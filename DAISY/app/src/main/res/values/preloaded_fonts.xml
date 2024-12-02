@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <array name="preloaded_fonts_list" translatable="false" tools:ignore="InconsistentArrays">
+        <item>@font/asset</item>
+        <item>@font/bowlby_one_sc</item>
+        <item>@font/bruno_ace</item>
+        <item>@font/rocknroll_one</item>
+        <item>@font/titan_one</item>
+    </array>
+</resources>

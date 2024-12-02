@@ -1,0 +1,234 @@
+[
+    {
+        "merged": "com.example.daisy.app-debug-65:/layout_activity_sign_up.xml.flat",
+        "source": "com.example.daisy.app-main-67:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ic_baseline_photo_camera_24.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ic_baseline_photo_camera_24.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ic_minus.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ic_minus.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-hdpi_logo.png.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-hdpi/logo.png"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/layout_item_dashboard.xml.flat",
+        "source": "com.example.daisy.app-main-67:/layout/item_dashboard.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_backspace_ic.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/backspace_ic.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/font_bowlby_one_sc.xml.flat",
+        "source": "com.example.daisy.app-main-67:/font/bowlby_one_sc.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/layout_item_gesture_recognizer_result.xml.flat",
+        "source": "com.example.daisy.app-main-67:/layout/item_gesture_recognizer_result.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/layout_activity_main.xml.flat",
+        "source": "com.example.daisy.app-main-67:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_icn_chevron_up.png.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/icn_chevron_up.png"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/layout_activity_splash_screen.xml.flat",
+        "source": "com.example.daisy.app-main-67:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/font_asset.xml.flat",
+        "source": "com.example.daisy.app-main-67:/font/asset.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_mic_ic.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/mic_ic.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ic_settings.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_emergency_ic.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/emergency_ic.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ic_left.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ic_left.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.daisy.app-main-67:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/layout_fragment_camera.xml.flat",
+        "source": "com.example.daisy.app-main-67:/layout/fragment_camera.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_gradient_bg.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/gradient_bg.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ic_sign_language.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ic_sign_language.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ic_baseline_photo_library_24.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ic_baseline_photo_library_24.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/layout_fragment_dashboard.xml.flat",
+        "source": "com.example.daisy.app-main-67:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ic_plus.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ic_plus.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_home_ic.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/home_ic.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_bg_view.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/bg_view.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_green_background.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/green_background.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_daisy_img.png.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/daisy_img.png"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/xml_backup_rules.xml.flat",
+        "source": "com.example.daisy.app-main-67:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/layout_info_bottom_sheet.xml.flat",
+        "source": "com.example.daisy.app-main-67:/layout/info_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ic_baseline_add_24.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/menu_bottom_navigation.xml.flat",
+        "source": "com.example.daisy.app-main-67:/menu/bottom_navigation.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/layout_activity_dashboard.xml.flat",
+        "source": "com.example.daisy.app-main-67:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_setting_ic.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/setting_ic.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_red_background.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/red_background.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_yellow_background.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/yellow_background.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ss_background.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ss_background.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_blue_background.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/blue_background.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_daisy_logo.png.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/daisy_logo.png"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ic_avatar.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ic_avatar.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ss_logo.png.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ss_logo.png"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/font_titan_one.xml.flat",
+        "source": "com.example.daisy.app-main-67:/font/titan_one.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/layout_activity_login.xml.flat",
+        "source": "com.example.daisy.app-main-67:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/drawable_ic_communication.xml.flat",
+        "source": "com.example.daisy.app-main-67:/drawable/ic_communication.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/navigation_nav_graph.xml.flat",
+        "source": "com.example.daisy.app-main-67:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.daisy.app-main-67:/mipmap-anydpi/ic_launcher.xml"
+    }
+]

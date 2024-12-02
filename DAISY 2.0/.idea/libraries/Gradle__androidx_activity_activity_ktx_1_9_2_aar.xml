@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.activity:activity-ktx:1.9.2@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$USER_HOME$/iDamo-App/caches/8.9/transforms/e09956c4af53d5d4fbcb42b7d311ceca/transformed/jetified-activity-ktx-1.9.2/res" />
+      <root url="jar://$USER_HOME$/iDamo-App/caches/8.9/transforms/e09956c4af53d5d4fbcb42b7d311ceca/transformed/jetified-activity-ktx-1.9.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/iDamo-App/caches/8.9/transforms/e09956c4af53d5d4fbcb42b7d311ceca/transformed/jetified-activity-ktx-1.9.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/iDamo-App/caches/modules-2/files-2.1/androidx.activity/activity-ktx/1.9.2/2ad14aed781c4a73ed4dbb421966d408a0a06686/activity-ktx-1.9.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

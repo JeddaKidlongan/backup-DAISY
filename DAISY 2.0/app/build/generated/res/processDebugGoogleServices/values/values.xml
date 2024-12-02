@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">11239792237</string>
+    <string name="google_api_key" translatable="false">AIzaSyA6w5TUT689xnS6ejcO_e5TVvjG_b6Btns</string>
+    <string name="google_app_id" translatable="false">1:11239792237:android:01faa911e886ee70242964</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA6w5TUT689xnS6ejcO_e5TVvjG_b6Btns</string>
+    <string name="google_storage_bucket" translatable="false">daisy-561f5.appspot.com</string>
+    <string name="project_id" translatable="false">daisy-561f5</string>
+</resources>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.mediapipe:tasks-vision:0.20230731@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$USER_HOME$/iDamo-App/caches/8.9/transforms/c354fe6d34d1791abebae7eebb1b8e8a/transformed/jetified-tasks-vision-0.20230731/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/iDamo-App/caches/8.9/transforms/c354fe6d34d1791abebae7eebb1b8e8a/transformed/jetified-tasks-vision-0.20230731/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

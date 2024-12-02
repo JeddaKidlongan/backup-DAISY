@@ -1,0 +1,68 @@
+com.example.daisy.app-profileinstaller-1.3.1-0 C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\res
+com.example.daisy.app-activity-1.9.2-1 C:\Users\kinga\.gradle\caches\8.9\transforms\04c1b753cf613bee2b787bc09029883d\transformed\activity-1.9.2\res
+com.example.daisy.app-slidingpanelayout-1.2.0-2 C:\Users\kinga\.gradle\caches\8.9\transforms\0bb1f22c27abbb71ed4542cee482304d\transformed\slidingpanelayout-1.2.0\res
+com.example.daisy.app-lifecycle-runtime-ktx-2.6.2-3 C:\Users\kinga\.gradle\caches\8.9\transforms\1081e42cc0b6bde923fbf900673e23ff\transformed\lifecycle-runtime-ktx-2.6.2\res
+com.example.daisy.app-credentials-1.2.0-rc01-4 C:\Users\kinga\.gradle\caches\8.9\transforms\198b9f7f8a3f050e5cb2dd3abe0f00ef\transformed\credentials-1.2.0-rc01\res
+com.example.daisy.app-startup-runtime-1.1.1-5 C:\Users\kinga\.gradle\caches\8.9\transforms\20aee92a8d04b11b0ba97259bb23c35e\transformed\startup-runtime-1.1.1\res
+com.example.daisy.app-fragment-1.6.2-6 C:\Users\kinga\.gradle\caches\8.9\transforms\20c85cac10883b21dc606c90168db5c3\transformed\fragment-1.6.2\res
+com.example.daisy.app-core-runtime-2.2.0-7 C:\Users\kinga\.gradle\caches\8.9\transforms\2348f0cf51889e656a58ac4863e688e4\transformed\core-runtime-2.2.0\res
+com.example.daisy.app-recyclerview-1.3.2-8 C:\Users\kinga\.gradle\caches\8.9\transforms\28c50d3ee02394cf47af39b91076d237\transformed\recyclerview-1.3.2\res
+com.example.daisy.app-navigation-common-ktx-2.8.3-9 C:\Users\kinga\.gradle\caches\8.9\transforms\28f92efd45cd6d14b03b3107495958ca\transformed\navigation-common-ktx-2.8.3\res
+com.example.daisy.app-fragment-ktx-1.6.2-10 C:\Users\kinga\.gradle\caches\8.9\transforms\2925d58d9d3de3693eb593530c0a02e8\transformed\fragment-ktx-1.6.2\res
+com.example.daisy.app-camera-core-1.3.4-11 C:\Users\kinga\.gradle\caches\8.9\transforms\31a4df08079af970e7d71c0f6d1a3d3e\transformed\camera-core-1.3.4\res
+com.example.daisy.app-camera-camera2-1.3.4-12 C:\Users\kinga\.gradle\caches\8.9\transforms\379b286e0a0d41aac3df57054749a21b\transformed\camera-camera2-1.3.4\res
+com.example.daisy.app-customview-poolingcontainer-1.0.0-13 C:\Users\kinga\.gradle\caches\8.9\transforms\3b5e3a9375afc0e262c9d9a96519ea3f\transformed\customview-poolingcontainer-1.0.0\res
+com.example.daisy.app-navigation-common-2.8.3-14 C:\Users\kinga\.gradle\caches\8.9\transforms\3e3579afae6710cfec9a38dc62ef1472\transformed\navigation-common-2.8.3\res
+com.example.daisy.app-camera-video-1.3.4-15 C:\Users\kinga\.gradle\caches\8.9\transforms\434007103f0a969bea469a492c96ec29\transformed\camera-video-1.3.4\res
+com.example.daisy.app-camera-lifecycle-1.3.4-16 C:\Users\kinga\.gradle\caches\8.9\transforms\480206f36fea454a1212e045a8a57125\transformed\camera-lifecycle-1.3.4\res
+com.example.daisy.app-navigation-runtime-ktx-2.8.3-17 C:\Users\kinga\.gradle\caches\8.9\transforms\48767c047842befabb6f7f1adf3ad5ff\transformed\navigation-runtime-ktx-2.8.3\res
+com.example.daisy.app-emoji2-1.3.0-18 C:\Users\kinga\.gradle\caches\8.9\transforms\4b166bc9f89e2c47f1fcd8e1b510807c\transformed\emoji2-1.3.0\res
+com.example.daisy.app-appcompat-resources-1.7.0-19 C:\Users\kinga\.gradle\caches\8.9\transforms\50a48c7bf305a2fb84a4163af5ae5fb5\transformed\appcompat-resources-1.7.0\res
+com.example.daisy.app-annotation-experimental-1.4.1-20 C:\Users\kinga\.gradle\caches\8.9\transforms\538b685dbc328a974bfd4b700bbf871c\transformed\annotation-experimental-1.4.1\res
+com.example.daisy.app-drawerlayout-1.1.1-21 C:\Users\kinga\.gradle\caches\8.9\transforms\56807f5fb1b966f71cffea675e876783\transformed\drawerlayout-1.1.1\res
+com.example.daisy.app-window-1.3.0-22 C:\Users\kinga\.gradle\caches\8.9\transforms\5806357e2456447e7a250ce030333645\transformed\window-1.3.0\res
+com.example.daisy.app-lifecycle-viewmodel-savedstate-2.6.2-23 C:\Users\kinga\.gradle\caches\8.9\transforms\580956b30292d0c71ec623ccf5272d2c\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
+com.example.daisy.app-emoji2-views-helper-1.3.0-24 C:\Users\kinga\.gradle\caches\8.9\transforms\61856b11ab6a828140f5916cb6ce0528\transformed\emoji2-views-helper-1.3.0\res
+com.example.daisy.app-browser-1.4.0-25 C:\Users\kinga\.gradle\caches\8.9\transforms\6784593d52e5380ec47064dce6e2412b\transformed\browser-1.4.0\res
+com.example.daisy.app-core-1.13.1-26 C:\Users\kinga\.gradle\caches\8.9\transforms\6a026fae943466c031f5d4e3348f8b7f\transformed\core-1.13.1\res
+com.example.daisy.app-lifecycle-viewmodel-2.6.2-27 C:\Users\kinga\.gradle\caches\8.9\transforms\6cc2fdb2ff816ea1d2271ca84e7b5313\transformed\lifecycle-viewmodel-2.6.2\res
+com.example.daisy.app-lifecycle-livedata-2.6.2-28 C:\Users\kinga\.gradle\caches\8.9\transforms\719ae46510ab09695d25c7bce9c05cc3\transformed\lifecycle-livedata-2.6.2\res
+com.example.daisy.app-camera-view-1.3.4-29 C:\Users\kinga\.gradle\caches\8.9\transforms\7b1889f9ca19b2ac960b465898195464\transformed\camera-view-1.3.4\res
+com.example.daisy.app-credentials-play-services-auth-1.2.0-rc01-30 C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\res
+com.example.daisy.app-play-services-maps-19.0.0-31 C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\res
+com.example.daisy.app-lifecycle-livedata-core-2.6.2-32 C:\Users\kinga\.gradle\caches\8.9\transforms\81dd1f3138acc2a2c0e95a107cc9cc06\transformed\lifecycle-livedata-core-2.6.2\res
+com.example.daisy.app-savedstate-ktx-1.2.1-33 C:\Users\kinga\.gradle\caches\8.9\transforms\8366d356b65d1a708138b4a2665f33dd\transformed\savedstate-ktx-1.2.1\res
+com.example.daisy.app-navigation-ui-2.8.3-34 C:\Users\kinga\.gradle\caches\8.9\transforms\8880fa8bea115339492c9402f067073f\transformed\navigation-ui-2.8.3\res
+com.example.daisy.app-core-1.0.0-35 C:\Users\kinga\.gradle\caches\8.9\transforms\8a96e2f5d8f5a90590efcf3ca57931f8\transformed\core-1.0.0\res
+com.example.daisy.app-viewpager2-1.1.0-beta02-36 C:\Users\kinga\.gradle\caches\8.9\transforms\8acc7ed4630bb5f78fc25f36e77ca7d1\transformed\viewpager2-1.1.0-beta02\res
+com.example.daisy.app-transition-1.5.0-37 C:\Users\kinga\.gradle\caches\8.9\transforms\92be0f9969f9aa87dd9b3f0479b47cb4\transformed\transition-1.5.0\res
+com.example.daisy.app-lifecycle-process-2.6.2-38 C:\Users\kinga\.gradle\caches\8.9\transforms\a063ad4dd303f9cce7d04ad874508d59\transformed\lifecycle-process-2.6.2\res
+com.example.daisy.app-lifecycle-runtime-2.6.2-39 C:\Users\kinga\.gradle\caches\8.9\transforms\a5c1c554d2f7f6c2e5be866ee6caebe3\transformed\lifecycle-runtime-2.6.2\res
+com.example.daisy.app-play-services-basement-18.4.0-40 C:\Users\kinga\.gradle\caches\8.9\transforms\a62dfec9d3ccc5da5b2514a75bc8a13e\transformed\play-services-basement-18.4.0\res
+com.example.daisy.app-lifecycle-livedata-core-ktx-2.6.2-41 C:\Users\kinga\.gradle\caches\8.9\transforms\a6b977735a27fe26b296467069c7693a\transformed\lifecycle-livedata-core-ktx-2.6.2\res
+com.example.daisy.app-navigation-runtime-2.8.3-42 C:\Users\kinga\.gradle\caches\8.9\transforms\a7d7237679883f9fa68fe777fabb1726\transformed\navigation-runtime-2.8.3\res
+com.example.daisy.app-savedstate-1.2.1-43 C:\Users\kinga\.gradle\caches\8.9\transforms\aa668440a445b9e02b44bb8d1c02cef6\transformed\savedstate-1.2.1\res
+com.example.daisy.app-constraintlayout-2.1.4-44 C:\Users\kinga\.gradle\caches\8.9\transforms\b66eab691261edd81f12d476cc7f50cc\transformed\constraintlayout-2.1.4\res
+com.example.daisy.app-lifecycle-viewmodel-ktx-2.6.2-45 C:\Users\kinga\.gradle\caches\8.9\transforms\b90c6b09c87d91b03206647fe4a3eabe\transformed\lifecycle-viewmodel-ktx-2.6.2\res
+com.example.daisy.app-firebase-common-21.0.0-46 C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\res
+com.example.daisy.app-gridlayout-1.0.0-47 C:\Users\kinga\.gradle\caches\8.9\transforms\cb589f2bee8cc41d225b77459ff0ebe0\transformed\gridlayout-1.0.0\res
+com.example.daisy.app-core-ktx-1.13.1-48 C:\Users\kinga\.gradle\caches\8.9\transforms\cd6ea26d77ad039284347b3685eecdc6\transformed\core-ktx-1.13.1\res
+com.example.daisy.app-navigation-ui-ktx-2.8.3-49 C:\Users\kinga\.gradle\caches\8.9\transforms\cdd741a0b6dc7b8b81933efecb0e0afc\transformed\navigation-ui-ktx-2.8.3\res
+com.example.daisy.app-material-1.12.0-50 C:\Users\kinga\.gradle\caches\8.9\transforms\cfab92b36e5d0481116204d3fd994b4d\transformed\material-1.12.0\res
+com.example.daisy.app-navigation-fragment-ktx-2.8.3-51 C:\Users\kinga\.gradle\caches\8.9\transforms\d13f61f9c1d90df8bc8c9b8747ff402a\transformed\navigation-fragment-ktx-2.8.3\res
+com.example.daisy.app-play-services-base-18.5.0-52 C:\Users\kinga\.gradle\caches\8.9\transforms\d47cfa2dec812b28ca283d9cf18630ee\transformed\play-services-base-18.5.0\res
+com.example.daisy.app-places-4.0.0-53 C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\res
+com.example.daisy.app-navigation-fragment-2.8.3-54 C:\Users\kinga\.gradle\caches\8.9\transforms\df3f0175a7cfe67eab3db495f8cedbb2\transformed\navigation-fragment-2.8.3\res
+com.example.daisy.app-coordinatorlayout-1.1.0-55 C:\Users\kinga\.gradle\caches\8.9\transforms\e45ea83fe43582d774588e42e0c8551b\transformed\coordinatorlayout-1.1.0\res
+com.example.daisy.app-activity-ktx-1.9.2-56 C:\Users\kinga\.gradle\caches\8.9\transforms\e629891494063aa7c115469a9f9d259d\transformed\activity-ktx-1.9.2\res
+com.example.daisy.app-cardview-1.0.0-57 C:\Users\kinga\.gradle\caches\8.9\transforms\ef42e0bc980590e871ec9c2de82320b0\transformed\cardview-1.0.0\res
+com.example.daisy.app-appcompat-1.7.0-58 C:\Users\kinga\.gradle\caches\8.9\transforms\f853a13d581907a1113805f39deb1ffa\transformed\appcompat-1.7.0\res
+com.example.daisy.app-play-services-auth-20.7.0-59 C:\Users\kinga\.gradle\caches\8.9\transforms\fe46929c306465b90ed130852592075e\transformed\play-services-auth-20.7.0\res
+com.example.daisy.app-pngs-60 C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\build\generated\res\pngs\debug
+com.example.daisy.app-res-61 C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\build\generated\res\processDebugGoogleServices
+com.example.daisy.app-resValues-62 C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\build\generated\res\resValues\debug
+com.example.daisy.app-packageDebugResources-63 C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.daisy.app-packageDebugResources-64 C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.daisy.app-debug-65 C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.daisy.app-debug-66 C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\debug\res
+com.example.daisy.app-main-67 C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\res

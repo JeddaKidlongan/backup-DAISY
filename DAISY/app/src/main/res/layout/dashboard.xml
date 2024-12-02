@@ -1,0 +1,243 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/bruno_ace"
+        android:text="DAISY"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+
+        android:layout_marginEnd="36dp"
+        android:elevation="4dp"
+        android:src="@drawable/ic_avatar"
+        app:layout_constraintBottom_toTopOf="@+id/assistive_communication_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/assistive_communication_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="#7ED26C"
+        android:drawableEnd="@drawable/ic_communication"
+        android:fontFamily="@font/rocknroll_one"
+        android:insetLeft="12dp"
+        android:insetRight="12dp"
+        android:padding="16dp"
+        android:shadowColor="#0F0000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:text="Assistive Communication"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/transportation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="#FFF59D"
+        android:drawableEnd="@drawable/ic_transportation"
+        android:fontFamily="@font/rocknroll_one"
+        android:insetLeft="12dp"
+        android:insetRight="12dp"
+        android:padding="16dp"
+        android:text="Transportation"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigation_assistant_btn"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/money_detection_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="#FFAB91"
+        android:drawableEnd="@drawable/ic_detect"
+        android:fontFamily="@font/rocknroll_one"
+        android:insetLeft="12dp"
+        android:insetRight="12dp"
+        android:padding="16dp"
+        android:text="Money Detection"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assistive_communication_btn"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/navigation_assistant_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="#C5E1A5"
+        android:drawableEnd="@drawable/ic_navigation"
+        android:fontFamily="@font/rocknroll_one"
+        android:insetLeft="12dp"
+        android:insetRight="12dp"
+        android:padding="16dp"
+        android:text="Navigation Assistant"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/money_detection_btn"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <ImageButton
+        android:id="@+id/mic_btn"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/blue_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transportation_btn"
+        app:layout_constraintVertical_bias="0.876"
+        app:srcCompat="@drawable/mic_ic"
+        tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/backspace_Btn"
+        android:layout_width="36dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="122dp"
+        android:background="@drawable/blue_background"
+        app:layout_constraintBottom_toTopOf="@+id/BotNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/backspace_ic"
+        tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintBounds" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BotNav"
+        android:layout_width="409dp"
+        android:layout_height="61dp"
+        android:foregroundTint="#572727"
+        app:itemIconTint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintBounds">
+
+        <ImageButton
+            android:id="@+id/emergency_btn"
+            android:layout_width="89dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            app:srcCompat="@drawable/emergency_ic"
+            app:tint="#0D47A1"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/home_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            app:srcCompat="@drawable/home_ic"
+            app:tint="#0D47A1"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/settings_btn"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@android:color/transparent"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            app:srcCompat="@drawable/setting_ic"
+            app:tint="#0D47A1"
+            tools:ignore="ContentDescription,RtlSymmetry,SpeakableTextPresentCheck" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to speak"
+        android:textColor="#FFCDD2"
+        app:layout_constraintBottom_toTopOf="@+id/mic_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transportation_btn"
+        app:layout_constraintVertical_bias="0.92"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="187dp"
+        app:layout_constraintBottom_toTopOf="@+id/assistive_communication_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bg_view"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

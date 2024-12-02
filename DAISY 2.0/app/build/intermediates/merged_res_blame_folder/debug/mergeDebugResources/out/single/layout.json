@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.example.daisy.app-mergeDebugResources-64:/layout/activity_main.xml",
+        "source": "com.example.daisy.app-main-67:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-mergeDebugResources-64:/layout/fragment_dashboard.xml",
+        "source": "com.example.daisy.app-main-67:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-mergeDebugResources-64:/layout/activity_sign_up.xml",
+        "source": "com.example.daisy.app-main-67:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-mergeDebugResources-64:/layout/activity_dashboard.xml",
+        "source": "com.example.daisy.app-main-67:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-mergeDebugResources-64:/layout/item_gesture_recognizer_result.xml",
+        "source": "com.example.daisy.app-main-67:/layout/item_gesture_recognizer_result.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-mergeDebugResources-64:/layout/activity_splash_screen.xml",
+        "source": "com.example.daisy.app-main-67:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-mergeDebugResources-64:/layout/activity_login.xml",
+        "source": "com.example.daisy.app-main-67:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-mergeDebugResources-64:/layout/fragment_camera.xml",
+        "source": "com.example.daisy.app-main-67:/layout/fragment_camera.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-mergeDebugResources-64:/layout/item_dashboard.xml",
+        "source": "com.example.daisy.app-main-67:/layout/item_dashboard.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-mergeDebugResources-64:/layout/info_bottom_sheet.xml",
+        "source": "com.example.daisy.app-main-67:/layout/info_bottom_sheet.xml"
+    }
+]

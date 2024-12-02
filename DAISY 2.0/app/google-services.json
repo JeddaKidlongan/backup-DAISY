@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "11239792237",
+    "project_id": "daisy-561f5",
+    "storage_bucket": "daisy-561f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11239792237:android:01faa911e886ee70242964",
+        "android_client_info": {
+          "package_name": "com.example.daisy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6w5TUT689xnS6ejcO_e5TVvjG_b6Btns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
