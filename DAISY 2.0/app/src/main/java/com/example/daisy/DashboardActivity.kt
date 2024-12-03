@@ -1,12 +1,12 @@
 package com.example.daisy
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -34,6 +34,31 @@ class DashboardActivity : AppCompatActivity() {
 
         sampleQuizCard.setOnClickListener {
             Toast.makeText(this, "COMING SOON!", Toast.LENGTH_SHORT).show()
+        }
+
+        // Initialize BottomNavigationView for Profile Navigation
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
+        bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_user -> {
+                    // Launch UserProfileActivity
+                    val intent = Intent(this, UserProfileActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+
+                R.id.nav_settings -> {
+                    Toast.makeText(this, "Settings Coming Soon!", Toast.LENGTH_SHORT).show()
+                    true
+                }
+
+                R.id.nav_messages -> {
+                    Toast.makeText(this, "Forum Coming Soon!", Toast.LENGTH_SHORT).show()
+                    true
+                }
+
+                else -> false
+            }
         }
     }
 }

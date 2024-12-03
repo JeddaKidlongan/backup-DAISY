@@ -30,6 +30,9 @@
     </queries>
 
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <permission
         android:name="com.example.daisy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -52,7 +55,7 @@
         android:theme="@style/Theme.GestureRecognizer" >
         <activity
             android:name="com.example.daisy.DashboardActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="com.example.daisy.SplashScreenActivity"
             android:exported="true" >
@@ -69,6 +72,8 @@
             android:name="com.example.daisy.LoginActivity"
             android:exported="true" >
         </activity>
+        <activity android:name="com.example.daisy.UserProfileActivity" />
+        <activity android:name="com.example.daisy.EditProfileActivity" />
         <activity
             android:name="com.example.daisy.MainActivity"
             android:exported="true" />
@@ -123,6 +128,12 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
@@ -198,6 +209,22 @@
         <uses-library
             android:name="androidx.window.sidecar"
             android:required="false" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

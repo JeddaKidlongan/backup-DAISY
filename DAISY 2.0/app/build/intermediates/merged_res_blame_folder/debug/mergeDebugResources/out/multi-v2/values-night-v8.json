@@ -4,7 +4,7 @@
             "outputFile": "com.example.daisy.app-mergeDebugResources-63:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kinga\\cc17-3k-daisy-developers\\DAISY 2.0\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\kinga\\backup-DAISY\\DAISY 2.0\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

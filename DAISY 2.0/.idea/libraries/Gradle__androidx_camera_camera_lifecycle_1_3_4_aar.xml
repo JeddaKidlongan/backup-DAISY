@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.camera:camera-lifecycle:1.3.4@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/iDamo-App/caches/8.9/transforms/58ac71c0c94c9eb933a50f1bcae9bb0b/transformed/jetified-camera-lifecycle-1.3.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/iDamo-App/caches/8.9/transforms/58ac71c0c94c9eb933a50f1bcae9bb0b/transformed/jetified-camera-lifecycle-1.3.4/res" />
-      <root url="file://$USER_HOME$/iDamo-App/caches/8.9/transforms/58ac71c0c94c9eb933a50f1bcae9bb0b/transformed/jetified-camera-lifecycle-1.3.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.9/transforms/480206f36fea454a1212e045a8a57125/transformed/camera-lifecycle-1.3.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.9/transforms/480206f36fea454a1212e045a8a57125/transformed/camera-lifecycle-1.3.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.9/transforms/480206f36fea454a1212e045a8a57125/transformed/camera-lifecycle-1.3.4/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/iDamo-App/caches/modules-2/files-2.1/androidx.camera/camera-lifecycle/1.3.4/fadc8569bbf7f44a7a5425643064db16fdd0c131/camera-lifecycle-1.3.4-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.camera/camera-lifecycle/1.3.4/fadc8569bbf7f44a7a5425643064db16fdd0c131/camera-lifecycle-1.3.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

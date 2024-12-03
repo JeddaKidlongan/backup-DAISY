@@ -1,10 +1,10 @@
-#Mon Dec 02 22:22:05 SGT 2024
-base.0=C\:\\Users\\kinga\\cc17-3k-daisy-developers\\DAISY 2.0\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\kinga\\cc17-3k-daisy-developers\\DAISY 2.0\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\kinga\\cc17-3k-daisy-developers\\DAISY 2.0\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
-base.3=C\:\\Users\\kinga\\cc17-3k-daisy-developers\\DAISY 2.0\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-base.4=C\:\\Users\\kinga\\cc17-3k-daisy-developers\\DAISY 2.0\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.5=C\:\\Users\\kinga\\cc17-3k-daisy-developers\\DAISY 2.0\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+#Tue Dec 03 11:11:45 SGT 2024
+base.0=C\:\\Users\\kinga\\backup-DAISY\\DAISY 2.0\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\kinga\\backup-DAISY\\DAISY 2.0\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\kinga\\backup-DAISY\\DAISY 2.0\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.3=C\:\\Users\\kinga\\backup-DAISY\\DAISY 2.0\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.4=C\:\\Users\\kinga\\backup-DAISY\\DAISY 2.0\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.5=C\:\\Users\\kinga\\backup-DAISY\\DAISY 2.0\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=14/classes.dex

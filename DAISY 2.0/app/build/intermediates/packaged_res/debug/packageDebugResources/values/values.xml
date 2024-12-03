@@ -68,6 +68,7 @@
     <string name="google_app_id" translatable="false">1:11239792237:android:01faa911e886ee70242964</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA6w5TUT689xnS6ejcO_e5TVvjG_b6Btns</string>
     <string name="google_storage_bucket" translatable="false">daisy-561f5.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="label_delegate">Delegate</string>
     <string name="label_fps">Frames per Second</string>
     <string name="label_hand_detection_confidence_threshold">Detection

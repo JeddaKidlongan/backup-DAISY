@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:2:1-55:12
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [androidx.databinding:viewbinding:8.7.2] C:\Users\kinga\.gradle\caches\8.9\transforms\e9ba225d5bcfe55234be70d18a4efbb2\transformed\viewbinding-8.7.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.8.3] C:\Users\kinga\.gradle\caches\8.9\transforms\3e3579afae6710cfec9a38dc62ef1472\transformed\navigation-common-2.8.3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.8.3] C:\Users\kinga\.gradle\caches\8.9\transforms\28f92efd45cd6d14b03b3107495958ca\transformed\navigation-common-ktx-2.8.3\AndroidManifest.xml:2:1-7:12
@@ -34,6 +34,10 @@ MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\User
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\6fd41fb0231f032268858c9c362ab663\transformed\recaptcha-18.4.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\81b3d83aa53c70a9e1f0b6bb5befd752\transformed\integrity-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\0318df21dcaed6b8397c6fd1cb7e4019\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-core:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\30514e14d4276744276ab02fda539986\transformed\firebase-core-21.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-analytics:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\76700b5a9e7b3daf75debe525ab248fc\transformed\firebase-analytics-21.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:15:1-41:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\863784853bf97255b71c8adab22fcbb6\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\be0eee8379cfa22a34eb7d913693089d\transformed\play-services-location-21.0.1\AndroidManifest.xml:2:1-9:12
@@ -46,6 +50,10 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\kinga\
 MERGED from [androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5806357e2456447e7a250ce030333645\transformed\window-1.3.0\AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.transition:transition:1.5.0] C:\Users\kinga\.gradle\caches\8.9\transforms\92be0f9969f9aa87dd9b3f0479b47cb4\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a3f6942e2b3dcada2b1c1213f8012141\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\727460db1426e1497c0e75ab5112c764\transformed\play-services-measurement-sdk-21.1.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\kinga\.gradle\caches\8.9\transforms\126589b123907887e824b3292f87ba71\transformed\play-services-stats-17.0.2\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a0d842a28bd15a81d69bf09d2ba432f1\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\4dd123f487ef32dfa37ce1759eea24fd\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\61856b11ab6a828140f5916cb6ce0528\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
@@ -63,7 +71,12 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\kinga\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\kinga\.gradle\caches\8.9\transforms\580956b30292d0c71ec623ccf5272d2c\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\kinga\.gradle\caches\8.9\transforms\8366d356b65d1a708138b4a2665f33dd\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\kinga\.gradle\caches\8.9\transforms\aa668440a445b9e02b44bb8d1c02cef6\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\de92d62766e6698870b58019bfdd816d\transformed\firebase-installations-interop-17.0.1\AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\2ec0555a4dd0b265764904d300498fa7\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\e97bab11db9620c31e212b760524df24\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5488af99e983304ef40adb90504dc5f3\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-measurement-base:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a80ed8bbd1baae34f341d89943434d93\transformed\play-services-measurement-base-21.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\97e755bb8611cba9d3816bce01c6be74\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a62dfec9d3ccc5da5b2514a75bc8a13e\transformed\play-services-basement-18.4.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\kinga\.gradle\caches\8.9\transforms\28c50d3ee02394cf47af39b91076d237\transformed\recyclerview-1.3.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] C:\Users\kinga\.gradle\caches\8.9\transforms\8acc7ed4630bb5f78fc25f36e77ca7d1\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:2:1-7:12
@@ -104,19 +117,19 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\kinga\.gradle\ca
 MERGED from [androidx.print:print:1.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\596420b84609d667834b4aa07de6133a\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.volley:volley:1.2.1] C:\Users\kinga\.gradle\caches\8.9\transforms\7d5fed802e96fa18e927d2dc79fb543d\transformed\volley-1.2.1\AndroidManifest.xml:2:1-7:12
 	package
-		INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:4:5-51
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:4:5-51
 	xmlns:dist
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:3:5-61
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:3:5-61
 	android:versionCode
-		INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:6:5-67
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:12:5-67
@@ -125,41 +138,51 @@ MERGED from [com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.g
 MERGED from [com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\6fd41fb0231f032268858c9c362ab663\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\6fd41fb0231f032268858c9c362ab663\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5488af99e983304ef40adb90504dc5f3\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5488af99e983304ef40adb90504dc5f3\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\b70c661cb4333e0ccd746617f45acde3\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\b70c661cb4333e0ccd746617f45acde3\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:7:5-79
 MERGED from [com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:10:5-79
 MERGED from [com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:7:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:8:5-81
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:8:5-81
 MERGED from [com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:9:5-81
 MERGED from [com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:8:22-78
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:9:5-71
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:9:5-71
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:9:22-68
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:9:22-68
 dist:module
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:10:5-40
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:10:5-40
 	dist:instant
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:10:18-37
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:10:18-37
 uses-feature#android.hardware.camera
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:11:5-60
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:11:5-60
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:11:19-57
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:11:19-57
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:12:5-65
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:12:5-65
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:12:22-62
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:12:22-62
 application
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:14:5-53:19
-INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:14:5-53:19
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:14:5-56:19
+INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:14:5-56:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\kinga\.gradle\caches\8.9\transforms\cfab92b36e5d0481116204d3fd994b4d\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\kinga\.gradle\caches\8.9\transforms\cfab92b36e5d0481116204d3fd994b4d\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
@@ -184,6 +207,14 @@ MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\kinga\.gradle\cac
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\81b3d83aa53c70a9e1f0b6bb5befd752\transformed\integrity-1.2.0\AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\0318df21dcaed6b8397c6fd1cb7e4019\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\0318df21dcaed6b8397c6fd1cb7e4019\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-core:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\30514e14d4276744276ab02fda539986\transformed\firebase-core-21.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\30514e14d4276744276ab02fda539986\transformed\firebase-core-21.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\76700b5a9e7b3daf75debe525ab248fc\transformed\firebase-analytics-21.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\76700b5a9e7b3daf75debe525ab248fc\transformed\firebase-analytics-21.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:14:5-22:19
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:22:5-39:19
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:22:5-39:19
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\863784853bf97255b71c8adab22fcbb6\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:23:5-20
@@ -196,12 +227,26 @@ MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\kinga\.g
 MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d47cfa2dec812b28ca283d9cf18630ee\transformed\play-services-base-18.5.0\AndroidManifest.xml:4:5-6:19
 MERGED from [androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5806357e2456447e7a250ce030333645\transformed\window-1.3.0\AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5806357e2456447e7a250ce030333645\transformed\window-1.3.0\AndroidManifest.xml:22:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\727460db1426e1497c0e75ab5112c764\transformed\play-services-measurement-sdk-21.1.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\727460db1426e1497c0e75ab5112c764\transformed\play-services-measurement-sdk-21.1.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\kinga\.gradle\caches\8.9\transforms\126589b123907887e824b3292f87ba71\transformed\play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\kinga\.gradle\caches\8.9\transforms\126589b123907887e824b3292f87ba71\transformed\play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\4b166bc9f89e2c47f1fcd8e1b510807c\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\4b166bc9f89e2c47f1fcd8e1b510807c\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\kinga\.gradle\caches\8.9\transforms\a063ad4dd303f9cce7d04ad874508d59\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\kinga\.gradle\caches\8.9\transforms\a063ad4dd303f9cce7d04ad874508d59\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\2ec0555a4dd0b265764904d300498fa7\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:4:5-20
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\2ec0555a4dd0b265764904d300498fa7\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\e97bab11db9620c31e212b760524df24\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\e97bab11db9620c31e212b760524df24\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a80ed8bbd1baae34f341d89943434d93\transformed\play-services-measurement-base-21.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a80ed8bbd1baae34f341d89943434d93\transformed\play-services-measurement-base-21.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\97e755bb8611cba9d3816bce01c6be74\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\97e755bb8611cba9d3816bce01c6be74\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a62dfec9d3ccc5da5b2514a75bc8a13e\transformed\play-services-basement-18.4.0\AndroidManifest.xml:5:5-7:19
 MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a62dfec9d3ccc5da5b2514a75bc8a13e\transformed\play-services-basement-18.4.0\AndroidManifest.xml:5:5-7:19
 MERGED from [androidx.core:core:1.13.1] C:\Users\kinga\.gradle\caches\8.9\transforms\6a026fae943466c031f5d4e3348f8b7f\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
@@ -217,77 +262,85 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Us
 MERGED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\1d71d0eea3f1c5326975f6a09de29bd7\transformed\transport-runtime-3.2.0\AndroidManifest.xml:23:5-37:19
 MERGED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\1d71d0eea3f1c5326975f6a09de29bd7\transformed\transport-runtime-3.2.0\AndroidManifest.xml:23:5-37:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] C:\Users\kinga\.gradle\caches\8.9\transforms\6a026fae943466c031f5d4e3348f8b7f\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:19:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:17:9-54
 	android:roundIcon
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:20:9-54
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:20:9-54
 	tools:targetApi
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:23:9-29
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:23:9-29
 	android:icon
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:18:9-36
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:18:9-36
 	android:allowBackup
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:22:9-55
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:22:9-55
 	android:dataExtractionRules
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:16:9-65
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:16:9-65
 activity#com.example.daisy.DashboardActivity
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:24:9-26:40
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:24:9-26:39
 	android:exported
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:26:13-37
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:25:13-46
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:25:13-46
 activity#com.example.daisy.SplashScreenActivity
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:27:9-36:20
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:27:9-36:20
 	android:exported
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:29:13-36
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:29:13-36
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:28:13-49
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:28:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:34:27-74
 activity#com.example.daisy.SignUpActivity
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:38:9-40:40
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:39:13-43
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:39:13-43
 activity#com.example.daisy.LoginActivity
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:41:9-44:20
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:41:9-44:20
 	android:exported
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:43:13-36
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:43:13-36
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:42:13-42
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:42:13-42
+activity#com.example.daisy.UserProfileActivity
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:45:9-57
+	android:name
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:45:19-54
+activity#com.example.daisy.EditProfileActivity
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:46:9-57
+	android:name
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:46:19-54
 activity#com.example.daisy.MainActivity
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:45:9-47:39
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:48:9-50:39
 	android:exported
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:47:13-36
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:50:13-36
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:46:13-41
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:49:13-41
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:49:9-51:71
+ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:52:9-54:71
 	android:value
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:51:13-68
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:54:13-68
 	android:name
-		ADDED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml:50:13-58
+		ADDED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:53:13-58
 uses-sdk
-INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.7.2] C:\Users\kinga\.gradle\caches\8.9\transforms\e9ba225d5bcfe55234be70d18a4efbb2\transformed\viewbinding-8.7.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.7.2] C:\Users\kinga\.gradle\caches\8.9\transforms\e9ba225d5bcfe55234be70d18a4efbb2\transformed\viewbinding-8.7.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.navigation:navigation-common:2.8.3] C:\Users\kinga\.gradle\caches\8.9\transforms\3e3579afae6710cfec9a38dc62ef1472\transformed\navigation-common-2.8.3\AndroidManifest.xml:20:5-44
@@ -348,6 +401,14 @@ MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\kinga\.gradle\cac
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\81b3d83aa53c70a9e1f0b6bb5befd752\transformed\integrity-1.2.0\AndroidManifest.xml:4:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\0318df21dcaed6b8397c6fd1cb7e4019\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\0318df21dcaed6b8397c6fd1cb7e4019\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\30514e14d4276744276ab02fda539986\transformed\firebase-core-21.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\30514e14d4276744276ab02fda539986\transformed\firebase-core-21.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\76700b5a9e7b3daf75debe525ab248fc\transformed\firebase-analytics-21.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\76700b5a9e7b3daf75debe525ab248fc\transformed\firebase-analytics-21.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:19:5-44
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:19:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\863784853bf97255b71c8adab22fcbb6\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:18:5-20:41
@@ -372,6 +433,14 @@ MERGED from [androidx.transition:transition:1.5.0] C:\Users\kinga\.gradle\caches
 MERGED from [androidx.transition:transition:1.5.0] C:\Users\kinga\.gradle\caches\8.9\transforms\92be0f9969f9aa87dd9b3f0479b47cb4\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a3f6942e2b3dcada2b1c1213f8012141\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a3f6942e2b3dcada2b1c1213f8012141\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\727460db1426e1497c0e75ab5112c764\transformed\play-services-measurement-sdk-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\727460db1426e1497c0e75ab5112c764\transformed\play-services-measurement-sdk-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\kinga\.gradle\caches\8.9\transforms\126589b123907887e824b3292f87ba71\transformed\play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\kinga\.gradle\caches\8.9\transforms\126589b123907887e824b3292f87ba71\transformed\play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a0d842a28bd15a81d69bf09d2ba432f1\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a0d842a28bd15a81d69bf09d2ba432f1\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\4dd123f487ef32dfa37ce1759eea24fd\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
@@ -406,8 +475,18 @@ MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\kinga\.gradle\ca
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\kinga\.gradle\caches\8.9\transforms\8366d356b65d1a708138b4a2665f33dd\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\kinga\.gradle\caches\8.9\transforms\aa668440a445b9e02b44bb8d1c02cef6\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\kinga\.gradle\caches\8.9\transforms\aa668440a445b9e02b44bb8d1c02cef6\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\de92d62766e6698870b58019bfdd816d\transformed\firebase-installations-interop-17.0.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\de92d62766e6698870b58019bfdd816d\transformed\firebase-installations-interop-17.0.1\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\2ec0555a4dd0b265764904d300498fa7\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:3:5-44
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\2ec0555a4dd0b265764904d300498fa7\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\e97bab11db9620c31e212b760524df24\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\e97bab11db9620c31e212b760524df24\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5488af99e983304ef40adb90504dc5f3\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5488af99e983304ef40adb90504dc5f3\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a80ed8bbd1baae34f341d89943434d93\transformed\play-services-measurement-base-21.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a80ed8bbd1baae34f341d89943434d93\transformed\play-services-measurement-base-21.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\97e755bb8611cba9d3816bce01c6be74\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\97e755bb8611cba9d3816bce01c6be74\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a62dfec9d3ccc5da5b2514a75bc8a13e\transformed\play-services-basement-18.4.0\AndroidManifest.xml:3:5-44
 MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a62dfec9d3ccc5da5b2514a75bc8a13e\transformed\play-services-basement-18.4.0\AndroidManifest.xml:3:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\kinga\.gradle\caches\8.9\transforms\28c50d3ee02394cf47af39b91076d237\transformed\recyclerview-1.3.2\AndroidManifest.xml:20:5-44
@@ -489,15 +568,25 @@ MERGED from [com.android.volley:volley:1.2.1] C:\Users\kinga\.gradle\caches\8.9\
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:23:9-148
 	android:targetSdkVersion
-		INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\kinga\cc17-3k-daisy-developers\DAISY 2.0\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:5-79
 MERGED from [com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\6fd41fb0231f032268858c9c362ab663\transformed\recaptcha-18.4.0\AndroidManifest.xml:8:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\6fd41fb0231f032268858c9c362ab663\transformed\recaptcha-18.4.0\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5488af99e983304ef40adb90504dc5f3\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5488af99e983304ef40adb90504dc5f3\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\b70c661cb4333e0ccd746617f45acde3\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\b70c661cb4333e0ccd746617f45acde3\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\1d71d0eea3f1c5326975f6a09de29bd7\transformed\transport-runtime-3.2.0\AndroidManifest.xml:20:5-79
@@ -556,6 +645,10 @@ service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:66:9-72:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\0c80f8606c7fafe80eaad88ef6e90729\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\0c80f8606c7fafe80eaad88ef6e90729\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:15:9-21:19
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:30:9-38:19
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:30:9-38:19
 	android:exported
@@ -686,6 +779,38 @@ uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
 ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\6fd41fb0231f032268858c9c362ab663\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
 	android:name
 		ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\6fd41fb0231f032268858c9c362ab663\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5488af99e983304ef40adb90504dc5f3\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5488af99e983304ef40adb90504dc5f3\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\e97bab11db9620c31e212b760524df24\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\e97bab11db9620c31e212b760524df24\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5488af99e983304ef40adb90504dc5f3\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5488af99e983304ef40adb90504dc5f3\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:25:22-76
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:31:13-33:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:33:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:32:17-139
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
 	android:authorities
@@ -724,6 +849,38 @@ ADDED from [androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.9\tran
 		ADDED from [androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5806357e2456447e7a250ce030333645\transformed\window-1.3.0\AndroidManifest.xml:28:13-37
 	android:name
 		ADDED from [androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5806357e2456447e7a250ce030333645\transformed\window-1.3.0\AndroidManifest.xml:27:13-51
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\14aac1fea9b41f2bac245613686451f6\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:40:13-87
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\4b166bc9f89e2c47f1fcd8e1b510807c\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\kinga\.gradle\caches\8.9\transforms\a063ad4dd303f9cce7d04ad874508d59\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
