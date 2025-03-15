@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.media3:media3-decoder:1.5.1@aar" external-system-id="GRADLE">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/e36dab64a52b7ed8d5764882a86323b4/transformed/media3-decoder-1.5.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/e36dab64a52b7ed8d5764882a86323b4/transformed/media3-decoder-1.5.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/e36dab64a52b7ed8d5764882a86323b4/transformed/media3-decoder-1.5.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

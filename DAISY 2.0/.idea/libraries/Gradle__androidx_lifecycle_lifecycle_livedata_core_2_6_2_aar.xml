@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/8.9/transforms/81dd1f3138acc2a2c0e95a107cc9cc06/transformed/lifecycle-livedata-core-2.6.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/8.9/transforms/81dd1f3138acc2a2c0e95a107cc9cc06/transformed/lifecycle-livedata-core-2.6.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/8.9/transforms/81dd1f3138acc2a2c0e95a107cc9cc06/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/75b8b3b094703cbdc2eca4e454c8ad5f/transformed/lifecycle-livedata-core-2.6.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/75b8b3b094703cbdc2eca4e454c8ad5f/transformed/lifecycle-livedata-core-2.6.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/75b8b3b094703cbdc2eca4e454c8ad5f/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

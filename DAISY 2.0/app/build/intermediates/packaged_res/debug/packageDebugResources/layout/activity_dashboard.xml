@@ -1,95 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".DashboardActivity"
+    tools:openDrawer="start"
     android:background="@android:color/transparent">
 
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start"
+        tools:ignore="VisualLintBounds" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="8dp"
-        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
         app:layout_constraintTop_toBottomOf="@id/dashboard_toolbar">
 
         <!-- Toolbar -->
-
-        <!-- Dashboard 1 -->
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/dashboard_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:background="@color/mp_color_primary_dark"
             android:elevation="4dp"
             android:padding="8dp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             android:titleTextColor="@android:color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/camera_fragment"
             app:layout_constraintTop_toTopOf="parent"
-            app:title="@string/app_name" />
+            app:title="@string/app_name"
+            app:navigationIcon="@drawable/ic_baseline_more_vert"/>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/camera_fragment"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:focusable="true"
-            app:cardBackgroundColor="@color/vv_light_blue"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
-            app:layout_constraintBottom_toTopOf="@id/learn_signlanguage_card"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.33"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/dashboard_toolbar">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="75dp"
-                    android:layout_gravity="center"
-                    android:contentDescription="Sign Language Interpreter"
-                    android:src="@drawable/signs" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="8dp"
-                    android:text="Sign Language Interpreter"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Dashboard 2 -->
+        <!-- Learn Sign Language Card -->
         <androidx.cardview.widget.CardView
             android:id="@+id/learn_signlanguage_card"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:clickable="true"
             android:focusable="true"
+            android:layout_marginTop="40dp"
+            app:cardBackgroundColor="@color/vv_light_blue"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp"
-            app:cardBackgroundColor="@color/vv_light_blue"
-            app:layout_constraintBottom_toTopOf="@id/sample_quiz_card"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintTop_toBottomOf="@id/dashboard_toolbar"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/camera_fragment">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.33">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -116,22 +82,21 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Dashboard 3 -->
+        <!-- Sample Quiz Card -->
         <androidx.cardview.widget.CardView
             android:id="@+id/sample_quiz_card"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
             android:clickable="true"
             android:focusable="true"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
+            android:layout_marginTop="40dp"
             app:cardBackgroundColor="@color/vv_light_blue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.33"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintTop_toBottomOf="@id/learn_signlanguage_card"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/learn_signlanguage_card">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.33">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -158,36 +123,57 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
+        <!-- Sign Language Interpreter Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/camera_fragment"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_gravity="bottom"
-            app:itemIconTint="@color/mp_color_primary_dark"
-            app:itemTextColor="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="40dp"
+            app:cardBackgroundColor="@color/vv_light_blue"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
             app:layout_constraintTop_toBottomOf="@id/sample_quiz_card"
-            app:menu="@menu/bottom_navigation"
-            tools:layout_editor_absoluteX="8dp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.33">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
 
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Sign Language Interpreter"
+                    android:src="@drawable/signs" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:text="Sign Language Interpreter"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Fragment Container for Camera Fragment -->
-
-
-    <!-- BottomNavigationView -->
+    <!-- Fragment Container -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
-        app:layout_anchor="@+id/constraintLayout"
-        app:layout_anchorGravity="center"
-        app:navGraph="@navigation/nav_graph"
-        tools:ignore="DuplicateIds" />
+        app:navGraph="@navigation/nav_graph" />
 
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

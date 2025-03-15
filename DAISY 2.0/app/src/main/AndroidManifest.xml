@@ -22,29 +22,43 @@
         android:theme="@style/Theme.GestureRecognizer"
         tools:targetApi="31">
         <activity
-            android:name=".DashboardActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SplashScreenActivity"
+            android:name=".LearnWordsActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LearnSignLanguageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LearnAlphabetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SampleQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity android:name=".UserProfileActivity" />
         <activity android:name=".EditProfileActivity" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true" />
@@ -52,7 +66,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBJm_dHDQyxruXYJfX7N4QDkP0OywrdaQk" />
-
     </application>
 
 </manifest>

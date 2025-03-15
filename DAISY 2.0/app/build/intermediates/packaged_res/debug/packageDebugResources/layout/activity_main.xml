@@ -27,26 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_below="@id/toolbar"
-        android:layout_alignParentBottom="true"
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph"
         tools:context=".MainActivity" />
-
-    <!-- BottomNavigationView -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:itemIconTint="@color/bg_nav_item"
-        app:itemTextColor="@color/bg_nav_item" />
-
-    <!-- Divider line below BottomNavigationView -->
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@id/navigation"
-        android:background="@android:color/darker_gray" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

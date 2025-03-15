@@ -18,4 +18,19 @@
     <color name="black">#000000</color>
     <color name="light_blue">#009688</color>
     <color name="colorPrimary">#165FF1</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#67EFC8</color>
+    <color name="gradStart">#63C9FF</color>
+    <color name="green_500">#075F0A</color>
+    <color name="colorPrimaryDark">#485C31</color>
+
+    <!-- Light theme colors -->
+    <color name="mp_color_accent">#03DAC6</color>
+
+
+    <!-- Dark theme colors -->
+    <color name="dark_primary">#BB86FC</color>
+    <color name="dark_primary_dark">#3700B3</color>
+    <color name="dark_accent">#03DAC5</color>
 </resources>

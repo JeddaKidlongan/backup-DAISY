@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.daisy"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.daisy"
@@ -37,6 +37,7 @@ android {
     }
     buildFeatures{
         viewBinding = true
+        dataBinding = true
     }
 }
 
@@ -56,9 +57,15 @@ dependencies {
     implementation(libs.places)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.camera.core)
+    implementation(libs.androidx.media3.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation ("org.jetbrains.kotlin:kotlin-stdlib:2.1.0")
+    implementation ("androidx.work:work-runtime-ktx:2.9.0")
+    implementation ("androidx.media3:media3-exoplayer:1.2.0")
+    implementation ("androidx.media3:media3-ui:1.2.0")
+    implementation ("androidx.media3:media3-common:1.2.0")
 
     //Recycle View
     implementation (libs.androidx.recyclerview)

@@ -3,10 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/DAISY.iml" filepath="$PROJECT_DIR$/.idea/modules/DAISY.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DAISY 2.0.DAISY.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DAISY 2.0.DAISY.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DAISY 2.0.DAISY.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DAISY 2.0.DAISY.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DAISY 2.0.DAISY.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DAISY 2.0.DAISY.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DAISY 2.0.DAISY.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DAISY 2.0.DAISY.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DAISY.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DAISY.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DAISY.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DAISY.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DAISY.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DAISY.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DAISY.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DAISY.app.unitTest.iml" />
     </modules>
   </component>
 </project>

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.daisy.app-mergeDebugResources-63:/values-port/values-port.xml",
+            "outputFile": "com.example.daisy.app-mergeDebugResources-79:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kinga\\.gradle\\caches\\8.9\\transforms\\f853a13d581907a1113805f39deb1ffa\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\kinga\\.gradle\\caches\\8.11.1\\transforms\\df649fd41fc28e721964a03c2203764c\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

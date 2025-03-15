@@ -30,500 +30,745 @@
 18    <uses-permission android:name="android.permission.CAMERA" />
 18-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:12:5-65
 18-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:12:22-62
-19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-19-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:5-79
-19-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:22-76
-20    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-20-->[com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:11:5-76
-20-->[com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:11:22-73
+19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+19-->[com.google.android.libraries.places:places:4.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\19bcae3b7f54f0c3a711da14add37693\transformed\places-4.1.0\AndroidManifest.xml:11:5-76
+19-->[com.google.android.libraries.places:places:4.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\19bcae3b7f54f0c3a711da14add37693\transformed\places-4.1.0\AndroidManifest.xml:11:22-73
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:26:5-79
+20-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:26:22-76
 21
 22    <uses-feature
-22-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\AndroidManifest.xml:26:5-28:35
+22-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\5fc08c2b4dbd187f2c3d62ffe1f1b6d6\transformed\play-services-maps-19.1.0\AndroidManifest.xml:22:5-24:33
 23        android:glEsVersion="0x00020000"
-23-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\AndroidManifest.xml:27:9-41
+23-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\5fc08c2b4dbd187f2c3d62ffe1f1b6d6\transformed\play-services-maps-19.1.0\AndroidManifest.xml:23:8-40
 24        android:required="true" />
-24-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\AndroidManifest.xml:28:9-32
+24-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\5fc08c2b4dbd187f2c3d62ffe1f1b6d6\transformed\play-services-maps-19.1.0\AndroidManifest.xml:24:8-31
 25
 26    <queries>
-26-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\AndroidManifest.xml:30:5-34:15
+26-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\5fc08c2b4dbd187f2c3d62ffe1f1b6d6\transformed\play-services-maps-19.1.0\AndroidManifest.xml:27:5-30:15
 27
 28        <!-- Needs to be explicitly declared on Android R+ -->
 29        <package android:name="com.google.android.apps.maps" />
-29-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\AndroidManifest.xml:33:9-64
-29-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\AndroidManifest.xml:33:18-61
+29-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\5fc08c2b4dbd187f2c3d62ffe1f1b6d6\transformed\play-services-maps-19.1.0\AndroidManifest.xml:29:7-61
+29-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\5fc08c2b4dbd187f2c3d62ffe1f1b6d6\transformed\play-services-maps-19.1.0\AndroidManifest.xml:29:16-59
 30    </queries>
 31
 32    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-32-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\6fd41fb0231f032268858c9c362ab663\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
-32-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\6fd41fb0231f032268858c9c362ab663\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+32-->[com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\kinga\.gradle\caches\8.11.1\transforms\4d2c868729afb8d6dcc849954dbfe53a\transformed\recaptcha-18.6.1\AndroidManifest.xml:9:5-98
+32-->[com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\kinga\.gradle\caches\8.11.1\transforms\4d2c868729afb8d6dcc849954dbfe53a\transformed\recaptcha-18.6.1\AndroidManifest.xml:9:22-95
 33    <uses-permission android:name="android.permission.WAKE_LOCK" />
-33-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:24:5-68
-33-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:24:22-65
+33-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b10f514e07c06d87f0e71698a63d77dc\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:24:5-68
+33-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b10f514e07c06d87f0e71698a63d77dc\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:24:22-65
 34    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-34-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:25:5-79
-34-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:25:22-76
-35    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-35-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:26:5-110
-35-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:26:22-107
-36
-37    <permission
-37-->[androidx.core:core:1.13.1] C:\Users\kinga\.gradle\caches\8.9\transforms\6a026fae943466c031f5d4e3348f8b7f\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-38        android:name="com.example.daisy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-38-->[androidx.core:core:1.13.1] C:\Users\kinga\.gradle\caches\8.9\transforms\6a026fae943466c031f5d4e3348f8b7f\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-39        android:protectionLevel="signature" />
-39-->[androidx.core:core:1.13.1] C:\Users\kinga\.gradle\caches\8.9\transforms\6a026fae943466c031f5d4e3348f8b7f\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
-40
-41    <uses-permission android:name="com.example.daisy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-41-->[androidx.core:core:1.13.1] C:\Users\kinga\.gradle\caches\8.9\transforms\6a026fae943466c031f5d4e3348f8b7f\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-41-->[androidx.core:core:1.13.1] C:\Users\kinga\.gradle\caches\8.9\transforms\6a026fae943466c031f5d4e3348f8b7f\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+34-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b10f514e07c06d87f0e71698a63d77dc\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:25:5-79
+34-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b10f514e07c06d87f0e71698a63d77dc\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:25:22-76
+35    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+35-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:25:5-81
+35-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:25:22-78
+36    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+36-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:26:5-77
+36-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:26:22-74
+37    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+37-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:26:5-110
+37-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:26:22-107
+38
+39    <permission
+39-->[androidx.core:core:1.15.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\ea4b9bc024893d6514ad049ed75a04a9\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+40        android:name="com.example.daisy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+40-->[androidx.core:core:1.15.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\ea4b9bc024893d6514ad049ed75a04a9\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+41        android:protectionLevel="signature" />
+41-->[androidx.core:core:1.15.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\ea4b9bc024893d6514ad049ed75a04a9\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
 42
-43    <application
-43-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:14:5-56:19
-44        android:allowBackup="true"
-44-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:15:9-35
-45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-45-->[androidx.core:core:1.13.1] C:\Users\kinga\.gradle\caches\8.9\transforms\6a026fae943466c031f5d4e3348f8b7f\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
-46        android:dataExtractionRules="@xml/data_extraction_rules"
-46-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:16:9-65
-47        android:debuggable="true"
-48        android:extractNativeLibs="false"
-49        android:fullBackupContent="@xml/backup_rules"
-49-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:17:9-54
-50        android:icon="@mipmap/logo"
-50-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:18:9-36
-51        android:label="@string/app_name"
-51-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:19:9-41
-52        android:roundIcon="@mipmap/ic_launcher_round"
-52-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:20:9-54
-53        android:supportsRtl="true"
-53-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:21:9-35
-54        android:testOnly="true"
-55        android:theme="@style/Theme.GestureRecognizer" >
-55-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:22:9-55
-56        <activity
-56-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:24:9-26:39
-57            android:name="com.example.daisy.DashboardActivity"
-57-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:25:13-46
-58            android:exported="true" />
-58-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:26:13-36
-59        <activity
-59-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:27:9-36:20
-60            android:name="com.example.daisy.SplashScreenActivity"
-60-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:28:13-49
-61            android:exported="true" >
-61-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:29:13-36
-62            <intent-filter>
-62-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:31:13-35:29
-63                <action android:name="android.intent.action.MAIN" />
-63-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:32:17-69
-63-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:32:25-66
-64
-65                <category android:name="android.intent.category.LAUNCHER" />
-65-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:34:17-77
-65-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:34:27-74
-66            </intent-filter>
-67        </activity>
-68        <activity
-68-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:38:9-40:40
-69            android:name="com.example.daisy.SignUpActivity"
-69-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:39:13-43
-70            android:exported="false" />
-70-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:40:13-37
-71        <activity
-71-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:41:9-44:20
-72            android:name="com.example.daisy.LoginActivity"
-72-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:42:13-42
-73            android:exported="true" >
-73-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:43:13-36
-74        </activity>
-75        <activity android:name="com.example.daisy.UserProfileActivity" />
-75-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:45:9-57
-75-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:45:19-54
-76        <activity android:name="com.example.daisy.EditProfileActivity" />
-76-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:46:9-57
-76-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:46:19-54
-77        <activity
-77-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:48:9-50:39
-78            android:name="com.example.daisy.MainActivity"
-78-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:49:13-41
-79            android:exported="true" />
-79-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:50:13-36
-80
-81        <meta-data
-81-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:52:9-54:71
-82            android:name="com.google.android.geo.API_KEY"
-82-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:53:13-58
-83            android:value="AIzaSyBJm_dHDQyxruXYJfX7N4QDkP0OywrdaQk" />
-83-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:54:13-68
+43    <uses-permission android:name="com.example.daisy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+43-->[androidx.core:core:1.15.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\ea4b9bc024893d6514ad049ed75a04a9\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+43-->[androidx.core:core:1.15.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\ea4b9bc024893d6514ad049ed75a04a9\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+44
+45    <application
+45-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:14:5-69:19
+46        android:allowBackup="true"
+46-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:15:9-35
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.15.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\ea4b9bc024893d6514ad049ed75a04a9\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+48        android:dataExtractionRules="@xml/data_extraction_rules"
+48-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:16:9-65
+49        android:debuggable="true"
+50        android:extractNativeLibs="false"
+51        android:fullBackupContent="@xml/backup_rules"
+51-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:17:9-54
+52        android:icon="@mipmap/logo"
+52-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:18:9-36
+53        android:label="@string/app_name"
+53-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:19:9-41
+54        android:roundIcon="@mipmap/ic_launcher_round"
+54-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:20:9-54
+55        android:supportsRtl="true"
+55-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:21:9-35
+56        android:testOnly="true"
+57        android:theme="@style/Theme.GestureRecognizer" >
+57-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:22:9-55
+58        <activity
+58-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:24:9-32:20
+59            android:name="com.example.daisy.LearnWordsActivity"
+59-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:25:13-47
+60            android:exported="true" >
+60-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:26:13-36
+61            <intent-filter>
+61-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:27:13-31:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:28:17-69
+62-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:28:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:30:17-77
+64-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:30:27-74
+65            </intent-filter>
+66        </activity>
+67        <activity
+67-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:33:9-35:39
+68            android:name="com.example.daisy.DashboardActivity"
+68-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:34:13-46
+69            android:exported="true" />
+69-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:35:13-36
+70        <activity
+70-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:36:9-38:40
+71            android:name="com.example.daisy.LearnSignLanguageActivity"
+71-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:37:13-54
+72            android:exported="false" />
+72-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:38:13-37
+73        <activity
+73-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:39:9-41:40
+74            android:name="com.example.daisy.LearnAlphabetActivity"
+74-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:40:13-50
+75            android:exported="false" />
+75-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:41:13-37
+76        <activity
+76-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:42:9-44:40
+77            android:name="com.example.daisy.SampleQuizActivity"
+77-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:43:13-47
+78            android:exported="false" />
+78-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:44:13-37
+79        <activity
+79-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:45:9-53:20
+80            android:name="com.example.daisy.SplashScreenActivity"
+80-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:46:13-49
+81            android:exported="true" >
+81-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:47:13-36
+82            <intent-filter>
+82-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:27:13-31:29
+83                <action android:name="android.intent.action.MAIN" />
+83-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:28:17-69
+83-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:28:25-66
 84
-85        <activity
-85-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:29:9-46:20
-86            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-86-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:30:13-80
-87            android:excludeFromRecents="true"
-87-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:31:13-46
-88            android:exported="true"
-88-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:32:13-36
-89            android:launchMode="singleTask"
-89-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:33:13-44
-90            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-90-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:34:13-72
-91            <intent-filter>
-91-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:35:13-45:29
-92                <action android:name="android.intent.action.VIEW" />
-92-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
-92-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
-93
-94                <category android:name="android.intent.category.DEFAULT" />
-94-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
-94-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
-95                <category android:name="android.intent.category.BROWSABLE" />
-95-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
-95-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
-96
-97                <data
-97-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
-98                    android:host="firebase.auth"
-98-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
-99                    android:path="/"
-99-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
-100                    android:scheme="genericidp" />
-100-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
-101            </intent-filter>
-102        </activity>
-103        <activity
-103-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:47:9-64:20
-104            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-104-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:48:13-79
-105            android:excludeFromRecents="true"
-105-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:49:13-46
-106            android:exported="true"
-106-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:50:13-36
-107            android:launchMode="singleTask"
-107-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:51:13-44
-108            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-108-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:52:13-72
-109            <intent-filter>
-109-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:53:13-63:29
-110                <action android:name="android.intent.action.VIEW" />
-110-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
-110-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
+85                <category android:name="android.intent.category.LAUNCHER" />
+85-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:30:17-77
+85-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:30:27-74
+86            </intent-filter>
+87        </activity>
+88        <activity
+88-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:54:9-56:40
+89            android:name="com.example.daisy.SignUpActivity"
+89-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:55:13-43
+90            android:exported="false" />
+90-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:56:13-37
+91        <activity
+91-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:57:9-59:48
+92            android:name="com.example.daisy.LoginActivity"
+92-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:58:13-42
+93            android:exported="true" />
+93-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:59:13-36
+94        <activity android:name="com.example.daisy.UserProfileActivity" />
+94-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:60:9-57
+94-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:60:19-54
+95        <activity android:name="com.example.daisy.EditProfileActivity" />
+95-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:61:9-57
+95-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:61:19-54
+96        <activity
+96-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:62:9-64:39
+97            android:name="com.example.daisy.MainActivity"
+97-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:63:13-41
+98            android:exported="true" />
+98-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:64:13-36
+99
+100        <meta-data
+100-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:66:9-68:71
+101            android:name="com.google.android.geo.API_KEY"
+101-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:67:13-58
+102            android:value="AIzaSyBJm_dHDQyxruXYJfX7N4QDkP0OywrdaQk" />
+102-->C:\Users\kinga\backup-DAISY\DAISY 2.0\app\src\main\AndroidManifest.xml:68:13-68
+103
+104        <activity
+104-->[com.google.android.libraries.places:places:4.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\19bcae3b7f54f0c3a711da14add37693\transformed\places-4.1.0\AndroidManifest.xml:15:9-21:20
+105            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+105-->[com.google.android.libraries.places:places:4.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\19bcae3b7f54f0c3a711da14add37693\transformed\places-4.1.0\AndroidManifest.xml:16:13-91
+106            android:exported="false"
+106-->[com.google.android.libraries.places:places:4.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\19bcae3b7f54f0c3a711da14add37693\transformed\places-4.1.0\AndroidManifest.xml:17:13-37
+107            android:label="@string/places_autocomplete_label"
+107-->[com.google.android.libraries.places:places:4.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\19bcae3b7f54f0c3a711da14add37693\transformed\places-4.1.0\AndroidManifest.xml:18:13-62
+108            android:theme="@style/PlacesAutocompleteOverlay"
+108-->[com.google.android.libraries.places:places:4.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\19bcae3b7f54f0c3a711da14add37693\transformed\places-4.1.0\AndroidManifest.xml:19:13-61
+109            android:windowSoftInputMode="adjustResize" >
+109-->[com.google.android.libraries.places:places:4.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\19bcae3b7f54f0c3a711da14add37693\transformed\places-4.1.0\AndroidManifest.xml:20:13-55
+110        </activity>
 111
-112                <category android:name="android.intent.category.DEFAULT" />
-112-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
-112-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
-113                <category android:name="android.intent.category.BROWSABLE" />
-113-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
-113-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
-114
-115                <data
-115-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
-116                    android:host="firebase.auth"
-116-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
-117                    android:path="/"
-117-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
-118                    android:scheme="recaptcha" />
-118-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
-119            </intent-filter>
-120        </activity>
-121
-122        <service
-122-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:66:9-72:19
-123            android:name="com.google.firebase.components.ComponentDiscoveryService"
-123-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:67:13-84
-124            android:directBootAware="true"
-124-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
-125            android:exported="false" >
-125-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:68:13-37
-126            <meta-data
-126-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:69:13-71:85
-127                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-127-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:70:17-109
-128                android:value="com.google.firebase.components.ComponentRegistrar" />
-128-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\7e12b2e2ad3553d19e62a1b7f3bf1182\transformed\firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
-129            <meta-data
-129-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\0c80f8606c7fafe80eaad88ef6e90729\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
-130                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-130-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\0c80f8606c7fafe80eaad88ef6e90729\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
-131                android:value="com.google.firebase.components.ComponentRegistrar" />
-131-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\0c80f8606c7fafe80eaad88ef6e90729\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
-132            <meta-data
-132-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:31:13-33:85
-133                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-133-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:32:17-139
-134                android:value="com.google.firebase.components.ComponentRegistrar" />
-134-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a707586c4e083d7a3075e5920094731d\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:33:17-82
-135            <meta-data
-135-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
-136                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-136-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
-137                android:value="com.google.firebase.components.ComponentRegistrar" />
-137-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.9\transforms\313d577b38802f9e9be3a1461e5e69be\transformed\firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
-138            <meta-data
-138-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
-139                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-139-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
-140                android:value="com.google.firebase.components.ComponentRegistrar" />
-140-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
-141        </service>
-142        <service
-142-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
-143            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
-143-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
-144            android:enabled="true"
-144-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
-145            android:exported="false" >
-145-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
-146            <meta-data
-146-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
-147                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
-147-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
-148                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
-148-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
-149        </service>
+112        <service
+112-->[androidx.camera:camera-camera2:1.4.1] C:\Users\kinga\.gradle\caches\8.11.1\transforms\9eda4be660740823161cc7351c3c621c\transformed\camera-camera2-1.4.1\AndroidManifest.xml:24:9-33:19
+113            android:name="androidx.camera.core.impl.MetadataHolderService"
+113-->[androidx.camera:camera-camera2:1.4.1] C:\Users\kinga\.gradle\caches\8.11.1\transforms\9eda4be660740823161cc7351c3c621c\transformed\camera-camera2-1.4.1\AndroidManifest.xml:25:13-75
+114            android:enabled="false"
+114-->[androidx.camera:camera-camera2:1.4.1] C:\Users\kinga\.gradle\caches\8.11.1\transforms\9eda4be660740823161cc7351c3c621c\transformed\camera-camera2-1.4.1\AndroidManifest.xml:26:13-36
+115            android:exported="false" >
+115-->[androidx.camera:camera-camera2:1.4.1] C:\Users\kinga\.gradle\caches\8.11.1\transforms\9eda4be660740823161cc7351c3c621c\transformed\camera-camera2-1.4.1\AndroidManifest.xml:27:13-37
+116            <meta-data
+116-->[androidx.camera:camera-camera2:1.4.1] C:\Users\kinga\.gradle\caches\8.11.1\transforms\9eda4be660740823161cc7351c3c621c\transformed\camera-camera2-1.4.1\AndroidManifest.xml:30:13-32:89
+117                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+117-->[androidx.camera:camera-camera2:1.4.1] C:\Users\kinga\.gradle\caches\8.11.1\transforms\9eda4be660740823161cc7351c3c621c\transformed\camera-camera2-1.4.1\AndroidManifest.xml:31:17-103
+118                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+118-->[androidx.camera:camera-camera2:1.4.1] C:\Users\kinga\.gradle\caches\8.11.1\transforms\9eda4be660740823161cc7351c3c621c\transformed\camera-camera2-1.4.1\AndroidManifest.xml:32:17-86
+119        </service>
+120
+121        <activity
+121-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:29:9-46:20
+122            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+122-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:30:13-80
+123            android:excludeFromRecents="true"
+123-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:31:13-46
+124            android:exported="true"
+124-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:32:13-36
+125            android:launchMode="singleTask"
+125-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:33:13-44
+126            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+126-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:34:13-72
+127            <intent-filter>
+127-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:35:13-45:29
+128                <action android:name="android.intent.action.VIEW" />
+128-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:36:17-69
+128-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:36:25-66
+129
+130                <category android:name="android.intent.category.DEFAULT" />
+130-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:38:17-76
+130-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:38:27-73
+131                <category android:name="android.intent.category.BROWSABLE" />
+131-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:39:17-78
+131-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:39:27-75
+132
+133                <data
+133-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:41:17-44:51
+134                    android:host="firebase.auth"
+134-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:42:21-49
+135                    android:path="/"
+135-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:43:21-37
+136                    android:scheme="genericidp" />
+136-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:44:21-48
+137            </intent-filter>
+138        </activity>
+139        <activity
+139-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:47:9-64:20
+140            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+140-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:48:13-79
+141            android:excludeFromRecents="true"
+141-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:49:13-46
+142            android:exported="true"
+142-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:50:13-36
+143            android:launchMode="singleTask"
+143-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:51:13-44
+144            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+144-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:52:13-72
+145            <intent-filter>
+145-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:53:13-63:29
+146                <action android:name="android.intent.action.VIEW" />
+146-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:36:17-69
+146-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:36:25-66
+147
+148                <category android:name="android.intent.category.DEFAULT" />
+148-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:38:17-76
+148-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:38:27-73
+149                <category android:name="android.intent.category.BROWSABLE" />
+149-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:39:17-78
+149-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:39:27-75
 150
-151        <activity
-151-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
-152            android:name="androidx.credentials.playservices.HiddenActivity"
-152-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
-153            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-153-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
-154            android:enabled="true"
-154-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
-155            android:exported="false"
-155-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
-156            android:fitsSystemWindows="true"
-156-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
-157            android:theme="@style/Theme.Hidden" >
-157-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.9\transforms\80ba8e8dc0652cbc13ab93f8efe3505c\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
-158        </activity>
-159        <activity
-159-->[com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:15:9-21:20
-160            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-160-->[com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:16:13-91
-161            android:exported="false"
-161-->[com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:17:13-37
-162            android:label="@string/places_autocomplete_label"
-162-->[com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:18:13-62
-163            android:theme="@style/PlacesAutocompleteOverlay"
-163-->[com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:19:13-61
-164            android:windowSoftInputMode="adjustResize" >
-164-->[com.google.android.libraries.places:places:4.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d9c1f1c97497c4cfdecd999c63d0e7ed\transformed\places-4.0.0\AndroidManifest.xml:20:13-55
-165        </activity>
-166
-167        <service
-167-->[androidx.camera:camera-camera2:1.3.4] C:\Users\kinga\.gradle\caches\8.9\transforms\379b286e0a0d41aac3df57054749a21b\transformed\camera-camera2-1.3.4\AndroidManifest.xml:24:9-33:19
-168            android:name="androidx.camera.core.impl.MetadataHolderService"
-168-->[androidx.camera:camera-camera2:1.3.4] C:\Users\kinga\.gradle\caches\8.9\transforms\379b286e0a0d41aac3df57054749a21b\transformed\camera-camera2-1.3.4\AndroidManifest.xml:25:13-75
-169            android:enabled="false"
-169-->[androidx.camera:camera-camera2:1.3.4] C:\Users\kinga\.gradle\caches\8.9\transforms\379b286e0a0d41aac3df57054749a21b\transformed\camera-camera2-1.3.4\AndroidManifest.xml:26:13-36
-170            android:exported="false" >
-170-->[androidx.camera:camera-camera2:1.3.4] C:\Users\kinga\.gradle\caches\8.9\transforms\379b286e0a0d41aac3df57054749a21b\transformed\camera-camera2-1.3.4\AndroidManifest.xml:27:13-37
+151                <data
+151-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:41:17-44:51
+152                    android:host="firebase.auth"
+152-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:42:21-49
+153                    android:path="/"
+153-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:43:21-37
+154                    android:scheme="recaptcha" />
+154-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:44:21-48
+155            </intent-filter>
+156        </activity>
+157
+158        <service
+158-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:66:9-72:19
+159            android:name="com.google.firebase.components.ComponentDiscoveryService"
+159-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:67:13-84
+160            android:directBootAware="true"
+160-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\63db403fdc0847900d6b131e7f994b0c\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+161            android:exported="false" >
+161-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:68:13-37
+162            <meta-data
+162-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:69:13-71:85
+163                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+163-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:70:17-109
+164                android:value="com.google.firebase.components.ComponentRegistrar" />
+164-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\dcb2e1e11df3830686959cb2d511d0ff\transformed\firebase-auth-23.2.0\AndroidManifest.xml:71:17-82
+165            <meta-data
+165-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\5b1a5a30b23fd6e71be6c3e602688211\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+166                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+166-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\5b1a5a30b23fd6e71be6c3e602688211\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+167                android:value="com.google.firebase.components.ComponentRegistrar" />
+167-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\5b1a5a30b23fd6e71be6c3e602688211\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+168            <meta-data
+168-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b10f514e07c06d87f0e71698a63d77dc\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:31:13-33:85
+169                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+169-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b10f514e07c06d87f0e71698a63d77dc\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:32:17-139
+170                android:value="com.google.firebase.components.ComponentRegistrar" />
+170-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b10f514e07c06d87f0e71698a63d77dc\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:33:17-82
 171            <meta-data
-171-->[androidx.camera:camera-camera2:1.3.4] C:\Users\kinga\.gradle\caches\8.9\transforms\379b286e0a0d41aac3df57054749a21b\transformed\camera-camera2-1.3.4\AndroidManifest.xml:30:13-32:89
-172                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-172-->[androidx.camera:camera-camera2:1.3.4] C:\Users\kinga\.gradle\caches\8.9\transforms\379b286e0a0d41aac3df57054749a21b\transformed\camera-camera2-1.3.4\AndroidManifest.xml:31:17-103
-173                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-173-->[androidx.camera:camera-camera2:1.3.4] C:\Users\kinga\.gradle\caches\8.9\transforms\379b286e0a0d41aac3df57054749a21b\transformed\camera-camera2-1.3.4\AndroidManifest.xml:32:17-86
-174        </service> <!-- Needs to be explicitly declared on P+ -->
-175        <uses-library
-175-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\AndroidManifest.xml:39:9-41:40
-176            android:name="org.apache.http.legacy"
-176-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\AndroidManifest.xml:40:13-50
-177            android:required="false" />
-177-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\819608e881bd080d91e77c9173930cfa\transformed\play-services-maps-19.0.0\AndroidManifest.xml:41:13-37
-178
-179        <activity
-179-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.9\transforms\fe46929c306465b90ed130852592075e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
-180            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-180-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.9\transforms\fe46929c306465b90ed130852592075e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
-181            android:excludeFromRecents="true"
-181-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.9\transforms\fe46929c306465b90ed130852592075e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
-182            android:exported="false"
-182-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.9\transforms\fe46929c306465b90ed130852592075e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
-183            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-183-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.9\transforms\fe46929c306465b90ed130852592075e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
-184        <!--
-185            Service handling Google Sign-In user revocation. For apps that do not integrate with
-186            Google Sign-In, this service will never be started.
-187        -->
-188        <service
-188-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.9\transforms\fe46929c306465b90ed130852592075e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
-189            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-189-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.9\transforms\fe46929c306465b90ed130852592075e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
-190            android:exported="true"
-190-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.9\transforms\fe46929c306465b90ed130852592075e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
-191            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-191-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.9\transforms\fe46929c306465b90ed130852592075e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
-192            android:visibleToInstantApps="true" />
-192-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.9\transforms\fe46929c306465b90ed130852592075e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
-193
-194        <provider
-194-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
-195            android:name="com.google.firebase.provider.FirebaseInitProvider"
-195-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
-196            android:authorities="com.example.daisy.firebaseinitprovider"
-196-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
-197            android:directBootAware="true"
-197-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
-198            android:exported="false"
-198-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
-199            android:initOrder="100" />
-199-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.9\transforms\c5989f567dff7b779c34ebe769b93478\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
-200
-201        <activity
-201-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d47cfa2dec812b28ca283d9cf18630ee\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
-202            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-202-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d47cfa2dec812b28ca283d9cf18630ee\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
-203            android:exported="false"
-203-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d47cfa2dec812b28ca283d9cf18630ee\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
-204            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-204-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\kinga\.gradle\caches\8.9\transforms\d47cfa2dec812b28ca283d9cf18630ee\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
-205
-206        <uses-library
-206-->[androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5806357e2456447e7a250ce030333645\transformed\window-1.3.0\AndroidManifest.xml:23:9-25:40
-207            android:name="androidx.window.extensions"
-207-->[androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5806357e2456447e7a250ce030333645\transformed\window-1.3.0\AndroidManifest.xml:24:13-54
-208            android:required="false" />
-208-->[androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5806357e2456447e7a250ce030333645\transformed\window-1.3.0\AndroidManifest.xml:25:13-37
-209        <uses-library
-209-->[androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5806357e2456447e7a250ce030333645\transformed\window-1.3.0\AndroidManifest.xml:26:9-28:40
-210            android:name="androidx.window.sidecar"
-210-->[androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5806357e2456447e7a250ce030333645\transformed\window-1.3.0\AndroidManifest.xml:27:13-51
-211            android:required="false" />
-211-->[androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\5806357e2456447e7a250ce030333645\transformed\window-1.3.0\AndroidManifest.xml:28:13-37
-212
-213        <receiver
-213-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:29:9-33:20
-214            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-214-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:30:13-85
-215            android:enabled="true"
-215-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:31:13-35
-216            android:exported="false" >
-216-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:32:13-37
-217        </receiver>
-218
-219        <service
-219-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:35:9-38:40
-220            android:name="com.google.android.gms.measurement.AppMeasurementService"
-220-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:36:13-84
-221            android:enabled="true"
-221-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:37:13-35
-222            android:exported="false" />
-222-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:38:13-37
-223        <service
-223-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:39:9-43:72
-224            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-224-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:40:13-87
-225            android:enabled="true"
-225-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:41:13-35
-226            android:exported="false"
-226-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:42:13-37
-227            android:permission="android.permission.BIND_JOB_SERVICE" />
-227-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.9\transforms\ca1937d71b182185fd6575e411f80c5c\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:43:13-69
-228
-229        <provider
-229-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\4b166bc9f89e2c47f1fcd8e1b510807c\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-230            android:name="androidx.startup.InitializationProvider"
-230-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\4b166bc9f89e2c47f1fcd8e1b510807c\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-231            android:authorities="com.example.daisy.androidx-startup"
-231-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\4b166bc9f89e2c47f1fcd8e1b510807c\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-232            android:exported="false" >
-232-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\4b166bc9f89e2c47f1fcd8e1b510807c\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-233            <meta-data
-233-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\4b166bc9f89e2c47f1fcd8e1b510807c\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-234                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-234-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\4b166bc9f89e2c47f1fcd8e1b510807c\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-235                android:value="androidx.startup" />
-235-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.9\transforms\4b166bc9f89e2c47f1fcd8e1b510807c\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-236            <meta-data
-236-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\kinga\.gradle\caches\8.9\transforms\a063ad4dd303f9cce7d04ad874508d59\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-237                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-237-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\kinga\.gradle\caches\8.9\transforms\a063ad4dd303f9cce7d04ad874508d59\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-238                android:value="androidx.startup" />
-238-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\kinga\.gradle\caches\8.9\transforms\a063ad4dd303f9cce7d04ad874508d59\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-239            <meta-data
-239-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-240                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-240-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-241                android:value="androidx.startup" />
-241-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-242        </provider>
-243
-244        <meta-data
-244-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a62dfec9d3ccc5da5b2514a75bc8a13e\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
-245            android:name="com.google.android.gms.version"
-245-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a62dfec9d3ccc5da5b2514a75bc8a13e\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
-246            android:value="@integer/google_play_services_version" />
-246-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\kinga\.gradle\caches\8.9\transforms\a62dfec9d3ccc5da5b2514a75bc8a13e\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
-247
-248        <receiver
-248-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-249            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-249-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-250            android:directBootAware="false"
-250-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-251            android:enabled="true"
-251-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-252            android:exported="true"
-252-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-253            android:permission="android.permission.DUMP" >
-253-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-254            <intent-filter>
-254-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-255                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-255-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-255-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-256            </intent-filter>
-257            <intent-filter>
-257-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-258                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-258-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-258-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-259            </intent-filter>
-260            <intent-filter>
-260-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-261                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-261-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-261-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-262            </intent-filter>
-263            <intent-filter>
-263-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-264                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-264-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-264-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\kinga\.gradle\caches\8.9\transforms\02c3eed2b7689589761b89102106cdc0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-265            </intent-filter>
-266        </receiver>
+171-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.11.1\transforms\020acd0215f56605f2160661b7d6604e\transformed\firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+172                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+172-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.11.1\transforms\020acd0215f56605f2160661b7d6604e\transformed\firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+173                android:value="com.google.firebase.components.ComponentRegistrar" />
+173-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\kinga\.gradle\caches\8.11.1\transforms\020acd0215f56605f2160661b7d6604e\transformed\firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+174            <meta-data
+174-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\63db403fdc0847900d6b131e7f994b0c\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+175                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+175-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\63db403fdc0847900d6b131e7f994b0c\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+176                android:value="com.google.firebase.components.ComponentRegistrar" />
+176-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\63db403fdc0847900d6b131e7f994b0c\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+177        </service> <!-- Needs to be explicitly declared on P+ -->
+178        <uses-library
+178-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\5fc08c2b4dbd187f2c3d62ffe1f1b6d6\transformed\play-services-maps-19.1.0\AndroidManifest.xml:33:7-86
+179            android:name="org.apache.http.legacy"
+179-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\5fc08c2b4dbd187f2c3d62ffe1f1b6d6\transformed\play-services-maps-19.1.0\AndroidManifest.xml:33:21-58
+180            android:required="false" />
+180-->[com.google.android.gms:play-services-maps:19.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\5fc08c2b4dbd187f2c3d62ffe1f1b6d6\transformed\play-services-maps-19.1.0\AndroidManifest.xml:33:59-83
+181
+182        <service
+182-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+183            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+183-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+184            android:enabled="true"
+184-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+185            android:exported="false" >
+185-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+186            <meta-data
+186-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+187                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+187-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+188                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+188-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+189        </service>
+190
+191        <activity
+191-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+192            android:name="androidx.credentials.playservices.HiddenActivity"
+192-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+193            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+193-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+194            android:enabled="true"
+194-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+195            android:exported="false"
+195-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+196            android:fitsSystemWindows="true"
+196-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+197            android:theme="@style/Theme.Hidden" >
+197-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\kinga\.gradle\caches\8.11.1\transforms\32fb1cabd77abdaa2517295f5a125c1a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+198        </activity>
+199        <activity
+199-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6d71784810ca1c005f055f770731a4fe\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+200            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+200-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6d71784810ca1c005f055f770731a4fe\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+201            android:excludeFromRecents="true"
+201-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6d71784810ca1c005f055f770731a4fe\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+202            android:exported="false"
+202-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6d71784810ca1c005f055f770731a4fe\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+203            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+203-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6d71784810ca1c005f055f770731a4fe\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+204        <!--
+205            Service handling Google Sign-In user revocation. For apps that do not integrate with
+206            Google Sign-In, this service will never be started.
+207        -->
+208        <service
+208-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6d71784810ca1c005f055f770731a4fe\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+209            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+209-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6d71784810ca1c005f055f770731a4fe\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+210            android:exported="true"
+210-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6d71784810ca1c005f055f770731a4fe\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+211            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+211-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6d71784810ca1c005f055f770731a4fe\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+212            android:visibleToInstantApps="true" />
+212-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6d71784810ca1c005f055f770731a4fe\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+213
+214        <provider
+214-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\63db403fdc0847900d6b131e7f994b0c\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+215            android:name="com.google.firebase.provider.FirebaseInitProvider"
+215-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\63db403fdc0847900d6b131e7f994b0c\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+216            android:authorities="com.example.daisy.firebaseinitprovider"
+216-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\63db403fdc0847900d6b131e7f994b0c\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+217            android:directBootAware="true"
+217-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\63db403fdc0847900d6b131e7f994b0c\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+218            android:exported="false"
+218-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\63db403fdc0847900d6b131e7f994b0c\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+219            android:initOrder="100" />
+219-->[com.google.firebase:firebase-common:21.0.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\63db403fdc0847900d6b131e7f994b0c\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+220
+221        <activity
+221-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\90ccee919186004b3630120ef97249db\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+222            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+222-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\90ccee919186004b3630120ef97249db\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+223            android:exported="false"
+223-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\90ccee919186004b3630120ef97249db\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+224            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+224-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\90ccee919186004b3630120ef97249db\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+225
+226        <uses-library
+226-->[androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\4a1c55024e268d106bd1d7cb1de59326\transformed\window-1.3.0\AndroidManifest.xml:23:9-25:40
+227            android:name="androidx.window.extensions"
+227-->[androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\4a1c55024e268d106bd1d7cb1de59326\transformed\window-1.3.0\AndroidManifest.xml:24:13-54
+228            android:required="false" />
+228-->[androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\4a1c55024e268d106bd1d7cb1de59326\transformed\window-1.3.0\AndroidManifest.xml:25:13-37
+229        <uses-library
+229-->[androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\4a1c55024e268d106bd1d7cb1de59326\transformed\window-1.3.0\AndroidManifest.xml:26:9-28:40
+230            android:name="androidx.window.sidecar"
+230-->[androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\4a1c55024e268d106bd1d7cb1de59326\transformed\window-1.3.0\AndroidManifest.xml:27:13-51
+231            android:required="false" />
+231-->[androidx.window:window:1.3.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\4a1c55024e268d106bd1d7cb1de59326\transformed\window-1.3.0\AndroidManifest.xml:28:13-37
+232
+233        <provider
+233-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:29:9-37:20
+234            android:name="androidx.startup.InitializationProvider"
+234-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:30:13-67
+235            android:authorities="com.example.daisy.androidx-startup"
+235-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:31:13-68
+236            android:exported="false" >
+236-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:32:13-37
+237            <meta-data
+237-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:34:13-36:52
+238                android:name="androidx.work.WorkManagerInitializer"
+238-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:35:17-68
+239                android:value="androidx.startup" />
+239-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:36:17-49
+240            <meta-data
+240-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\7e308b237ce0774e3717ec5036442ea5\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+241                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+241-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\7e308b237ce0774e3717ec5036442ea5\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+242                android:value="androidx.startup" />
+242-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\7e308b237ce0774e3717ec5036442ea5\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+243            <meta-data
+243-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\kinga\.gradle\caches\8.11.1\transforms\8c4a190ed4816d7d78e18c7fa3643f57\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+244                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+244-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\kinga\.gradle\caches\8.11.1\transforms\8c4a190ed4816d7d78e18c7fa3643f57\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+245                android:value="androidx.startup" />
+245-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\kinga\.gradle\caches\8.11.1\transforms\8c4a190ed4816d7d78e18c7fa3643f57\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+246            <meta-data
+246-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+247                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+247-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+248                android:value="androidx.startup" />
+248-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+249        </provider>
+250
+251        <service
+251-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:39:9-45:35
+252            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+252-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:40:13-88
+253            android:directBootAware="false"
+253-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:41:13-44
+254            android:enabled="@bool/enable_system_alarm_service_default"
+254-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:42:13-72
+255            android:exported="false" />
+255-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:43:13-37
+256        <service
+256-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:46:9-52:35
+257            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+257-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:47:13-84
+258            android:directBootAware="false"
+258-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:48:13-44
+259            android:enabled="@bool/enable_system_job_service_default"
+259-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:49:13-70
+260            android:exported="true"
+260-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:50:13-36
+261            android:permission="android.permission.BIND_JOB_SERVICE" />
+261-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:51:13-69
+262        <service
+262-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:53:9-59:35
+263            android:name="androidx.work.impl.foreground.SystemForegroundService"
+263-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:54:13-81
+264            android:directBootAware="false"
+264-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:55:13-44
+265            android:enabled="@bool/enable_system_foreground_service_default"
+265-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:56:13-77
+266            android:exported="false" />
+266-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:57:13-37
 267
-268        <service
-268-->[com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\b70c661cb4333e0ccd746617f45acde3\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:26:9-32:19
-269            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-269-->[com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\b70c661cb4333e0ccd746617f45acde3\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:27:13-103
-270            android:exported="false" >
-270-->[com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\b70c661cb4333e0ccd746617f45acde3\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:28:13-37
-271            <meta-data
-271-->[com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\b70c661cb4333e0ccd746617f45acde3\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:29:13-31:39
-272                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-272-->[com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\b70c661cb4333e0ccd746617f45acde3\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:30:17-94
-273                android:value="cct" />
-273-->[com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\b70c661cb4333e0ccd746617f45acde3\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:31:17-36
-274        </service>
-275        <service
-275-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\1d71d0eea3f1c5326975f6a09de29bd7\transformed\transport-runtime-3.2.0\AndroidManifest.xml:24:9-28:19
-276            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-276-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\1d71d0eea3f1c5326975f6a09de29bd7\transformed\transport-runtime-3.2.0\AndroidManifest.xml:25:13-117
-277            android:exported="false"
-277-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\1d71d0eea3f1c5326975f6a09de29bd7\transformed\transport-runtime-3.2.0\AndroidManifest.xml:26:13-37
-278            android:permission="android.permission.BIND_JOB_SERVICE" >
-278-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\1d71d0eea3f1c5326975f6a09de29bd7\transformed\transport-runtime-3.2.0\AndroidManifest.xml:27:13-69
-279        </service>
-280
-281        <receiver
-281-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\1d71d0eea3f1c5326975f6a09de29bd7\transformed\transport-runtime-3.2.0\AndroidManifest.xml:30:9-32:40
-282            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-282-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\1d71d0eea3f1c5326975f6a09de29bd7\transformed\transport-runtime-3.2.0\AndroidManifest.xml:31:13-132
-283            android:exported="false" />
-283-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.9\transforms\1d71d0eea3f1c5326975f6a09de29bd7\transformed\transport-runtime-3.2.0\AndroidManifest.xml:32:13-37
-284    </application>
-285
-286</manifest>
+268        <receiver
+268-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:61:9-66:35
+269            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+269-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:62:13-88
+270            android:directBootAware="false"
+270-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:63:13-44
+271            android:enabled="true"
+271-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:64:13-35
+272            android:exported="false" />
+272-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:65:13-37
+273        <receiver
+273-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:67:9-77:20
+274            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+274-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:68:13-106
+275            android:directBootAware="false"
+275-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:69:13-44
+276            android:enabled="false"
+276-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:70:13-36
+277            android:exported="false" >
+277-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:71:13-37
+278            <intent-filter>
+278-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:73:13-76:29
+279                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+279-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:74:17-87
+279-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:74:25-84
+280                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+280-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:75:17-90
+280-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:75:25-87
+281            </intent-filter>
+282        </receiver>
+283        <receiver
+283-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:78:9-88:20
+284            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+284-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:79:13-104
+285            android:directBootAware="false"
+285-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:80:13-44
+286            android:enabled="false"
+286-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:81:13-36
+287            android:exported="false" >
+287-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:82:13-37
+288            <intent-filter>
+288-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:84:13-87:29
+289                <action android:name="android.intent.action.BATTERY_OKAY" />
+289-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:85:17-77
+289-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:85:25-74
+290                <action android:name="android.intent.action.BATTERY_LOW" />
+290-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:86:17-76
+290-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:86:25-73
+291            </intent-filter>
+292        </receiver>
+293        <receiver
+293-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:89:9-99:20
+294            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+294-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:90:13-104
+295            android:directBootAware="false"
+295-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:91:13-44
+296            android:enabled="false"
+296-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:92:13-36
+297            android:exported="false" >
+297-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:93:13-37
+298            <intent-filter>
+298-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:95:13-98:29
+299                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+299-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:96:17-83
+299-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:96:25-80
+300                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+300-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:97:17-82
+300-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:97:25-79
+301            </intent-filter>
+302        </receiver>
+303        <receiver
+303-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:100:9-109:20
+304            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+304-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:101:13-103
+305            android:directBootAware="false"
+305-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:102:13-44
+306            android:enabled="false"
+306-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:103:13-36
+307            android:exported="false" >
+307-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:104:13-37
+308            <intent-filter>
+308-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:106:13-108:29
+309                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+309-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:107:17-79
+309-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:107:25-76
+310            </intent-filter>
+311        </receiver>
+312        <receiver
+312-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:110:9-121:20
+313            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+313-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:111:13-88
+314            android:directBootAware="false"
+314-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:112:13-44
+315            android:enabled="false"
+315-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:113:13-36
+316            android:exported="false" >
+316-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:114:13-37
+317            <intent-filter>
+317-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:116:13-120:29
+318                <action android:name="android.intent.action.BOOT_COMPLETED" />
+318-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:117:17-79
+318-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:117:25-76
+319                <action android:name="android.intent.action.TIME_SET" />
+319-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:118:17-73
+319-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:118:25-70
+320                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+320-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:119:17-81
+320-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:119:25-78
+321            </intent-filter>
+322        </receiver>
+323        <receiver
+323-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:122:9-131:20
+324            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+324-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:123:13-99
+325            android:directBootAware="false"
+325-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:124:13-44
+326            android:enabled="@bool/enable_system_alarm_service_default"
+326-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:125:13-72
+327            android:exported="false" >
+327-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:126:13-37
+328            <intent-filter>
+328-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:128:13-130:29
+329                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+329-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:129:17-98
+329-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:129:25-95
+330            </intent-filter>
+331        </receiver>
+332        <receiver
+332-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:132:9-142:20
+333            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+333-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:133:13-78
+334            android:directBootAware="false"
+334-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:134:13-44
+335            android:enabled="true"
+335-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:135:13-35
+336            android:exported="true"
+336-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:136:13-36
+337            android:permission="android.permission.DUMP" >
+337-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:137:13-57
+338            <intent-filter>
+338-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:139:13-141:29
+339                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+339-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:140:17-88
+339-->[androidx.work:work-runtime:2.9.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\57dbde66a1b9c094943df598dac3a8b7\transformed\work-runtime-2.9.0\AndroidManifest.xml:140:25-85
+340            </intent-filter>
+341        </receiver>
+342        <receiver
+342-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:29:9-33:20
+343            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+343-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:30:13-85
+344            android:enabled="true"
+344-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:31:13-35
+345            android:exported="false" >
+345-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:32:13-37
+346        </receiver>
+347
+348        <service
+348-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:35:9-38:40
+349            android:name="com.google.android.gms.measurement.AppMeasurementService"
+349-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:36:13-84
+350            android:enabled="true"
+350-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:37:13-35
+351            android:exported="false" />
+351-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:38:13-37
+352        <service
+352-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:39:9-43:72
+353            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+353-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:40:13-87
+354            android:enabled="true"
+354-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:41:13-35
+355            android:exported="false"
+355-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:42:13-37
+356            android:permission="android.permission.BIND_JOB_SERVICE" />
+356-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\b151fc543b8fb2cc0a7afba5a2346e65\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:43:13-69
+357
+358        <meta-data
+358-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\29d6d551ede5c895fca29b72671b99c6\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+359            android:name="com.google.android.gms.version"
+359-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\29d6d551ede5c895fca29b72671b99c6\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+360            android:value="@integer/google_play_services_version" />
+360-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\29d6d551ede5c895fca29b72671b99c6\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+361
+362        <service
+362-->[androidx.room:room-runtime:2.5.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\4f3e03387fbc9fa5a48aa7a42e2426e3\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
+363            android:name="androidx.room.MultiInstanceInvalidationService"
+363-->[androidx.room:room-runtime:2.5.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\4f3e03387fbc9fa5a48aa7a42e2426e3\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
+364            android:directBootAware="true"
+364-->[androidx.room:room-runtime:2.5.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\4f3e03387fbc9fa5a48aa7a42e2426e3\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
+365            android:exported="false" />
+365-->[androidx.room:room-runtime:2.5.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\4f3e03387fbc9fa5a48aa7a42e2426e3\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
+366
+367        <receiver
+367-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+368            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+368-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+369            android:directBootAware="false"
+369-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+370            android:enabled="true"
+370-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+371            android:exported="true"
+371-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+372            android:permission="android.permission.DUMP" >
+372-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+373            <intent-filter>
+373-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+374                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+374-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+374-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+375            </intent-filter>
+376            <intent-filter>
+376-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+377                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+377-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+377-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+378            </intent-filter>
+379            <intent-filter>
+379-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+380                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+380-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+380-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+381            </intent-filter>
+382            <intent-filter>
+382-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+383                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+383-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+383-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\6fc55a9abf710ac1d23c6b04877fb2e9\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+384            </intent-filter>
+385        </receiver>
+386
+387        <service
+387-->[com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\10cda05c375781f7d97af232a5302366\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:26:9-32:19
+388            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+388-->[com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\10cda05c375781f7d97af232a5302366\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:27:13-103
+389            android:exported="false" >
+389-->[com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\10cda05c375781f7d97af232a5302366\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:28:13-37
+390            <meta-data
+390-->[com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\10cda05c375781f7d97af232a5302366\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:29:13-31:39
+391                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+391-->[com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\10cda05c375781f7d97af232a5302366\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:30:17-94
+392                android:value="cct" />
+392-->[com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\10cda05c375781f7d97af232a5302366\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:31:17-36
+393        </service>
+394        <service
+394-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\f708a90be4947457cf72e9e80589aaef\transformed\transport-runtime-3.2.0\AndroidManifest.xml:24:9-28:19
+395            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+395-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\f708a90be4947457cf72e9e80589aaef\transformed\transport-runtime-3.2.0\AndroidManifest.xml:25:13-117
+396            android:exported="false"
+396-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\f708a90be4947457cf72e9e80589aaef\transformed\transport-runtime-3.2.0\AndroidManifest.xml:26:13-37
+397            android:permission="android.permission.BIND_JOB_SERVICE" >
+397-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\f708a90be4947457cf72e9e80589aaef\transformed\transport-runtime-3.2.0\AndroidManifest.xml:27:13-69
+398        </service>
+399
+400        <receiver
+400-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\f708a90be4947457cf72e9e80589aaef\transformed\transport-runtime-3.2.0\AndroidManifest.xml:30:9-32:40
+401            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+401-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\f708a90be4947457cf72e9e80589aaef\transformed\transport-runtime-3.2.0\AndroidManifest.xml:31:13-132
+402            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+402-->[com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\kinga\.gradle\caches\8.11.1\transforms\f708a90be4947457cf72e9e80589aaef\transformed\transport-runtime-3.2.0\AndroidManifest.xml:32:13-37
+403        <activity
+403-->[com.google.android.play:core-common:2.0.3] C:\Users\kinga\.gradle\caches\8.11.1\transforms\bb49742da5ca796f44b4899b4b7582e4\transformed\core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+404            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+404-->[com.google.android.play:core-common:2.0.3] C:\Users\kinga\.gradle\caches\8.11.1\transforms\bb49742da5ca796f44b4899b4b7582e4\transformed\core-common-2.0.3\AndroidManifest.xml:15:13-93
+405            android:exported="false"
+405-->[com.google.android.play:core-common:2.0.3] C:\Users\kinga\.gradle\caches\8.11.1\transforms\bb49742da5ca796f44b4899b4b7582e4\transformed\core-common-2.0.3\AndroidManifest.xml:16:13-37
+406            android:stateNotNeeded="true"
+406-->[com.google.android.play:core-common:2.0.3] C:\Users\kinga\.gradle\caches\8.11.1\transforms\bb49742da5ca796f44b4899b4b7582e4\transformed\core-common-2.0.3\AndroidManifest.xml:17:13-42
+407            android:theme="@style/Theme.PlayCore.Transparent" />
+407-->[com.google.android.play:core-common:2.0.3] C:\Users\kinga\.gradle\caches\8.11.1\transforms\bb49742da5ca796f44b4899b4b7582e4\transformed\core-common-2.0.3\AndroidManifest.xml:18:13-62
+408    </application>
+409
+410</manifest>

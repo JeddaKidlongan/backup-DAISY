@@ -7,4 +7,24 @@
     <style name="AppThemeProgressStyle">
         <item name="colorAccent">@color/mp_color_primary_variant</item>
     </style>
+
+    <style name="BottomNavTitleText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item> <!-- Customize the color if needed -->
+    </style>
+
+    <!-- Light Theme -->
+    <style name="LightTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/mp_color_primary</item>
+        <item name="colorPrimaryDark">@color/mp_color_primary_dark</item>
+        <item name="colorAccent">@color/mp_color_accent</item>
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="DarkTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorPrimaryDark">@color/dark_primary_dark</item>
+        <item name="colorAccent">@color/dark_accent</item>
+    </style>
 </resources>
