@@ -1,3 +1,5 @@
+//Updated OverlayView
+
 package com.example.daisy
 
 import android.content.Context
@@ -88,7 +90,7 @@ class OverlayView(context: Context?, attrs: AttributeSet?) :
             /*Para sa LIVE_STREAM gawin 1f yung Width at Height Para makita yung markers
             * Gawing 0f yung Width at Height sa Final Product ng project*/
             RunningMode.IMAGE, RunningMode.VIDEO -> min(width * 0f / imageWidth, height * 0f / imageHeight)
-            RunningMode.LIVE_STREAM -> max(width * 1f / imageWidth, height * 1f / imageHeight)
+            RunningMode.LIVE_STREAM -> max(width * 0f / imageWidth, height * 0f / imageHeight)
         }
         invalidate()
     }

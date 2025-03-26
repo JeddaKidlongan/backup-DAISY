@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
@@ -46,10 +47,24 @@ class DashboardActivity : AppCompatActivity() {
             true
         }
 
+        // Ensure NavHostFragment is correctly referenced
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
+        val navController = navHostFragment.navController
+
         // Initialize CardViews and Button
         val realTimeCard: CardView = findViewById(R.id.camera_fragment)
         val learnSignLanguageCard: CardView = findViewById(R.id.learn_signlanguage_card)
         val startQuizCard: CardView = findViewById(R.id.start_Quiz_card)
+
+
+        // Set Click Listeners for Cards
+        realTimeCard.setOnClickListener {
+            // Navigate to CameraFragment via NavController
+            val navHostFragment =
+                supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
+            val navController = navHostFragment.navController
+            navController.navigate(R.id.camera_fragment)
+        }
 
         learnSignLanguageCard.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
@@ -60,13 +75,18 @@ class DashboardActivity : AppCompatActivity() {
             val intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
         }
+
     }
+
 
     // Handle Navigation Drawer clicks
     private fun handleNavigationItemClick(menuItem: MenuItem) {
         when (menuItem.itemId) {
             R.id.nav_home -> showSnackbar("Home Selected")
             R.id.nav_profile -> {
+                startActivity(Intent(this, UserProfileActivity::class.java))
+            }
+            R.id.nav_edit -> {
                 startActivity(Intent(this, EditProfileActivity::class.java))
             }
             R.id.nav_logout -> logoutUser()
@@ -87,14 +107,13 @@ class DashboardActivity : AppCompatActivity() {
         Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT).show()
     }
 
-    // Close Drawer Function
+     // Close Drawer Function
     private fun closeDrawer() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START)
         }
     }
 
-    // Handle Back Press to close drawer first
     override fun onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START)

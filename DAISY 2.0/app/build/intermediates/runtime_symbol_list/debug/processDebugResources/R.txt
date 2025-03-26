@@ -4060,7 +4060,6 @@ int id btnB 0x7f0a0083
 int id btnBack 0x7f0a0084
 int id btnBye 0x7f0a0085
 int id btnC 0x7f0a0086
-int id btnClearText 0x7f0a0087
 int id btnD 0x7f0a0088
 int id btnE 0x7f0a0089
 int id btnF 0x7f0a008a
@@ -4658,6 +4657,7 @@ int id triangle 0x7f0a02da
 int id tvLabel 0x7f0a02db
 int id tvLettersPercent 0x7f0a02dc
 int id tvNumbersPercent 0x7f0a02dd
+int id tvScore 0x7f0a0307
 int id tvWordsPercent 0x7f0a02de
 int id txtProgressPercent 0x7f0a02df
 int id txtQuizLabel 0x7f0a02e0

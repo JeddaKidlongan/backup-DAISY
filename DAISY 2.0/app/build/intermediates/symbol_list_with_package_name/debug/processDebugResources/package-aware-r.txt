@@ -4061,7 +4061,6 @@ id btnB
 id btnBack
 id btnBye
 id btnC
-id btnClearText
 id btnD
 id btnE
 id btnF
@@ -4659,6 +4658,7 @@ id triangle
 id tvLabel
 id tvLettersPercent
 id tvNumbersPercent
+id tvScore
 id tvWordsPercent
 id txtProgressPercent
 id txtQuizLabel

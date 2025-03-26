@@ -1,3 +1,4 @@
+//Updated CameraFragment
 
 package com.example.daisy.fragment
 
@@ -26,6 +27,7 @@ import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit
 import com.example.daisy.R
+import androidx.navigation.findNavController
 
 class CameraFragment : Fragment(),
     GestureRecognizerHelper.GestureRecognizerListener {
@@ -41,8 +43,7 @@ class CameraFragment : Fragment(),
 
     private lateinit var gestureRecognizerHelper: GestureRecognizerHelper
     private val viewModel: MainViewModel by activityViewModels()
-    /*Number of Results, MAX 2 kasi dalawa lang kaya ng app*/
-    private var defaultNumResults = 2
+    private var defaultNumResults = 1 /*2 is the maximum number the app can handle*/
     private val gestureRecognizerResultAdapter: GestureRecognizerResultsAdapter by lazy {
         GestureRecognizerResultsAdapter().apply {
             updateAdapterSize(defaultNumResults)
@@ -53,7 +54,7 @@ class CameraFragment : Fragment(),
     private var camera: Camera? = null
     private var cameraProvider: ProcessCameraProvider? = null
     /*Change Lens to Front or Back*/
-    private var cameraFacing = CameraSelector.LENS_FACING_BACK
+    private var cameraFacing = CameraSelector.LENS_FACING_FRONT
 
 
     /* Blocking ML operations are performed using this executor */
@@ -64,7 +65,7 @@ class CameraFragment : Fragment(),
         // Make sure that all permissions are still present, since the
         // user could have removed them while the app was in paused state.
         if (!PermissionsFragment.hasPermissions(requireContext())) {
-            Navigation.findNavController(requireActivity(), R.id.fragment_container)
+            requireActivity().findNavController(R.id.fragment_container)
                 .navigate(R.id.action_camera_to_permissions)
         }
 
