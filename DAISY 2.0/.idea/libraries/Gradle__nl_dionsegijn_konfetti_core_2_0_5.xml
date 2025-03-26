@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: nl.dionsegijn:konfetti-core:2.0.5" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="nl.dionsegijn" artifactId="konfetti-core" version="2.0.5" baseVersion="2.0.5" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nl.dionsegijn/konfetti-core/2.0.5/5589ae2ab81ef2ae1fb8aa51b3dd2d7744b5c700/konfetti-core-2.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

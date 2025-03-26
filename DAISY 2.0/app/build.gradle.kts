@@ -37,6 +37,7 @@ android {
     }
     buildFeatures{
         viewBinding = true
+        //noinspection DataBindingWithoutKapt
         dataBinding = true
     }
 }
@@ -66,6 +67,11 @@ dependencies {
     implementation ("androidx.media3:media3-exoplayer:1.2.0")
     implementation ("androidx.media3:media3-ui:1.2.0")
     implementation ("androidx.media3:media3-common:1.2.0")
+    implementation(libs.konfetti.xml)
+    implementation(libs.glide)
+    annotationProcessor(libs.glideCompiler)
+
+
 
     //Recycle View
     implementation (libs.androidx.recyclerview)

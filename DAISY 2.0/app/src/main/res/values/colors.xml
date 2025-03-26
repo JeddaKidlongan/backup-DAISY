@@ -23,7 +23,11 @@
     <color name="gradEnd">#67EFC8</color>
     <color name="gradStart">#63C9FF</color>
     <color name="green_500">#075F0A</color>
+    <color name="darkBlue">#081F56</color>
     <color name="colorPrimaryDark">#485C31</color>
+
+    <!-- For button of Front and Side View -->
+    <color name="btn_color">#1D5281</color>
 
     <!-- Light theme colors -->
     <color name="mp_color_accent">#03DAC6</color>

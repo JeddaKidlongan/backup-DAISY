@@ -33,7 +33,7 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_gravity="top|start"
-                    android:src="@drawable/ic_left"
+                    android:src="@drawable/ic_back"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:padding="8dp"
                     tools:ignore="ContentDescription,SpeakableTextPresentCheck" />

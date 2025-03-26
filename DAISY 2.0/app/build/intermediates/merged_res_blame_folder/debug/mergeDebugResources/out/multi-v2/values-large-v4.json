@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.daisy.app-mergeDebugResources-79:/values-large-v4/values-large-v4.xml",
+            "outputFile": "com.example.daisy.app-mergeDebugResources-80:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kinga\\.gradle\\caches\\8.11.1\\transforms\\df649fd41fc28e721964a03c2203764c\\transformed\\appcompat-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\kinga\\.gradle\\caches\\8.11.1\\transforms\\82e696208d648d212681105933dfbdf5\\transformed\\appcompat-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kinga\\.gradle\\caches\\8.11.1\\transforms\\e5f1d7749742b4b66efee540cd027ec4\\transformed\\material-1.12.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\kinga\\.gradle\\caches\\8.11.1\\transforms\\33146c0b1cb69994a3f1e029c9f3f156\\transformed\\material-1.12.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

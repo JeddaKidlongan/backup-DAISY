@@ -3,7 +3,6 @@ package com.example.daisy
 import android.annotation.SuppressLint
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
@@ -14,6 +13,7 @@ import androidx.core.net.toUri
 import androidx.media3.common.MediaItem
 import androidx.media3.common.PlaybackException
 import androidx.media3.common.Player
+import androidx.media3.common.util.Log
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.exoplayer.ExoPlayer
 import com.example.daisy.databinding.ActivitySignBinding
@@ -27,7 +27,6 @@ class SignActivity : AppCompatActivity() {
     private lateinit var currentCategory: String
     private lateinit var currentList: List<String>
     private var currentIndex: Int = 0
-    // New variable to store the current video code for naming local files
     private var currentVideoCode: String = ""
     private lateinit var gestureDetector: GestureDetector
     private var player: ExoPlayer? = null
@@ -215,7 +214,7 @@ class SignActivity : AppCompatActivity() {
         player?.setMediaItem(mediaItem)
         player?.prepare() // Prepare the media for playback
         player?.playWhenReady = true // Auto-play immediately
-        player?.setPlaybackSpeed(1.5f) // Set speed to 1.5x
+        player?.setPlaybackSpeed(1.2f) // Set speed to 1.5x
     }
 
     /**

@@ -16,6 +16,9 @@
     <dist:module dist:instant="true" /> <!-- Declare features -->
     <uses-feature android:name="android.hardware.camera" /> <!-- Declare permissions -->
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -56,7 +59,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.GestureRecognizer" >
         <activity
-            android:name="com.example.daisy.LearnWordsActivity"
+            android:name="com.example.daisy.WordsActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -68,13 +71,28 @@
             android:name="com.example.daisy.DashboardActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.daisy.LearnSignLanguageActivity"
+            android:name="com.example.daisy.MainActivity2"
             android:exported="false" />
         <activity
-            android:name="com.example.daisy.LearnAlphabetActivity"
+            android:name="com.example.daisy.LettersActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.daisy.SampleQuizActivity"
+            android:name="com.example.daisy.NumbersActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.daisy.SignActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.daisy.QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.daisy.LettersQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.daisy.NumbersQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.daisy.WordsQuizActivity"
             android:exported="false" />
         <activity
             android:name="com.example.daisy.SplashScreenActivity"
@@ -90,7 +108,8 @@
             android:exported="false" />
         <activity
             android:name="com.example.daisy.LoginActivity"
-            android:exported="true" />
+            android:exported="true" >
+        </activity>
         <activity android:name="com.example.daisy.UserProfileActivity" />
         <activity android:name="com.example.daisy.EditProfileActivity" />
         <activity

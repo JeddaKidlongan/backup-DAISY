@@ -45,13 +45,13 @@ public final class ActivityDashboardBinding implements ViewBinding {
   public final NavigationView navView;
 
   @NonNull
-  public final CardView sampleQuizCard;
+  public final CardView startQuizCard;
 
   private ActivityDashboardBinding(@NonNull DrawerLayout rootView, @NonNull CardView cameraFragment,
       @NonNull ConstraintLayout constraintLayout, @NonNull Toolbar dashboardToolbar,
       @NonNull DrawerLayout drawerLayout, @NonNull FragmentContainerView fragmentContainer,
       @NonNull CardView learnSignlanguageCard, @NonNull NavigationView navView,
-      @NonNull CardView sampleQuizCard) {
+      @NonNull CardView startQuizCard) {
     this.rootView = rootView;
     this.cameraFragment = cameraFragment;
     this.constraintLayout = constraintLayout;
@@ -60,7 +60,7 @@ public final class ActivityDashboardBinding implements ViewBinding {
     this.fragmentContainer = fragmentContainer;
     this.learnSignlanguageCard = learnSignlanguageCard;
     this.navView = navView;
-    this.sampleQuizCard = sampleQuizCard;
+    this.startQuizCard = startQuizCard;
   }
 
   @Override
@@ -128,15 +128,15 @@ public final class ActivityDashboardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.sample_quiz_card;
-      CardView sampleQuizCard = ViewBindings.findChildViewById(rootView, id);
-      if (sampleQuizCard == null) {
+      id = R.id.start_Quiz_card;
+      CardView startQuizCard = ViewBindings.findChildViewById(rootView, id);
+      if (startQuizCard == null) {
         break missingId;
       }
 
       return new ActivityDashboardBinding((DrawerLayout) rootView, cameraFragment, constraintLayout,
           dashboardToolbar, drawerLayout, fragmentContainer, learnSignlanguageCard, navView,
-          sampleQuizCard);
+          startQuizCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

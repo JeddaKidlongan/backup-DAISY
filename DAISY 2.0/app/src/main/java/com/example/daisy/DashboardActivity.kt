@@ -3,15 +3,11 @@ package com.example.daisy
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.navigation.fragment.NavHostFragment
-import com.example.daisy.R.id.drawer_layout
-import com.example.daisy.R.id.nav_view
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
@@ -30,8 +26,8 @@ class DashboardActivity : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         // Initialize DrawerLayout and NavigationView
-        drawerLayout = findViewById(drawer_layout)
-        navView = findViewById(nav_view)
+        drawerLayout = findViewById(R.id.drawer_layout)
+        navView = findViewById(R.id.nav_view)
 
         // Setup Toolbar and Drawer Toggle
         val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.dashboard_toolbar)
@@ -50,32 +46,23 @@ class DashboardActivity : AppCompatActivity() {
             true
         }
 
-        // Ensure NavHostFragment is correctly referenced
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
-        val navController = navHostFragment.navController
-
-        // Initialize CardViews
+        // Initialize CardViews and Button
         val realTimeCard: CardView = findViewById(R.id.camera_fragment)
         val learnSignLanguageCard: CardView = findViewById(R.id.learn_signlanguage_card)
-        val sampleQuizCard: CardView = findViewById(R.id.sample_quiz_card)
-
-        // Set Click Listeners for Cards
-        realTimeCard.setOnClickListener {
-            navigateToFragment(R.id.camera_fragment)
-        }
+        val startQuizCard: CardView = findViewById(R.id.start_Quiz_card)
 
         learnSignLanguageCard.setOnClickListener {
-            val intent = Intent(this, LearnSignLanguageActivity::class.java)
+            val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
 
-        sampleQuizCard.setOnClickListener {
-            val intent = Intent(this, SampleQuizActivity::class.java)
+        startQuizCard.setOnClickListener {
+            val intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
         }
     }
 
-    // Handle Navigation Drawer Clicks
+    // Handle Navigation Drawer clicks
     private fun handleNavigationItemClick(menuItem: MenuItem) {
         when (menuItem.itemId) {
             R.id.nav_home -> showSnackbar("Home Selected")
@@ -84,6 +71,7 @@ class DashboardActivity : AppCompatActivity() {
             }
             R.id.nav_logout -> logoutUser()
         }
+        closeDrawer()
     }
 
     // Logout User
@@ -94,18 +82,9 @@ class DashboardActivity : AppCompatActivity() {
         finish()
     }
 
-    // Navigate to Fragments
-    private fun navigateToFragment(fragmentId: Int) {
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
-        val navController = navHostFragment.navController
-        navController.navigate(fragmentId)
-        closeDrawer()
-    }
-
     // Show Snackbar Message
     private fun showSnackbar(message: String) {
         Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT).show()
-        closeDrawer()
     }
 
     // Close Drawer Function
@@ -115,7 +94,7 @@ class DashboardActivity : AppCompatActivity() {
         }
     }
 
-    // Handle Back Press to Close Drawer First
+    // Handle Back Press to close drawer first
     override fun onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START)

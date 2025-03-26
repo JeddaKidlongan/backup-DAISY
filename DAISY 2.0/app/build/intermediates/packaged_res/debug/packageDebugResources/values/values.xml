@@ -18,14 +18,23 @@
         <item>CPU</item>
         <item>GPU</item>
     </string-array>
-    <string-array name="preloaded_fonts">Preloaded fonts</string-array>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/afacad_medium</item>
+        <item>@font/bakbak_one</item>
+        <item>@font/baloo_chettan</item>
+        <item>@font/bevan</item>
+        <item>@font/lemon</item>
+        <item>@font/wendy_one</item>
+    </array>
     <color name="bg_nav_item">#007F8B</color>
     <color name="black">#000000</color>
     <color name="bottom_sheet_background">#EEEEEE</color>
     <color name="bottom_sheet_text_color">@android:color/black</color>
+    <color name="btn_color">#1D5281</color>
     <color name="circleBorder">#50FFFFFF</color>
     <color name="colorPrimary">#165FF1</color>
     <color name="colorPrimaryDark">#485C31</color>
+    <color name="darkBlue">#081F56</color>
     <color name="dark_accent">#03DAC5</color>
     <color name="dark_primary">#BB86FC</color>
     <color name="dark_primary_dark">#3700B3</color>
