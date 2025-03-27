@@ -30,11 +30,13 @@ import java.io.File
 import java.util.Locale
 import java.util.concurrent.TimeUnit
 
+// Added an optional property "codeSuffix" for word questions.
 data class QuizQuestion(
     val type: String, // "number", "letter", or "word"
     val correctAnswer: String,
     val videoUrl: String,
-    val options: List<String>
+    val options: List<String>,
+    val codeSuffix: String? = null
 )
 
 data class QuizProgress(
@@ -55,7 +57,6 @@ class QuizActivity : AppCompatActivity() {
     private var questionTimer: CountDownTimer? = null
     private val questionTimeInMillis: Long = 15000
 
-    // Remove any quizType extra – we always generate all modules.
     // Flag to ensure only one answer is processed per question.
     private var questionAnswered = false
 
@@ -110,23 +111,37 @@ class QuizActivity : AppCompatActivity() {
             QuizQuestion(
                 type = "letter",
                 correctAnswer = letter.toString(),
-                videoUrl = VideoRepository.getCloudinaryUrl(
-                    "l" + letter.lowercase(Locale.getDefault()),
-                    "front"
-                ),
+                videoUrl = VideoRepository.getCloudinaryUrl("l" + letter.lowercase(Locale.getDefault()), "front"),
                 options = generateOptions(letter.toString(), ('A'..'Z').toList())
             )
         }
     }
 
+    /**
+     * Generate word questions using Tagalog display text and corresponding code suffix.
+     */
     private fun generateWordQuestions(): List<QuizQuestion> {
-        val words = listOf("goodmorning", "goodafternoon", "goodevening", "takecare", "bye")
-        return words.map { word ->
+        // Define a list of pairs: (Tagalog text, English code suffix)
+        val wordPairs = listOf(
+            Pair("Magandang Umaga", "goodmorning"),
+            Pair("Magandang Hapon", "goodafternoon"),
+            Pair("Magandang Gabi", "goodevening"),
+            Pair("Ingat ka", "takecare"),
+            Pair("Paalam", "bye"),
+            Pair("Help", "help"),
+            Pair("Doctor", "doctor"),
+            Pair("Hospital", "hospital"),
+            Pair("Police", "police"),
+            Pair("Painful/Hurt", "painful"),
+            Pair("Emergency", "emergency")
+        )
+        return wordPairs.map { pair ->
             QuizQuestion(
                 type = "word",
-                correctAnswer = word,
-                videoUrl = VideoRepository.getCloudinaryUrl("w_" + word.replace(" ", "_"), "front"),
-                options = generateOptions(word, words)
+                correctAnswer = pair.first, // Tagalog version
+                videoUrl = VideoRepository.getCloudinaryUrl("w_" + pair.second, "front"),
+                options = generateOptions(pair.first, wordPairs.map { it.first }),
+                codeSuffix = pair.second
             )
         }
     }
@@ -164,11 +179,11 @@ class QuizActivity : AppCompatActivity() {
         }
         currentQuestion = questions.removeFirst()
 
-        // Build video key based on question type.
+        // Build video code based on question type.
         val videoCode = when (currentQuestion.type) {
             "number" -> "n" + currentQuestion.correctAnswer
             "letter" -> "l" + currentQuestion.correctAnswer.lowercase(Locale.getDefault())
-            "word" -> "w_" + currentQuestion.correctAnswer.replace(" ", "_")
+            "word" -> "w_" + (currentQuestion.codeSuffix ?: currentQuestion.correctAnswer.replace(" ", "_"))
             else -> currentQuestion.correctAnswer
         }
         val localUri = getLocalVideoUri(videoCode, "front", currentQuestion.videoUrl)
@@ -211,18 +226,20 @@ class QuizActivity : AppCompatActivity() {
         if (questionAnswered) return
         questionAnswered = true
         questionTimer?.cancel()
+
         val isCorrect = selectedAnswer.equals(currentQuestion.correctAnswer, ignoreCase = true)
+        val newCurrentStreak = if (isCorrect) currentProgress.currentStreak + 1 else 0
+
         currentProgress = currentProgress.copy(
             correctAnswers = currentProgress.correctAnswers + if (isCorrect) 1 else 0,
-            currentStreak = if (isCorrect) currentProgress.currentStreak + 1 else 0,
-            bestStreak = kotlin.comparisons.maxOf(
-                currentProgress.bestStreak,
-                currentProgress.currentStreak
-            )
+            currentStreak = newCurrentStreak,
+            bestStreak = kotlin.comparisons.maxOf(currentProgress.bestStreak, newCurrentStreak)
         )
+
         saveProgress()
         updateProgressUI()
         showFeedback(isCorrect)
+
         Handler(Looper.getMainLooper()).postDelayed({
             if (questions.isEmpty()) showResults() else showNextQuestion()
         }, 1000)
@@ -265,7 +282,6 @@ class QuizActivity : AppCompatActivity() {
                     checkAnswer(droppedText)
                     true
                 }
-
                 else -> true
             }
         }
@@ -273,7 +289,7 @@ class QuizActivity : AppCompatActivity() {
 
     private fun setupClickListeners() {
         binding.btnBack.setOnClickListener { finish() }
-        // Do not set onClick listeners on options, only draggable behavior is used.
+        // Do not set onClick listeners on options; only draggable behavior is used.
     }
 
     private fun showFeedback(isCorrect: Boolean) {
@@ -293,8 +309,6 @@ class QuizActivity : AppCompatActivity() {
 
         // Define a passing threshold (70% of total questions)
         val passingThreshold = (currentProgress.totalQuestions * 0.7).toInt()
-
-        // Check if the user passed
         val passed = currentProgress.correctAnswers >= passingThreshold
 
         // Construct message based on pass or fail
@@ -309,15 +323,14 @@ class QuizActivity : AppCompatActivity() {
                     "📊 Score: ${currentProgress.correctAnswers}/${currentProgress.totalQuestions}"
         }
 
-        // Show an alert dialog with the result message
         AlertDialog.Builder(this)
             .setTitle("Quiz Complete!")
             .setMessage(message)
             .setPositiveButton(if (passed) "Finish" else "Retry") { _, _ ->
                 if (passed) {
-                    finish() // Exit the quiz after completion
+                    finish()
                 } else {
-                    recreate() // Restart quiz if failed
+                    recreate()
                 }
             }
             .setNegativeButton("Exit") { _, _ -> finish() }
@@ -365,15 +378,12 @@ class QuizActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun updateProgressUI() {
-        // Calculate progress based on questions attempted rather than score.
         val totalQuestions = currentProgress.totalQuestions
         val questionsAttempted = totalQuestions - questions.size
         val progressPercent = ((questionsAttempted.toFloat() / totalQuestions) * 100).toInt()
 
-        // Optionally, display the current score separately if needed.
         binding.txtScore.text = "Score: ${currentProgress.correctAnswers}"
 
-        // Update progress bar based on quiz progress.
         val prevProgress = binding.progressBar.progress
         val progressAnimator = ValueAnimator.ofInt(prevProgress, progressPercent).apply {
             duration = 500
@@ -382,7 +392,6 @@ class QuizActivity : AppCompatActivity() {
                 val value = animator.animatedValue as Int
                 binding.progressBar.progress = value
                 binding.txtProgressPercent.text = "$value%"
-                // Adjust the indicator position based on progress.
                 val translationX =
                     (binding.progressBar.width * (value / 100f)) - (binding.progressIndicator.width / 2f)
                 binding.progressIndicator.translationX = translationX
@@ -390,7 +399,6 @@ class QuizActivity : AppCompatActivity() {
         }
         progressAnimator.start()
 
-        // Update streak info (unchanged).
         binding.txtStreakMain.text =
             "Current Streak: ${currentProgress.currentStreak}\nBest Streak: ${currentProgress.bestStreak}"
     }

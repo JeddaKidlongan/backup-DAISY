@@ -131,7 +131,9 @@ id btnBack
 id btnBye
 id btnC
 id btnD
+id btnDoctor
 id btnE
+id btnEmergency
 id btnF
 id btnFrontView
 id btnG
@@ -139,6 +141,8 @@ id btnGoodafternoon
 id btnGoodevening
 id btnGoodmorning
 id btnH
+id btnHelp
+id btnHospital
 id btnI
 id btnJ
 id btnK
@@ -153,6 +157,8 @@ id btnOption2
 id btnOption3
 id btnOption4
 id btnP
+id btnPainful
+id btnPolice
 id btnQ
 id btnR
 id btnS

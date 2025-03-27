@@ -60,12 +60,12 @@
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_user_profile.xml"
     },
     {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\mipmap-hdpi_logo.png.flat",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\mipmap-hdpi\\logo.png"
-    },
-    {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\font_baloo_chettan.xml.flat",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\font\\baloo_chettan.xml"
+    },
+    {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\mipmap-hdpi_logo.png.flat",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\mipmap-hdpi\\logo.png"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\navigation_nav_graph.xml.flat",
@@ -140,24 +140,20 @@
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_ic_edit.xml.flat",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\drawable\\ic_edit.xml"
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_btn_bg_ripple.xml.flat",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\drawable\\btn_bg_ripple.xml"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\font_asset.xml.flat",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\font\\asset.xml"
     },
     {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_btn_bg_ripple.xml.flat",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\drawable\\btn_bg_ripple.xml"
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\drawable\\ic_edit.xml"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\layout_activity_sign_up.xml.flat",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_sign_up.xml"
-    },
-    {
-        "merged": "com.example.daisy.app-debug-82:/layout_header.xml.flat",
-        "source": "com.example.daisy.app-main-84:/layout/header.xml"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_profile.png.flat",
@@ -308,6 +304,10 @@
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\mipmap-anydpi\\ic_launcher.xml"
     },
     {
+        "merged": "com.example.daisy.app-debug-82:/layout_activity_words.xml.flat",
+        "source": "com.example.daisy.app-main-84:/layout/activity_words.xml"
+    },
+    {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_signs.png.flat",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\drawable\\signs.png"
     },
@@ -402,6 +402,10 @@
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\layout_header.xml.flat",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\header.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-82:/layout_activity_sign.xml.flat",
+        "source": "com.example.daisy.app-main-84:/layout/activity_sign.xml"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_btn2_bg_ripple.xml.flat",

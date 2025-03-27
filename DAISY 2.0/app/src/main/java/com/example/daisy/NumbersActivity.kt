@@ -4,9 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.daisy.databinding.ActivityNumbersBinding
-import androidx.core.content.edit
 import com.bumptech.glide.Glide
-
 
 class NumbersActivity : AppCompatActivity() {
 
@@ -62,7 +60,7 @@ class NumbersActivity : AppCompatActivity() {
         val completed = prefs.getStringSet("numbers_completed", mutableSetOf())?.toMutableSet()
             ?: mutableSetOf()
         if (completed.add(displayText)) {
-            prefs.edit { putStringSet("numbers_completed", completed) }
+            prefs.edit().putStringSet("numbers_completed", completed).apply()
         }
 
         Intent(this, SignActivity::class.java).apply {

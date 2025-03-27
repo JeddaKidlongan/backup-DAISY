@@ -4061,7 +4061,9 @@ int id btnBack 0x7f0a0084
 int id btnBye 0x7f0a0085
 int id btnC 0x7f0a0086
 int id btnD 0x7f0a0088
+int id btnDoctor 0x7f0a030a
 int id btnE 0x7f0a0089
+int id btnEmergency 0x7f0a030b
 int id btnF 0x7f0a008a
 int id btnFrontView 0x7f0a008b
 int id btnG 0x7f0a008c
@@ -4069,6 +4071,8 @@ int id btnGoodafternoon 0x7f0a008d
 int id btnGoodevening 0x7f0a008e
 int id btnGoodmorning 0x7f0a008f
 int id btnH 0x7f0a0090
+int id btnHelp 0x7f0a030c
+int id btnHospital 0x7f0a030d
 int id btnI 0x7f0a0091
 int id btnJ 0x7f0a0092
 int id btnK 0x7f0a0093
@@ -4083,6 +4087,8 @@ int id btnOption2 0x7f0a009b
 int id btnOption3 0x7f0a009c
 int id btnOption4 0x7f0a009d
 int id btnP 0x7f0a009e
+int id btnPainful 0x7f0a030e
+int id btnPolice 0x7f0a030f
 int id btnQ 0x7f0a009f
 int id btnR 0x7f0a00a0
 int id btnS 0x7f0a00a1

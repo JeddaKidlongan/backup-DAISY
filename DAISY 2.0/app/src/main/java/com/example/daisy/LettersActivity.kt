@@ -5,7 +5,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.daisy.databinding.ActivityLettersBinding
 import com.bumptech.glide.Glide
-
+import kotlin.apply
+import kotlin.collections.forEach
+import kotlin.collections.toMutableSet
+import kotlin.jvm.java
+import kotlin.to
 
 class LettersActivity : AppCompatActivity() {
 
