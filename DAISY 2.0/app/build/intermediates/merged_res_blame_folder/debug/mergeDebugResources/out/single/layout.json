@@ -1,19 +1,35 @@
 [
     {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_quiz.xml",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_quiz.xml"
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_main_2.xml",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_main_2.xml"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_setting.xml",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_setting.xml"
     },
     {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_quiz.xml",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\info_bottom_sheet.xml",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\info_bottom_sheet.xml"
+    },
+    {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_words.xml",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_words.xml"
+    },
+    {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_edit_profile.xml",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_edit_profile.xml"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_numbers_quiz.xml",
@@ -28,6 +44,10 @@
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_dashboard.xml"
     },
     {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\fragment_camera.xml",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\fragment_camera.xml"
+    },
+    {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_numbers.xml",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_numbers.xml"
     },
@@ -36,8 +56,16 @@
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\item_dashboard.xml"
     },
     {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_sign.xml",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_sign.xml"
+    },
+    {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_words_quiz.xml",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_words_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_letters.xml",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_letters.xml"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\header.xml",
@@ -62,37 +90,5 @@
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_letters_quiz.xml",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_letters_quiz.xml"
-    },
-    {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_main_2.xml",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_main_2.xml"
-    },
-    {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\info_bottom_sheet.xml",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\info_bottom_sheet.xml"
-    },
-    {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_edit_profile.xml",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_edit_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\fragment_camera.xml",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\fragment_camera.xml"
-    },
-    {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_sign.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_sign.xml"
-    },
-    {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_sign.xml",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_sign.xml"
-    },
-    {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_letters.xml",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_letters.xml"
     }
 ]

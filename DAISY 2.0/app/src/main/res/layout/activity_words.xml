@@ -65,7 +65,7 @@
                     android:background="@drawable/btn_bg_ripple"
                     android:fontFamily="@font/bakbak_one"
                     android:text="Magandang Umaga"
-                    android:textColor="#E2D9D9"
+                    android:textColor="#040404"
                     android:textSize="25sp"
                     app:backgroundTint="@null"
                     tools:ignore="HardcodedText,NewApi" />
@@ -78,7 +78,7 @@
                     android:background="@drawable/btn_bg_ripple"
                     android:fontFamily="@font/bakbak_one"
                     android:text="Magandang Hapon"
-                    android:textColor="#E2D9D9"
+                    android:textColor="#090909"
                     android:textSize="25sp"
                     app:backgroundTint="@null"
                     tools:ignore="HardcodedText,NewApi" />
@@ -91,7 +91,7 @@
                     android:background="@drawable/btn_bg_ripple"
                     android:fontFamily="@font/bakbak_one"
                     android:text="Magandang Gabi"
-                    android:textColor="#E2D9D9"
+                    android:textColor="#070707"
                     android:textSize="25sp"
                     app:backgroundTint="@null"
                     tools:ignore="HardcodedText,NewApi" />
@@ -104,7 +104,7 @@
                     android:background="@drawable/btn_bg_ripple"
                     android:fontFamily="@font/bakbak_one"
                     android:text="Ingat ka"
-                    android:textColor="#E2D9D9"
+                    android:textColor="#040404"
                     android:textSize="25sp"
                     app:backgroundTint="@null"
                     tools:ignore="HardcodedText,NewApi" />
@@ -117,7 +117,7 @@
                     android:background="@drawable/btn_bg_ripple"
                     android:fontFamily="@font/bakbak_one"
                     android:text="Paalam"
-                    android:textColor="#E2D9D9"
+                    android:textColor="#040404"
                     android:textSize="25sp"
                     app:backgroundTint="@null"
                     tools:ignore="HardcodedText,NewApi" />
@@ -130,7 +130,7 @@
                     android:background="@drawable/btn_bg_ripple"
                     android:fontFamily="@font/bakbak_one"
                     android:text="Help"
-                    android:textColor="#E2D9D9"
+                    android:textColor="#050505"
                     android:textSize="25sp"
                     app:backgroundTint="@null"
                     tools:ignore="HardcodedText,NewApi" />
@@ -143,7 +143,7 @@
                     android:background="@drawable/btn_bg_ripple"
                     android:fontFamily="@font/bakbak_one"
                     android:text="Doctor"
-                    android:textColor="#E2D9D9"
+                    android:textColor="#040404"
                     android:textSize="25sp"
                     app:backgroundTint="@null"
                     tools:ignore="HardcodedText,NewApi" />
@@ -156,7 +156,7 @@
                     android:background="@drawable/btn_bg_ripple"
                     android:fontFamily="@font/bakbak_one"
                     android:text="Hospital"
-                    android:textColor="#E2D9D9"
+                    android:textColor="#050505"
                     android:textSize="25sp"
                     app:backgroundTint="@null"
                     tools:ignore="HardcodedText,NewApi" />
@@ -169,7 +169,7 @@
                     android:background="@drawable/btn_bg_ripple"
                     android:fontFamily="@font/bakbak_one"
                     android:text="Police"
-                    android:textColor="#E2D9D9"
+                    android:textColor="#040404"
                     android:textSize="25sp"
                     app:backgroundTint="@null"
                     tools:ignore="HardcodedText,NewApi" />
@@ -182,7 +182,7 @@
                     android:background="@drawable/btn_bg_ripple"
                     android:fontFamily="@font/bakbak_one"
                     android:text="Painful/Hurt"
-                    android:textColor="#E2D9D9"
+                    android:textColor="#000000"
                     android:textSize="25sp"
                     app:backgroundTint="@null"
                     tools:ignore="HardcodedText,NewApi" />
@@ -195,7 +195,7 @@
                     android:background="@drawable/btn_bg_ripple"
                     android:fontFamily="@font/bakbak_one"
                     android:text="Emergency"
-                    android:textColor="#E2D9D9"
+                    android:textColor="#090909"
                     android:textSize="25sp"
                     app:backgroundTint="@null"
                     tools:ignore="HardcodedText,NewApi" />
@@ -236,7 +236,7 @@
                     android:layout_marginStart="16dp"
                     android:text="Take Words Quiz"
                     android:fontFamily="@font/lemon"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="20sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>

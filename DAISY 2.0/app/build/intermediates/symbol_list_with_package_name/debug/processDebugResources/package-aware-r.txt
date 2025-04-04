@@ -3650,6 +3650,8 @@ drawable blue_background
 drawable bottom_shape
 drawable btn2_bg
 drawable btn2_bg_ripple
+drawable btn3_bg
+drawable btn4_bg
 drawable btn_bg
 drawable btn_bg_ripple
 drawable btn_checkbox_checked_mtrl

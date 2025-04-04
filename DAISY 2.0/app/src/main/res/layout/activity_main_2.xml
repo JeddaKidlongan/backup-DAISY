@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                app:cardBackgroundColor="@color/material_dynamic_primary20"
+                app:cardBackgroundColor="@color/vv_light_blue"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="8dp">
 
@@ -67,7 +67,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:background="@drawable/btn2_bg_ripple"
+                        android:background="@drawable/btn4_bg"
                         android:fontFamily="@font/wendy_one"
                         android:text="Learn Numbers"
                         android:textColor="#E2D9D9"
@@ -83,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                app:cardBackgroundColor="@color/material_dynamic_primary20"
+                app:cardBackgroundColor="@color/vv_light_blue"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="8dp">
 
@@ -132,7 +132,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:background="@drawable/btn2_bg_ripple"
+                        android:background="@drawable/btn4_bg"
                         android:fontFamily="@font/wendy_one"
                         android:text="Learn Alphabet"
                         android:textColor="#E2D9D9"
@@ -147,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                app:cardBackgroundColor="@color/material_dynamic_primary20"
+                app:cardBackgroundColor="@color/vv_light_blue"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="8dp">
 
@@ -196,7 +196,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:background="@drawable/btn2_bg_ripple"
+                        android:background="@drawable/btn4_bg"
                         android:fontFamily="@font/wendy_one"
                         android:text="Learn Words"
                         android:textColor="#E2D9D9"
