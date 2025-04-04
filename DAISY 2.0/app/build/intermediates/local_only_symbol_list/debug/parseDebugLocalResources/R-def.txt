@@ -209,7 +209,7 @@ id loginExtra
 id logout
 id logout_button
 id main
-id nav_edit
+id nav_edit_profile
 id nav_graph
 id nav_home
 id nav_logout

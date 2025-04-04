@@ -3,6 +3,7 @@ package com.example.daisy
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -13,7 +14,7 @@ import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 
-class DashboardActivity : AppCompatActivity() {
+class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var navView: NavigationView
@@ -39,13 +40,16 @@ class DashboardActivity : AppCompatActivity() {
             R.string.navigation_drawer_open, R.string.navigation_drawer_close
         )
         drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
-
-        // Handle Navigation Drawer item clicks
-        navView.setNavigationItemSelectedListener { menuItem ->
-            handleNavigationItemClick(menuItem)
-            true
+        // Inside onCreate
+        navView = findViewById(R.id.nav_view)
+        navView.setNavigationItemSelectedListener { item ->
+            onNavigationItemSelected(item)
         }
+        if (savedInstanceState == null) {
+            // Don’t launch DashboardActivity from itself!
+            navView.setCheckedItem(R.id.nav_home)
+        }
+
 
         // Ensure NavHostFragment is correctly referenced
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
@@ -79,40 +83,27 @@ class DashboardActivity : AppCompatActivity() {
     }
 
 
-    // Handle Navigation Drawer clicks
-    private fun handleNavigationItemClick(menuItem: MenuItem) {
-        when (menuItem.itemId) {
-            R.id.nav_home -> showSnackbar("Home Selected")
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.nav_home -> {
+                startActivity(Intent(this, DashboardActivity::class.java))
+            }
             R.id.nav_profile -> {
                 startActivity(Intent(this, UserProfileActivity::class.java))
             }
-            R.id.nav_edit -> {
+            R.id.nav_edit_profile -> {
                 startActivity(Intent(this, EditProfileActivity::class.java))
             }
-            R.id.nav_logout -> logoutUser()
+            R.id.logout -> {
+                Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show()
+                // Add logout logic if needed
+            }
         }
-        closeDrawer()
+        drawerLayout.closeDrawer(GravityCompat.START)
+        return true
     }
 
-    // Logout User
-    private fun logoutUser() {
-        firebaseAuth.signOut()
-        showSnackbar("Logged out successfully!")
-        startActivity(Intent(this, LoginActivity::class.java))
-        finish()
-    }
 
-    // Show Snackbar Message
-    private fun showSnackbar(message: String) {
-        Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT).show()
-    }
-
-     // Close Drawer Function
-    private fun closeDrawer() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START)
-        }
-    }
 
     override fun onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {

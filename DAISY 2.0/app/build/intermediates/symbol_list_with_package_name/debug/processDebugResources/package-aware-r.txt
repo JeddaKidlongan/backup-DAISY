@@ -4416,7 +4416,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
-id nav_edit
+id nav_edit_profile
 id nav_graph
 id nav_home
 id nav_host_fragment_container
