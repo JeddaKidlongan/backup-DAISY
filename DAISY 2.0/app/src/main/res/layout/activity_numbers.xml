@@ -63,7 +63,7 @@
                     android:background="@drawable/btn_bg_ripple"
                     android:fontFamily="@font/lemon"
                     android:text="0"
-                    android:textColor="#040404"
+                    android:textColor="#090909"
                     android:textSize="35sp"
                     app:backgroundTint="@null"
                     app:cornerRadius="20dp"

@@ -108,7 +108,7 @@
                     android:layout_width="100dp"
                     android:layout_height="75dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Sample Quiz"
+                    android:contentDescription="Summative Assessment"
                     android:src="@drawable/sample_quiz" />
 
                 <TextView
@@ -116,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    android:text="Sample Quiz"
+                    android:text="Summative Assessment"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -150,7 +150,7 @@
                     android:layout_width="100dp"
                     android:layout_height="75dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Sign Language Interpreter"
+                    android:contentDescription="Sign Challenge"
                     android:src="@drawable/signs" />
 
                 <TextView
@@ -158,7 +158,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    android:text="Sign Language Interpreter"
+                    android:text="Sign Challenge"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
