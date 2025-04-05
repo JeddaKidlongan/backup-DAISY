@@ -1,22 +1,22 @@
-//Updated CameraFragment
-
 package com.example.daisy.fragment
 
 import android.annotation.SuppressLint
 import android.content.res.Configuration
 import android.os.Bundle
+import android.os.CountDownTimer
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.daisy.GestureRecognizerHelper
 import com.example.daisy.MainViewModel
@@ -28,49 +28,50 @@ import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit
 import com.example.daisy.R
 import androidx.navigation.findNavController
+import androidx.appcompat.app.AlertDialog
 
-class CameraFragment : Fragment(),
-    GestureRecognizerHelper.GestureRecognizerListener {
+@Suppress("DEPRECATION")
+class CameraFragment : Fragment(), GestureRecognizerHelper.GestureRecognizerListener {
 
     companion object {
         private const val TAG = "Sign Translator"
     }
 
     private var _fragmentCameraBinding: FragmentCameraBinding? = null
-
-    private val fragmentCameraBinding
-        get() = _fragmentCameraBinding!!
+    private val fragmentCameraBinding get() = _fragmentCameraBinding!!
 
     private lateinit var gestureRecognizerHelper: GestureRecognizerHelper
     private val viewModel: MainViewModel by activityViewModels()
-    private var defaultNumResults = 1 /*2 is the maximum number the app can handle*/
+    private var defaultNumResults = 1
     private val gestureRecognizerResultAdapter: GestureRecognizerResultsAdapter by lazy {
-        GestureRecognizerResultsAdapter().apply {
-            updateAdapterSize(defaultNumResults)
-        }
+        GestureRecognizerResultsAdapter().apply { updateAdapterSize(defaultNumResults) }
     }
     private var preview: Preview? = null
     private var imageAnalyzer: ImageAnalysis? = null
     private var camera: Camera? = null
     private var cameraProvider: ProcessCameraProvider? = null
-    /*Change Lens to Front or Back*/
     private var cameraFacing = CameraSelector.LENS_FACING_FRONT
-
-
-    /* Blocking ML operations are performed using this executor */
     private lateinit var backgroundExecutor: ExecutorService
+    private lateinit var challengeLetter: String
+
+    // Challenge Game Variables
+    private var score = 0
+    private var roundCount = 0
+    private var timer: CountDownTimer? = null
+    private val challengeDuration: Long = 5000
+    private var isChallengeInProgress = false
+    private var lastGestureTime: Long = 1
+    private val debounceTime = 1000
+
+    // Flag to mark round completion
+    private var roundCompleted = false
 
     override fun onResume() {
         super.onResume()
-        // Make sure that all permissions are still present, since the
-        // user could have removed them while the app was in paused state.
         if (!PermissionsFragment.hasPermissions(requireContext())) {
             requireActivity().findNavController(R.id.fragment_container)
                 .navigate(R.id.action_camera_to_permissions)
         }
-
-        // Start the GestureRecognizerHelper again when users come back
-        // to the foreground.
         backgroundExecutor.execute {
             if (gestureRecognizerHelper.isClosed()) {
                 gestureRecognizerHelper.setupGestureRecognizer()
@@ -85,8 +86,6 @@ class CameraFragment : Fragment(),
             viewModel.setMinHandTrackingConfidence(gestureRecognizerHelper.minHandTrackingConfidence)
             viewModel.setMinHandPresenceConfidence(gestureRecognizerHelper.minHandPresenceConfidence)
             viewModel.setDelegate(gestureRecognizerHelper.currentDelegate)
-
-            // Close the Gesture Recognizer helper and release resources
             backgroundExecutor.execute { gestureRecognizerHelper.clearGestureRecognizer() }
         }
     }
@@ -94,22 +93,14 @@ class CameraFragment : Fragment(),
     override fun onDestroyView() {
         _fragmentCameraBinding = null
         super.onDestroyView()
-
-        // Shut down our background executor
         backgroundExecutor.shutdown()
-        backgroundExecutor.awaitTermination(
-            Long.MAX_VALUE, TimeUnit.NANOSECONDS
-        )
+        backgroundExecutor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS)
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
-        _fragmentCameraBinding =
-            FragmentCameraBinding.inflate(inflater, container, false)
-
+        _fragmentCameraBinding = FragmentCameraBinding.inflate(inflater, container, false)
         return fragmentCameraBinding.root
     }
 
@@ -120,18 +111,29 @@ class CameraFragment : Fragment(),
             layoutManager = LinearLayoutManager(requireContext())
             adapter = gestureRecognizerResultAdapter
         }
+        val tvChallengeLetter = fragmentCameraBinding.tvChallengeLetter
+        val tvChallengeResult = fragmentCameraBinding.tvChallengeResult
+        val tvScore = fragmentCameraBinding.tvScore
+        val btnStartChallenge = fragmentCameraBinding.btnStartChallenge
 
-        // Initialize our background executor
-        backgroundExecutor = Executors.newSingleThreadExecutor()
-
-        // Wait for the views to be properly laid out
-        fragmentCameraBinding.viewFinder.post {
-            // Set up the camera and its use cases
+        btnStartChallenge.setOnClickListener {
+            // Reset challenge variables on start
+            score = 0
+            roundCount = 0
+            startChallenge(tvChallengeLetter, tvChallengeResult, tvScore)
+        }
+        fragmentCameraBinding.btnBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
+        fragmentCameraBinding.btnSwitchCamera.setOnClickListener {
+            cameraFacing = if (cameraFacing == CameraSelector.LENS_FACING_FRONT)
+                CameraSelector.LENS_FACING_BACK else CameraSelector.LENS_FACING_FRONT
             setUpCamera()
         }
 
-        // Create the Hand Gesture Recognition Helper that will handle the
-        // inference
+        backgroundExecutor = Executors.newSingleThreadExecutor()
+        fragmentCameraBinding.viewFinder.post { setUpCamera() }
+
         backgroundExecutor.execute {
             gestureRecognizerHelper = GestureRecognizerHelper(
                 context = requireContext(),
@@ -143,186 +145,131 @@ class CameraFragment : Fragment(),
                 gestureRecognizerListener = this
             )
         }
-
-        // Attach listeners to UI control widgets
-        initBottomSheetControls()
     }
 
-    private fun initBottomSheetControls() {
-        // init bottom sheet settings
-        fragmentCameraBinding.bottomSheetLayout.detectionThresholdValue.text =
-            String.format(
-                Locale.US, "%.2f", viewModel.currentMinHandDetectionConfidence
-            )
-        fragmentCameraBinding.bottomSheetLayout.trackingThresholdValue.text =
-            String.format(
-                Locale.US, "%.2f", viewModel.currentMinHandTrackingConfidence
-            )
-        fragmentCameraBinding.bottomSheetLayout.presenceThresholdValue.text =
-            String.format(
-                Locale.US, "%.2f", viewModel.currentMinHandPresenceConfidence
-            )
+    private fun startChallenge(
+        tvChallengeLetter: TextView, tvChallengeResult: TextView, tvScore: TextView
+    ) {
+        fragmentCameraBinding.btnStartChallenge.visibility = View.GONE
+        tvScore.visibility = View.VISIBLE
+        tvScore.text = "Score: $score"
+        generateNewChallenge(tvChallengeLetter, tvChallengeResult)
+        startChallengeTimer(tvChallengeResult)
+    }
 
-        // When clicked, lower hand detection score threshold floor
-        fragmentCameraBinding.bottomSheetLayout.detectionThresholdMinus.setOnClickListener {
-            if (gestureRecognizerHelper.minHandDetectionConfidence >= 0.2) {
-                gestureRecognizerHelper.minHandDetectionConfidence -= 0.1f
-                updateControlsUi()
-            }
-        }
+    private fun processDetectedSign(detectedSign: String, tvChallengeResult: TextView) {
+        if (::challengeLetter.isInitialized && !roundCompleted) {
+            val currentTime = System.currentTimeMillis()
+            if (currentTime - lastGestureTime >= debounceTime) {
+                val cleanedDetectedSign = detectedSign.trim().uppercase(Locale.ROOT)
+                val cleanedChallengeLetter = challengeLetter.trim().uppercase(Locale.ROOT)
+                lastGestureTime = currentTime
 
-        // When clicked, raise hand detection score threshold floor
-        fragmentCameraBinding.bottomSheetLayout.detectionThresholdPlus.setOnClickListener {
-            if (gestureRecognizerHelper.minHandDetectionConfidence <= 0.8) {
-                gestureRecognizerHelper.minHandDetectionConfidence += 0.1f
-                updateControlsUi()
-            }
-        }
-
-        // When clicked, lower hand tracking score threshold floor
-        fragmentCameraBinding.bottomSheetLayout.trackingThresholdMinus.setOnClickListener {
-            if (gestureRecognizerHelper.minHandTrackingConfidence >= 0.2) {
-                gestureRecognizerHelper.minHandTrackingConfidence -= 0.1f
-                updateControlsUi()
-            }
-        }
-
-        // When clicked, raise hand tracking score threshold floor
-        fragmentCameraBinding.bottomSheetLayout.trackingThresholdPlus.setOnClickListener {
-            if (gestureRecognizerHelper.minHandTrackingConfidence <= 0.8) {
-                gestureRecognizerHelper.minHandTrackingConfidence += 0.1f
-                updateControlsUi()
-            }
-        }
-
-        // When clicked, lower hand presence score threshold floor
-        fragmentCameraBinding.bottomSheetLayout.presenceThresholdMinus.setOnClickListener {
-            if (gestureRecognizerHelper.minHandPresenceConfidence >= 0.2) {
-                gestureRecognizerHelper.minHandPresenceConfidence -= 0.1f
-                updateControlsUi()
-            }
-        }
-
-        // When clicked, raise hand presence score threshold floor
-        fragmentCameraBinding.bottomSheetLayout.presenceThresholdPlus.setOnClickListener {
-            if (gestureRecognizerHelper.minHandPresenceConfidence <= 0.8) {
-                gestureRecognizerHelper.minHandPresenceConfidence += 0.1f
-                updateControlsUi()
-            }
-        }
-
-        // When clicked, change the underlying hardware used for inference.
-        // Current options are CPU and GPU
-        fragmentCameraBinding.bottomSheetLayout.spinnerDelegate.setSelection(
-            viewModel.currentDelegate, false
-        )
-        fragmentCameraBinding.bottomSheetLayout.spinnerDelegate.onItemSelectedListener =
-            object : AdapterView.OnItemSelectedListener {
-                override fun onItemSelected(
-                    p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long
-                ) {
-                    try {
-                        gestureRecognizerHelper.currentDelegate = p2
-                        updateControlsUi()
-                    } catch(e: UninitializedPropertyAccessException) {
-                        Log.e(TAG, "GestureRecognizerHelper has not been initialized yet.")
-
-                    }
-                }
-
-                override fun onNothingSelected(p0: AdapterView<*>?) {
-                    /* no op */
+                if (cleanedDetectedSign == cleanedChallengeLetter) {
+                    roundCompleted = true
+                    score++
+                    tvChallengeResult.text = "✅ Correct!"
+                    fragmentCameraBinding.tvScore.text = "Score: $score"
+                } else {
+                    tvChallengeResult.text = "❌ Incorrect! Detected: $cleanedDetectedSign"
                 }
             }
-    }
-
-    // Update the values displayed in the bottom sheet. Reset recognition
-    // helper.
-    private fun updateControlsUi() {
-        fragmentCameraBinding.bottomSheetLayout.detectionThresholdValue.text =
-            String.format(
-                Locale.US,
-                "%.2f",
-                gestureRecognizerHelper.minHandDetectionConfidence
-            )
-        fragmentCameraBinding.bottomSheetLayout.trackingThresholdValue.text =
-            String.format(
-                Locale.US,
-                "%.2f",
-                gestureRecognizerHelper.minHandTrackingConfidence
-            )
-        fragmentCameraBinding.bottomSheetLayout.presenceThresholdValue.text =
-            String.format(
-                Locale.US,
-                "%.2f",
-                gestureRecognizerHelper.minHandPresenceConfidence
-            )
-
-        // Needs to be cleared instead of reinitialized because the GPU
-        // delegate needs to be initialized on the thread using it when applicable
-        backgroundExecutor.execute {
-            gestureRecognizerHelper.clearGestureRecognizer()
-            gestureRecognizerHelper.setupGestureRecognizer()
         }
-        fragmentCameraBinding.overlay.clear()
     }
 
-    // Initialize CameraX, and prepare to bind the camera use cases
+    private fun proceedToNextChallenge(tvChallengeResult: TextView) {
+        roundCount++
+        if (roundCount >= 9) {
+            AlertDialog.Builder(requireContext())
+                .setTitle("Challenge Complete!")
+                .setMessage("Final Score: $score out of $roundCount")
+                .setCancelable(false)
+                .setPositiveButton("Retry") { dialog, which ->
+                    score = 0
+                    roundCount = 0
+                    fragmentCameraBinding.tvScore.text = "Score: $score"
+                    generateNewChallenge(fragmentCameraBinding.tvChallengeLetter, tvChallengeResult)
+                    startChallengeTimer(tvChallengeResult)
+                }
+                .setNegativeButton("Exit") { dialog, which ->
+                    // Pop the fragment rather than finishing the entire app
+                    requireActivity().onBackPressed()
+                }
+                .show()
+            isChallengeInProgress = false
+        } else {
+            generateNewChallenge(fragmentCameraBinding.tvChallengeLetter, tvChallengeResult)
+            startChallengeTimer(tvChallengeResult)
+            fragmentCameraBinding.tvScore.text = "Score: $score"
+            roundCompleted = false
+        }
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun generateNewChallenge(tvChallengeLetter: TextView, tvChallengeResult: TextView) {
+        if (roundCount >= 9) {
+            tvChallengeResult.text = "Challenge Complete! Final Score: $score"
+            return
+        }
+        isChallengeInProgress = true
+        challengeLetter = ('A'..'I').random().toString()
+        tvChallengeResult.text = "Waiting for sign..."
+        tvChallengeLetter.text = "Sign: $challengeLetter"
+        roundCompleted = false
+    }
+
+    private fun startChallengeTimer(tvChallengeResult: TextView) {
+        timer?.cancel()
+        timer = object : CountDownTimer(challengeDuration, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                val secondsRemaining = millisUntilFinished / 1000
+                tvChallengeResult.text = "Time Left: $secondsRemaining"
+            }
+
+            override fun onFinish() {
+                if (roundCompleted) {
+                    tvChallengeResult.text = "✅ Correct!"
+                } else {
+                    tvChallengeResult.text = "❌ Time's up! Next Letter"
+                }
+                Handler(Looper.getMainLooper()).postDelayed({
+                    proceedToNextChallenge(tvChallengeResult)
+                }, 3000)
+            }
+        }
+        timer?.start()
+    }
+
     private fun setUpCamera() {
-        val cameraProviderFuture =
-            ProcessCameraProvider.getInstance(requireContext())
-        cameraProviderFuture.addListener(
-            {
-                // CameraProvider
-                cameraProvider = cameraProviderFuture.get()
-
-                // Build and bind the camera use cases
-                bindCameraUseCases()
-            }, ContextCompat.getMainExecutor(requireContext())
-        )
+        val cameraProviderFuture = ProcessCameraProvider.getInstance(requireContext())
+        cameraProviderFuture.addListener({
+            cameraProvider = cameraProviderFuture.get()
+            bindCameraUseCases()
+        }, ContextCompat.getMainExecutor(requireContext()))
     }
 
-    // Declare and bind preview, capture and analysis use cases
     @SuppressLint("UnsafeOptInUsageError")
     private fun bindCameraUseCases() {
+        val cameraProvider = cameraProvider ?: throw IllegalStateException("Camera initialization failed.")
+        val cameraSelector = CameraSelector.Builder().requireLensFacing(cameraFacing).build()
 
-        // CameraProvider
-        val cameraProvider = cameraProvider
-            ?: throw IllegalStateException("Camera initialization failed.")
-
-        val cameraSelector =
-            CameraSelector.Builder().requireLensFacing(cameraFacing).build()
-
-        // Preview. Only using the 4:3 ratio because this is the closest to our models
         preview = Preview.Builder().setTargetAspectRatio(AspectRatio.RATIO_4_3)
             .setTargetRotation(fragmentCameraBinding.viewFinder.display.rotation)
             .build()
 
-        // ImageAnalysis. Using RGBA 8888 to match how our models work
-        imageAnalyzer =
-            ImageAnalysis.Builder().setTargetAspectRatio(AspectRatio.RATIO_4_3)
-                .setTargetRotation(fragmentCameraBinding.viewFinder.display.rotation)
-                .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
-                .setOutputImageFormat(ImageAnalysis.OUTPUT_IMAGE_FORMAT_RGBA_8888)
-                .build()
-                // The analyzer can then be assigned to the instance
-                .also {
-                    it.setAnalyzer(backgroundExecutor) { image ->
-                        recognizeHand(image)
-                    }
+        imageAnalyzer = ImageAnalysis.Builder().setTargetAspectRatio(AspectRatio.RATIO_4_3)
+            .setTargetRotation(fragmentCameraBinding.viewFinder.display.rotation)
+            .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
+            .setOutputImageFormat(ImageAnalysis.OUTPUT_IMAGE_FORMAT_RGBA_8888)
+            .build().also {
+                it.setAnalyzer(backgroundExecutor) { image ->
+                    recognizeHand(image)
                 }
+            }
 
-        // Must unbind the use-cases before rebinding them
         cameraProvider.unbindAll()
-
         try {
-            // A variable number of use-cases can be passed here -
-            // camera provides access to CameraControl & CameraInfo
-            camera = cameraProvider.bindToLifecycle(
-                this, cameraSelector, preview, imageAnalyzer
-            )
-
-            // Attach the viewfinder's surface provider to preview use case
+            camera = cameraProvider.bindToLifecycle(this, cameraSelector, preview, imageAnalyzer)
             preview?.setSurfaceProvider(fragmentCameraBinding.viewFinder.surfaceProvider)
         } catch (exc: Exception) {
             Log.e(TAG, "Use case binding failed", exc)
@@ -330,52 +277,35 @@ class CameraFragment : Fragment(),
     }
 
     private fun recognizeHand(imageProxy: ImageProxy) {
-        gestureRecognizerHelper.recognizeLiveStream(
-            imageProxy = imageProxy,
-        )
+        gestureRecognizerHelper.recognizeLiveStream(imageProxy = imageProxy)
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
-        imageAnalyzer?.targetRotation =
-            fragmentCameraBinding.viewFinder.display.rotation
+        imageAnalyzer?.targetRotation = fragmentCameraBinding.viewFinder.display.rotation
     }
 
-    // Update UI after a hand gesture has been recognized. Extracts original
-    // image height/width to scale and place the landmarks properly through
-    // OverlayView. Only one result is expected at a time. If two or more
-    // hands are seen in the camera frame, only one will be processed.
     override fun onResults(resultBundle: GestureRecognizerHelper.ResultBundle) {
         activity?.runOnUiThread {
             _fragmentCameraBinding?.let {
-                // Process multiple hand results
-                val gestureCategoriesList = resultBundle.results.flatMap { it.gestures().flatten() }
-                gestureRecognizerResultAdapter.updateResults(if (gestureCategoriesList.isNotEmpty()) gestureCategoriesList else emptyList())
-                fragmentCameraBinding.bottomSheetLayout.inferenceTimeVal.text =
-                    String.format("%d ms", resultBundle.inferenceTime)
-                fragmentCameraBinding.overlay.setResults(
-                    resultBundle.results.first(),  // Pass the whole result list
-                    resultBundle.inputImageHeight,
-                    resultBundle.inputImageWidth,
-                    RunningMode.LIVE_STREAM
-                )
-                fragmentCameraBinding.overlay.invalidate()
+                val detectedSign = resultBundle.results
+                    .flatMap { it.gestures().flatten() }
+                    .firstOrNull()?.categoryName()
+
+                if (detectedSign != null && detectedSign != "No gesture detected") {
+                    processDetectedSign(detectedSign, fragmentCameraBinding.tvChallengeResult)
+                    gestureRecognizerResultAdapter.updateResults(
+                        resultBundle.results.firstOrNull()?.gestures()?.flatten() ?: emptyList()
+                    )
+                }
             }
         }
     }
-
-
 
     override fun onError(error: String, errorCode: Int) {
         activity?.runOnUiThread {
             Toast.makeText(requireContext(), error, Toast.LENGTH_SHORT).show()
             gestureRecognizerResultAdapter.updateResults(emptyList())
-
-            if (errorCode == GestureRecognizerHelper.GPU_ERROR) {
-                fragmentCameraBinding.bottomSheetLayout.spinnerDelegate.setSelection(
-                    GestureRecognizerHelper.DELEGATE_CPU, false
-                )
-            }
         }
     }
 }

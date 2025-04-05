@@ -3659,6 +3659,7 @@ drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
 drawable btn_quiz
+drawable btn_quiz_bg
 drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
@@ -3820,6 +3821,7 @@ drawable ic_rocket
 drawable ic_search_black_24
 drawable ic_settings
 drawable ic_streak
+drawable ic_switch_camera
 drawable ic_word
 drawable icn_chevron_up
 drawable indeterminate_static
@@ -3911,6 +3913,7 @@ drawable sample_quiz
 drawable signs
 drawable ss_background
 drawable ss_logo
+drawable ss_logo2
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -4038,7 +4041,6 @@ id bestChoice
 id blocking
 id bottom
 id bottomToTop
-id bottom_sheet_layout
 id bounce
 id bounceBoth
 id bounceEnd
@@ -4096,6 +4098,8 @@ id btnQ
 id btnR
 id btnS
 id btnSideView
+id btnStartChallenge
+id btnSwitchCamera
 id btnT
 id btnTakecare
 id btnU
@@ -4170,9 +4174,6 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
-id detection_threshold_minus
-id detection_threshold_plus
-id detection_threshold_value
 id dialog_button
 id dimensions
 id direct
@@ -4321,8 +4322,6 @@ id imgQuizIcon
 id immediateStop
 id included
 id indeterminate
-id inference_time_label
-id inference_time_val
 id info
 id invisible
 id inward
@@ -4469,7 +4468,6 @@ id option3
 id option4
 id outline
 id outward
-id overlay
 id overshoot
 id packed
 id parallax
@@ -4508,9 +4506,6 @@ id places_autocomplete_try_again_progress
 id pooling_container_listener_holder_tag
 id position
 id postLayout
-id presence_threshold_minus
-id presence_threshold_plus
-id presence_threshold_value
 id pressed
 id profile_bio
 id profile_name
@@ -4523,6 +4518,7 @@ id radio
 id ratio
 id rectangles
 id recyclerview_results
+id recyclerview_top
 id report_drawn
 id reverseSawtooth
 id right
@@ -4580,7 +4576,6 @@ id south
 id spacer
 id special_effects_controller_view_tag
 id spherical_gl_surface_view
-id spinner_delegate
 id spline
 id split_action_bar
 id spread
@@ -4649,9 +4644,6 @@ id top
 id topPanel
 id topToBottom
 id touch_outside
-id tracking_threshold_minus
-id tracking_threshold_plus
-id tracking_threshold_value
 id transitionToEnd
 id transitionToStart
 id transition_clip
@@ -4663,6 +4655,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvChallengeLetter
+id tvChallengeResult
 id tvLabel
 id tvLettersPercent
 id tvNumbersPercent
@@ -4876,7 +4870,6 @@ layout fragment_camera
 layout header
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
-layout info_bottom_sheet
 layout item_dashboard
 layout item_gesture_recognizer_result
 layout m3_alert_dialog

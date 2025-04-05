@@ -115,7 +115,7 @@
                     android:textSize="18sp"
                     android:text="Front View"
                     android:textAlignment="center"
-                    android:textColor="@android:color/white"
+                    android:textColor="#F6E8E8"
                     tools:ignore="HardcodedText,RtlHardcoded" />
 
                 <Button
@@ -133,7 +133,7 @@
                     android:textSize="18sp"
                     android:text="Side View"
                     android:textAlignment="center"
-                    android:textColor="@android:color/white"
+                    android:textColor="#F8EFEF"
                     tools:ignore="HardcodedText,RtlHardcoded" />
             </LinearLayout>
         </LinearLayout>

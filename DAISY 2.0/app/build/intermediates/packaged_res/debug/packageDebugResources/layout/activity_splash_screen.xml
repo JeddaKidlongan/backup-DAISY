@@ -4,7 +4,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ss_background"
     tools:context=".SplashScreenActivity">
 
     <!--  LOGO of DAISY for splash screen  -->
@@ -13,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/daisy_splashscreen_logo"
-        android:src="@drawable/ss_logo" />
+        android:src="@drawable/ss_logo2" />
 
 
 </RelativeLayout>

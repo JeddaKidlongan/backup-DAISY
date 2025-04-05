@@ -1,45 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/camera_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Top Header -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_top"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_gravity="top"
+        android:background="@color/bottom_sheet_background"
+        android:clipToPadding="true"
+        android:padding="8dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!-- Camera Preview pushed below header -->
     <androidx.camera.view.PreviewView
         android:id="@+id/view_finder"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="93dp"
         app:scaleType="fillStart" />
 
-    <com.example.daisy.OverlayView
-        android:id="@+id/overlay"
+    <!-- Top Buttons -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:src="@drawable/ic_back2"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/btnSwitchCamera"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="25dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Switch Camera"
+        android:src="@drawable/ic_switch_camera"
+        tools:ignore="HardcodedText" />
+
+    <!-- Challenge UI and Panels -->
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
 
-    <include
-        android:id="@+id/bottom_sheet_layout"
-        layout="@layout/info_bottom_sheet" />
+        <!-- Challenge Letter -->
+        <TextView
+            android:id="@+id/tvChallengeLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:text="--"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/recyclerview_top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="HardcodedText,NotSibling" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_results"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:layout_marginBottom="@dimen/bottom_sheet_peek_height"
-        android:background="@color/bottom_sheet_background"
-        android:clipToPadding="true"
-        android:padding="@dimen/bottom_sheet_padding"
-        app:layout_anchor="@id/bottom_sheet_layout"
-        app:layout_anchorGravity="top"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <!-- Challenge Result -->
+        <TextView
+            android:id="@+id/tvChallengeResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/titan_one"
+            android:text="Result"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvChallengeLetter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:background="@color/mp_color_primary"
-        app:layout_anchor="@id/recyclerview_results"
-        app:layout_anchorGravity="bottom" />
+        <!-- Score -->
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/titan_one"
+            android:text="Score: 0"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tvChallengeResult"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Start Challenge Button -->
+        <Button
+            android:id="@+id/btnStartChallenge"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/wendy_one"
+            android:text="Start Challenge"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/recyclerview_results"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <!-- Bottom RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_results"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:background="@color/bottom_sheet_background"
+            android:padding="16dp"
+            android:clipToPadding="true"
+            tools:ignore="SpeakableTextPresentCheck"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

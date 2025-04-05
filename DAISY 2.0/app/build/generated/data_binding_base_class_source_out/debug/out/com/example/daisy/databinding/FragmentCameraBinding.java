@@ -4,6 +4,9 @@ package com.example.daisy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.camera.view.PreviewView;
@@ -11,7 +14,6 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.example.daisy.OverlayView;
 import com.example.daisy.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -22,29 +24,51 @@ public final class FragmentCameraBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
-  public final InfoBottomSheetBinding bottomSheetLayout;
+  public final ImageButton btnBack;
+
+  @NonNull
+  public final Button btnStartChallenge;
+
+  @NonNull
+  public final ImageButton btnSwitchCamera;
 
   @NonNull
   public final CoordinatorLayout cameraContainer;
 
   @NonNull
-  public final OverlayView overlay;
+  public final RecyclerView recyclerviewResults;
 
   @NonNull
-  public final RecyclerView recyclerviewResults;
+  public final RecyclerView recyclerviewTop;
+
+  @NonNull
+  public final TextView tvChallengeLetter;
+
+  @NonNull
+  public final TextView tvChallengeResult;
+
+  @NonNull
+  public final TextView tvScore;
 
   @NonNull
   public final PreviewView viewFinder;
 
-  private FragmentCameraBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull InfoBottomSheetBinding bottomSheetLayout, @NonNull CoordinatorLayout cameraContainer,
-      @NonNull OverlayView overlay, @NonNull RecyclerView recyclerviewResults,
+  private FragmentCameraBinding(@NonNull CoordinatorLayout rootView, @NonNull ImageButton btnBack,
+      @NonNull Button btnStartChallenge, @NonNull ImageButton btnSwitchCamera,
+      @NonNull CoordinatorLayout cameraContainer, @NonNull RecyclerView recyclerviewResults,
+      @NonNull RecyclerView recyclerviewTop, @NonNull TextView tvChallengeLetter,
+      @NonNull TextView tvChallengeResult, @NonNull TextView tvScore,
       @NonNull PreviewView viewFinder) {
     this.rootView = rootView;
-    this.bottomSheetLayout = bottomSheetLayout;
+    this.btnBack = btnBack;
+    this.btnStartChallenge = btnStartChallenge;
+    this.btnSwitchCamera = btnSwitchCamera;
     this.cameraContainer = cameraContainer;
-    this.overlay = overlay;
     this.recyclerviewResults = recyclerviewResults;
+    this.recyclerviewTop = recyclerviewTop;
+    this.tvChallengeLetter = tvChallengeLetter;
+    this.tvChallengeResult = tvChallengeResult;
+    this.tvScore = tvScore;
     this.viewFinder = viewFinder;
   }
 
@@ -75,24 +99,53 @@ public final class FragmentCameraBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.bottom_sheet_layout;
-      View bottomSheetLayout = ViewBindings.findChildViewById(rootView, id);
-      if (bottomSheetLayout == null) {
+      id = R.id.btnBack;
+      ImageButton btnBack = ViewBindings.findChildViewById(rootView, id);
+      if (btnBack == null) {
         break missingId;
       }
-      InfoBottomSheetBinding binding_bottomSheetLayout = InfoBottomSheetBinding.bind(bottomSheetLayout);
+
+      id = R.id.btnStartChallenge;
+      Button btnStartChallenge = ViewBindings.findChildViewById(rootView, id);
+      if (btnStartChallenge == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSwitchCamera;
+      ImageButton btnSwitchCamera = ViewBindings.findChildViewById(rootView, id);
+      if (btnSwitchCamera == null) {
+        break missingId;
+      }
 
       CoordinatorLayout cameraContainer = (CoordinatorLayout) rootView;
-
-      id = R.id.overlay;
-      OverlayView overlay = ViewBindings.findChildViewById(rootView, id);
-      if (overlay == null) {
-        break missingId;
-      }
 
       id = R.id.recyclerview_results;
       RecyclerView recyclerviewResults = ViewBindings.findChildViewById(rootView, id);
       if (recyclerviewResults == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerview_top;
+      RecyclerView recyclerviewTop = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerviewTop == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeLetter;
+      TextView tvChallengeLetter = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeLetter == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChallengeResult;
+      TextView tvChallengeResult = ViewBindings.findChildViewById(rootView, id);
+      if (tvChallengeResult == null) {
+        break missingId;
+      }
+
+      id = R.id.tvScore;
+      TextView tvScore = ViewBindings.findChildViewById(rootView, id);
+      if (tvScore == null) {
         break missingId;
       }
 
@@ -102,8 +155,9 @@ public final class FragmentCameraBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCameraBinding((CoordinatorLayout) rootView, binding_bottomSheetLayout,
-          cameraContainer, overlay, recyclerviewResults, viewFinder);
+      return new FragmentCameraBinding((CoordinatorLayout) rootView, btnBack, btnStartChallenge,
+          btnSwitchCamera, cameraContainer, recyclerviewResults, recyclerviewTop, tvChallengeLetter,
+          tvChallengeResult, tvScore, viewFinder);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
