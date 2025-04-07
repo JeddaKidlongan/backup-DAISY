@@ -53,6 +53,7 @@
     <color name="mp_color_primary_variant">#12B5CB</color>
     <color name="mp_color_secondary">#FBBC04</color>
     <color name="mp_color_secondary_variant">#F9AB00</color>
+    <color name="save_color">#3CC742</color>
     <color name="solidCircle">#AAFFFFFF</color>
     <color name="toolbar_background">#E0E0E0</color>
     <color name="vv_light_blue">#80CBC4</color>
@@ -80,6 +81,7 @@
     <string name="alt_bottom_sheet_threshold_button_plus">Increasing
         threshold of recognized hand gesture results button</string>
     <string name="app_name">DAISY</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
     <string name="assistive_communication">Assistive Communication</string>
     <string name="daisy_splashscreen_logo">DAISY SplashScreen Logo</string>
     <string name="dashboard_activity_label"/>
@@ -105,6 +107,7 @@
     <string name="menu_gallery">Gallery</string>
     <string name="navigation_drawer_close">Close Navigation Drawer</string>
     <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="no">NO</string>
     <string name="profile_btn">User profile</string>
     <string name="project_id" translatable="false">daisy-561f5</string>
     <string name="settings_btn">setting</string>
@@ -113,6 +116,7 @@
     <string name="sign_title_words">Learn Words</string>
     <string name="tv_gallery_placeholder">Click + to add an image or a video
         to begin running the gesture recognizer.</string>
+    <string name="yes">YES</string>
     <style name="AppThemeProgressStyle">
         <item name="colorAccent">@color/mp_color_primary_variant</item>
     </style>

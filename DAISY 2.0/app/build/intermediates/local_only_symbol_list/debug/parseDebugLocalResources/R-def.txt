@@ -34,6 +34,7 @@ color mp_color_primary_dark
 color mp_color_primary_variant
 color mp_color_secondary
 color mp_color_secondary_variant
+color save_color
 color solidCircle
 color toolbar_background
 color vv_light_blue
@@ -50,6 +51,7 @@ dimen round_button_medium
 dimen stroke_small
 drawable backspace_ic
 drawable baseline_add_home
+drawable bg_items
 drawable bg_view
 drawable blue_background
 drawable bottom_shape
@@ -117,6 +119,7 @@ font bevan
 font black_ops_one
 font bowlby_one_sc
 font lemon
+font poppins_black
 font titan_one
 font wendy_one
 id action_camera_to_permissions
@@ -188,6 +191,7 @@ id camera_container
 id camera_fragment
 id cardQuiz
 id cardScoreHistory
+id confirm
 id confirmPassEt
 id confirmPasswordLayout
 id constraintLayout
@@ -216,6 +220,7 @@ id konfettiView
 id learn_signlanguage_card
 id leftSwipeIndicator
 id lettersProgress
+id linearLayout
 id loginExtra
 id logout
 id main
@@ -223,6 +228,7 @@ id nav_graph
 id nav_history
 id nav_logout
 id nav_profile
+id noBtn
 id numbersGrid
 id numbersProgress
 id option1
@@ -270,6 +276,7 @@ id videoPlayer
 id videoQuestion
 id view_finder
 id wordsProgress
+id yesBtn
 integer bottom_sheet_control_text_min_ems
 layout activity_dashboard
 layout activity_edit_profile
@@ -289,6 +296,7 @@ layout activity_splash_screen
 layout activity_user_profile
 layout activity_words
 layout activity_words_quiz
+layout dialog_logout_confirmation
 layout fragment_camera
 layout header
 layout item_dashboard
@@ -308,6 +316,7 @@ string alt_bottom_sheet_thread_button_plus
 string alt_bottom_sheet_threshold_button_minus
 string alt_bottom_sheet_threshold_button_plus
 string app_name
+string are_you_sure_you_want_to_logout
 string assistive_communication
 string daisy_splashscreen_logo
 string dashboard_activity_label
@@ -330,6 +339,7 @@ string menu_camera
 string menu_gallery
 string navigation_drawer_close
 string navigation_drawer_open
+string no
 string profile_btn
 string project_id
 string settings_btn
@@ -337,6 +347,7 @@ string sign_title_alphabet
 string sign_title_numbers
 string sign_title_words
 string tv_gallery_placeholder
+string yes
 style AppThemeProgressStyle
 style Base.Theme.DAISY
 style BottomNavTitleText

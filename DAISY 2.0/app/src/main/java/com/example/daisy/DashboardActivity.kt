@@ -2,7 +2,9 @@ package com.example.daisy
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.navigation.fragment.NavHostFragment
@@ -45,7 +47,7 @@ class DashboardActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_logout -> {
-                    // Handle logout
+                    showLogoutConfirmationDialog()
                     true
                 }
                 else -> false
@@ -79,6 +81,38 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
+
+    private fun showLogoutConfirmationDialog() {
+        val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_logout_confirmation, null)
+
+        val dialog = android.app.AlertDialog.Builder(this)
+            .setView(dialogView)
+            .setCancelable(false)
+            .create()
+
+        val yesButton = dialogView.findViewById<Button>(R.id.yesBtn)
+        val noButton = dialogView.findViewById<Button>(R.id.noBtn)
+
+        yesButton.setOnClickListener {
+            dialog.dismiss()
+            logoutUser()
+        }
+
+        noButton.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        dialog.show()
+    }
+
+    private fun logoutUser() {
+        firebaseAuth.signOut()
+
+        val intent = Intent(this, SignUpActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
+        finish()
     }
 
 }

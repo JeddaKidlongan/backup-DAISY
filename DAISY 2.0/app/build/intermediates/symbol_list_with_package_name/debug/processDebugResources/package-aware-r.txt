@@ -2680,6 +2680,7 @@ color quantum_yellowA400
 color quantum_yellowA700
 color ripple_material_dark
 color ripple_material_light
+color save_color
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -3645,6 +3646,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable backspace_ic
 drawable baseline_add_home
+drawable bg_items
 drawable bg_view
 drawable blue_background
 drawable bottom_shape
@@ -3931,6 +3933,7 @@ font bevan
 font black_ops_one
 font bowlby_one_sc
 font lemon
+font poppins_black
 font roboto_medium_numbers
 font titan_one
 font wendy_one
@@ -4145,6 +4148,7 @@ id closest
 id collapseActionView
 id compatible
 id compress
+id confirm
 id confirmPassEt
 id confirmPasswordLayout
 id confirm_button
@@ -4356,6 +4360,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id locale
@@ -4441,6 +4446,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id noBtn
 id noScroll
 id noState
 id none
@@ -4716,6 +4722,7 @@ id wrap_content
 id wrap_content_constrained
 id x_left
 id x_right
+id yesBtn
 id zoom
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
@@ -4872,6 +4879,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_logout_confirmation
 layout exo_legacy_player_control_view
 layout exo_list_divider
 layout exo_player_control_ffwd_button
@@ -5017,6 +5025,7 @@ string androidx_credentials_TYPE_PUBLIC_KEY_CREDENTIAL
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string are_you_sure_you_want_to_logout
 string assistive_communication
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
@@ -5241,6 +5250,7 @@ string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string navigation_drawer_close
 string navigation_drawer_open
+string no
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -5268,6 +5278,7 @@ string sign_title_numbers
 string sign_title_words
 string status_bar_notification_info_overflow
 string tv_gallery_placeholder
+string yes
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

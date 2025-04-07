@@ -25,6 +25,8 @@
     <color name="green_500">#075F0A</color>
     <color name="darkBlue">#081F56</color>
     <color name="colorPrimaryDark">#485C31</color>
+    <color name="save_color">#3CC742</color>
+
 
     <!-- For button of Front and Side View -->
     <color name="btn_color">#1D5281</color>
