@@ -5,11 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -23,33 +23,38 @@ public final class ActivityUserProfileBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageButton btnBack;
+
+  @NonNull
   public final Button editButton;
 
   @NonNull
-  public final Button logoutButton;
+  public final TextView email;
 
   @NonNull
-  public final TextView profileBio;
+  public final RelativeLayout imgUser;
+
+  @NonNull
+  public final TextView phoneNum;
 
   @NonNull
   public final TextView profileName;
 
   @NonNull
-  public final ImageView profilePicture;
+  public final RelativeLayout rellay1;
 
-  @NonNull
-  public final Toolbar toolbar;
-
-  private ActivityUserProfileBinding(@NonNull ConstraintLayout rootView, @NonNull Button editButton,
-      @NonNull Button logoutButton, @NonNull TextView profileBio, @NonNull TextView profileName,
-      @NonNull ImageView profilePicture, @NonNull Toolbar toolbar) {
+  private ActivityUserProfileBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ImageButton btnBack, @NonNull Button editButton, @NonNull TextView email,
+      @NonNull RelativeLayout imgUser, @NonNull TextView phoneNum, @NonNull TextView profileName,
+      @NonNull RelativeLayout rellay1) {
     this.rootView = rootView;
+    this.btnBack = btnBack;
     this.editButton = editButton;
-    this.logoutButton = logoutButton;
-    this.profileBio = profileBio;
+    this.email = email;
+    this.imgUser = imgUser;
+    this.phoneNum = phoneNum;
     this.profileName = profileName;
-    this.profilePicture = profilePicture;
-    this.toolbar = toolbar;
+    this.rellay1 = rellay1;
   }
 
   @Override
@@ -79,21 +84,33 @@ public final class ActivityUserProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnBack;
+      ImageButton btnBack = ViewBindings.findChildViewById(rootView, id);
+      if (btnBack == null) {
+        break missingId;
+      }
+
       id = R.id.edit_button;
       Button editButton = ViewBindings.findChildViewById(rootView, id);
       if (editButton == null) {
         break missingId;
       }
 
-      id = R.id.logout_button;
-      Button logoutButton = ViewBindings.findChildViewById(rootView, id);
-      if (logoutButton == null) {
+      id = R.id.email;
+      TextView email = ViewBindings.findChildViewById(rootView, id);
+      if (email == null) {
         break missingId;
       }
 
-      id = R.id.profile_bio;
-      TextView profileBio = ViewBindings.findChildViewById(rootView, id);
-      if (profileBio == null) {
+      id = R.id.imgUser;
+      RelativeLayout imgUser = ViewBindings.findChildViewById(rootView, id);
+      if (imgUser == null) {
+        break missingId;
+      }
+
+      id = R.id.phone_num;
+      TextView phoneNum = ViewBindings.findChildViewById(rootView, id);
+      if (phoneNum == null) {
         break missingId;
       }
 
@@ -103,20 +120,14 @@ public final class ActivityUserProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.profile_picture;
-      ImageView profilePicture = ViewBindings.findChildViewById(rootView, id);
-      if (profilePicture == null) {
+      id = R.id.rellay1;
+      RelativeLayout rellay1 = ViewBindings.findChildViewById(rootView, id);
+      if (rellay1 == null) {
         break missingId;
       }
 
-      id = R.id.toolbar;
-      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
-      if (toolbar == null) {
-        break missingId;
-      }
-
-      return new ActivityUserProfileBinding((ConstraintLayout) rootView, editButton, logoutButton,
-          profileBio, profileName, profilePicture, toolbar);
+      return new ActivityUserProfileBinding((ConstraintLayout) rootView, btnBack, editButton, email,
+          imgUser, phoneNum, profileName, rellay1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

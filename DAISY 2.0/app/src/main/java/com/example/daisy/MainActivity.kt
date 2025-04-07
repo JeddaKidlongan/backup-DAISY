@@ -1,10 +1,12 @@
 package com.example.daisy
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.example.daisy.databinding.ActivityMainBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var activityMainBinding: ActivityMainBinding
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
         val navController = navHostFragment.navController
+
     }
 
     override fun onBackPressed() {

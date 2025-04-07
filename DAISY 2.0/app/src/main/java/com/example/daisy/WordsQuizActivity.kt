@@ -1,9 +1,9 @@
 package com.example.daisy
 
+
 import android.animation.ValueAnimator
 import android.annotation.SuppressLint
 import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -24,7 +24,6 @@ import nl.dionsegijn.konfetti.core.emitter.Emitter
 import java.io.File
 import java.util.Locale
 import java.util.concurrent.TimeUnit
-
 
 data class WordsQuizQuestion(
     val type: String, // Always "word" for this activity
@@ -214,7 +213,7 @@ class WordsQuizActivity : AppCompatActivity() {
         currentProgress = currentProgress.copy(
             correctAnswers = currentProgress.correctAnswers + if (isCorrect) 1 else 0,
             currentStreak = newCurrentStreak,
-            bestStreak = kotlin.comparisons.maxOf(currentProgress.bestStreak, newCurrentStreak)
+            bestStreak = maxOf(currentProgress.bestStreak, newCurrentStreak)
         )
 
         saveProgress()
@@ -232,7 +231,7 @@ class WordsQuizActivity : AppCompatActivity() {
 
     private fun showFeedback(isCorrect: Boolean) {
         val color = if (isCorrect) Color.GREEN else Color.RED
-        binding.videoQuestion.foreground = ColorDrawable(color).apply {
+        binding.videoQuestion.foreground = android.graphics.drawable.ColorDrawable(color).apply {
             alpha = 80
         }
         Handler(Looper.getMainLooper()).postDelayed({
@@ -286,24 +285,20 @@ class WordsQuizActivity : AppCompatActivity() {
         binding.konfettiView.start(party)
     }
 
+    @SuppressLint("UseKtx")
     private fun saveProgress() {
         with(sharedPref.edit()) {
-            putInt(
-                "bestScore",
-                kotlin.comparisons.maxOf(
-                    currentProgress.correctAnswers,
-                    sharedPref.getInt("bestScore", 0)
-                )
-            )
-            putInt(
-                "bestStreak",
-                kotlin.comparisons.maxOf(
-                    currentProgress.bestStreak,
-                    sharedPref.getInt("bestStreak", 0)
-                )
-            )
+            putInt("bestScore", maxOf(currentProgress.correctAnswers, sharedPref.getInt("bestScore", 0)))
+            putInt("bestStreak", maxOf(currentProgress.bestStreak, sharedPref.getInt("bestStreak", 0)))
             apply()
         }
+
+        // Calculate and save the percentage score globally.
+        val scorePercentage = (currentProgress.correctAnswers.toFloat() / currentProgress.totalQuestions * 100).toInt()
+        getSharedPreferences("MyScores", MODE_PRIVATE)
+            .edit()
+            .putInt("words_score",  currentProgress.correctAnswers)
+            .apply()
     }
 
     private fun loadProgress() {

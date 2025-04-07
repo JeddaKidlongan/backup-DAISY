@@ -6,7 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -21,19 +24,41 @@ public final class ActivityEditProfileBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final EditText editBio;
+  public final ImageButton btnBack;
+
+  @NonNull
+  public final EditText editEmail;
 
   @NonNull
   public final EditText editName;
 
   @NonNull
+  public final EditText editPhoneNum;
+
+  @NonNull
+  public final ImageView imageView;
+
+  @NonNull
+  public final RelativeLayout imgUser2;
+
+  @NonNull
+  public final RelativeLayout rellay2;
+
+  @NonNull
   public final Button saveButton;
 
-  private ActivityEditProfileBinding(@NonNull LinearLayout rootView, @NonNull EditText editBio,
-      @NonNull EditText editName, @NonNull Button saveButton) {
+  private ActivityEditProfileBinding(@NonNull LinearLayout rootView, @NonNull ImageButton btnBack,
+      @NonNull EditText editEmail, @NonNull EditText editName, @NonNull EditText editPhoneNum,
+      @NonNull ImageView imageView, @NonNull RelativeLayout imgUser2,
+      @NonNull RelativeLayout rellay2, @NonNull Button saveButton) {
     this.rootView = rootView;
-    this.editBio = editBio;
+    this.btnBack = btnBack;
+    this.editEmail = editEmail;
     this.editName = editName;
+    this.editPhoneNum = editPhoneNum;
+    this.imageView = imageView;
+    this.imgUser2 = imgUser2;
+    this.rellay2 = rellay2;
     this.saveButton = saveButton;
   }
 
@@ -64,9 +89,15 @@ public final class ActivityEditProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.edit_bio;
-      EditText editBio = ViewBindings.findChildViewById(rootView, id);
-      if (editBio == null) {
+      id = R.id.btnBack;
+      ImageButton btnBack = ViewBindings.findChildViewById(rootView, id);
+      if (btnBack == null) {
+        break missingId;
+      }
+
+      id = R.id.edit_email;
+      EditText editEmail = ViewBindings.findChildViewById(rootView, id);
+      if (editEmail == null) {
         break missingId;
       }
 
@@ -76,13 +107,38 @@ public final class ActivityEditProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.edit_phone_num;
+      EditText editPhoneNum = ViewBindings.findChildViewById(rootView, id);
+      if (editPhoneNum == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
+        break missingId;
+      }
+
+      id = R.id.imgUser2;
+      RelativeLayout imgUser2 = ViewBindings.findChildViewById(rootView, id);
+      if (imgUser2 == null) {
+        break missingId;
+      }
+
+      id = R.id.rellay2;
+      RelativeLayout rellay2 = ViewBindings.findChildViewById(rootView, id);
+      if (rellay2 == null) {
+        break missingId;
+      }
+
       id = R.id.save_button;
       Button saveButton = ViewBindings.findChildViewById(rootView, id);
       if (saveButton == null) {
         break missingId;
       }
 
-      return new ActivityEditProfileBinding((LinearLayout) rootView, editBio, editName, saveButton);
+      return new ActivityEditProfileBinding((LinearLayout) rootView, btnBack, editEmail, editName,
+          editPhoneNum, imageView, imgUser2, rellay2, saveButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -163,7 +163,7 @@
         android:id="@+id/BotNav"
         android:layout_width="409dp"
         android:layout_height="61dp"
-        android:foregroundTint="#572727"
+        android:foregroundTint="#BD4040"
         app:itemIconTint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

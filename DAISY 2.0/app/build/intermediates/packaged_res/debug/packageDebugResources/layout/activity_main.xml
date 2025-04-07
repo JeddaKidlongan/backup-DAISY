@@ -4,31 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/transparent">
+    android:background="@android:color/transparent"
+    tools:context=".MainActivity">
 
-    <!-- Toolbar with Logo -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <!-- AppBarLayout to host the Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
         android:background="@color/toolbar_background">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/daisy_logo" />
-    </androidx.appcompat.widget.Toolbar>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
 
-    <!-- NavHostFragment to manage navigation -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/daisy_logo" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Fragment Container View for Navigation -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_below="@id/toolbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginBottom="56dp"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_graph"
-        tools:context=".MainActivity" />
+        app:navGraph="@navigation/nav_graph" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

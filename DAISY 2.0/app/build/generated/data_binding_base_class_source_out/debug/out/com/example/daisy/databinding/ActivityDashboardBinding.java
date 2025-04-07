@@ -9,19 +9,21 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.daisy.R;
-import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityDashboardBinding implements ViewBinding {
   @NonNull
-  private final DrawerLayout rootView;
+  private final ConstraintLayout rootView;
+
+  @NonNull
+  public final BottomNavigationView bottomNavigation;
 
   @NonNull
   public final CardView cameraFragment;
@@ -30,10 +32,10 @@ public final class ActivityDashboardBinding implements ViewBinding {
   public final ConstraintLayout constraintLayout;
 
   @NonNull
-  public final Toolbar dashboardToolbar;
+  public final ConstraintLayout dashLayout;
 
   @NonNull
-  public final DrawerLayout drawerLayout;
+  public final Toolbar dashboardToolbar;
 
   @NonNull
   public final FragmentContainerView fragmentContainer;
@@ -42,30 +44,27 @@ public final class ActivityDashboardBinding implements ViewBinding {
   public final CardView learnSignlanguageCard;
 
   @NonNull
-  public final NavigationView navView;
-
-  @NonNull
   public final CardView startQuizCard;
 
-  private ActivityDashboardBinding(@NonNull DrawerLayout rootView, @NonNull CardView cameraFragment,
-      @NonNull ConstraintLayout constraintLayout, @NonNull Toolbar dashboardToolbar,
-      @NonNull DrawerLayout drawerLayout, @NonNull FragmentContainerView fragmentContainer,
-      @NonNull CardView learnSignlanguageCard, @NonNull NavigationView navView,
-      @NonNull CardView startQuizCard) {
+  private ActivityDashboardBinding(@NonNull ConstraintLayout rootView,
+      @NonNull BottomNavigationView bottomNavigation, @NonNull CardView cameraFragment,
+      @NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout dashLayout,
+      @NonNull Toolbar dashboardToolbar, @NonNull FragmentContainerView fragmentContainer,
+      @NonNull CardView learnSignlanguageCard, @NonNull CardView startQuizCard) {
     this.rootView = rootView;
+    this.bottomNavigation = bottomNavigation;
     this.cameraFragment = cameraFragment;
     this.constraintLayout = constraintLayout;
+    this.dashLayout = dashLayout;
     this.dashboardToolbar = dashboardToolbar;
-    this.drawerLayout = drawerLayout;
     this.fragmentContainer = fragmentContainer;
     this.learnSignlanguageCard = learnSignlanguageCard;
-    this.navView = navView;
     this.startQuizCard = startQuizCard;
   }
 
   @Override
   @NonNull
-  public DrawerLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -90,6 +89,12 @@ public final class ActivityDashboardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bottom_navigation;
+      BottomNavigationView bottomNavigation = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavigation == null) {
+        break missingId;
+      }
+
       id = R.id.camera_fragment;
       CardView cameraFragment = ViewBindings.findChildViewById(rootView, id);
       if (cameraFragment == null) {
@@ -102,13 +107,13 @@ public final class ActivityDashboardBinding implements ViewBinding {
         break missingId;
       }
 
+      ConstraintLayout dashLayout = (ConstraintLayout) rootView;
+
       id = R.id.dashboard_toolbar;
       Toolbar dashboardToolbar = ViewBindings.findChildViewById(rootView, id);
       if (dashboardToolbar == null) {
         break missingId;
       }
-
-      DrawerLayout drawerLayout = (DrawerLayout) rootView;
 
       id = R.id.fragment_container;
       FragmentContainerView fragmentContainer = ViewBindings.findChildViewById(rootView, id);
@@ -122,21 +127,15 @@ public final class ActivityDashboardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nav_view;
-      NavigationView navView = ViewBindings.findChildViewById(rootView, id);
-      if (navView == null) {
-        break missingId;
-      }
-
       id = R.id.start_Quiz_card;
       CardView startQuizCard = ViewBindings.findChildViewById(rootView, id);
       if (startQuizCard == null) {
         break missingId;
       }
 
-      return new ActivityDashboardBinding((DrawerLayout) rootView, cameraFragment, constraintLayout,
-          dashboardToolbar, drawerLayout, fragmentContainer, learnSignlanguageCard, navView,
-          startQuizCard);
+      return new ActivityDashboardBinding((ConstraintLayout) rootView, bottomNavigation,
+          cameraFragment, constraintLayout, dashLayout, dashboardToolbar, fragmentContainer,
+          learnSignlanguageCard, startQuizCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

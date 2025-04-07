@@ -5,7 +5,6 @@ import android.annotation.SuppressLint
 import android.content.ClipData
 import android.content.ClipDescription
 import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -59,6 +58,8 @@ class QuizActivity : AppCompatActivity() {
 
     // Flag to ensure only one answer is processed per question.
     private var questionAnswered = false
+    // Flag to prevent quiz start until instructions are accepted.
+    private var instructionsAccepted = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -76,12 +77,39 @@ class QuizActivity : AppCompatActivity() {
         setupDropZone()
         setupClickListeners()
         showNextQuestion()
+
+        // Instead of starting the quiz immediately, show instructions first.
+        showQuizInstruction()
     }
 
     override fun onDestroy() {
         super.onDestroy()
         questionTimer?.cancel()
         player?.release()
+    }
+
+    /**
+     * Displays the quiz instructions as a non-cancelable dialog.
+     * The quiz will not begin until the user taps "OK".
+     */
+    private fun showQuizInstruction() {
+        AlertDialog.Builder(this)
+            .setTitle("Quiz Instructions")
+            .setMessage(
+                "Welcome to the Drag & Drop Quiz!\n\n" +
+                        "Instructions:\n" +
+                        "1. Drag the option you think is correct into the drop zone.\n" +
+                        "2. Once dropped, your answer will be evaluated.\n" +
+                        "3. You cannot proceed until you have read these instructions.\n\n" +
+                        "Press OK to start the quiz."
+            )
+            .setCancelable(false)
+            .setPositiveButton("OK") { dialog, _ ->
+                instructionsAccepted = true
+                dialog.dismiss()
+                showNextQuestion()  // Start quiz after instructions are accepted.
+            }
+            .show()
     }
 
     /**
@@ -171,6 +199,9 @@ class QuizActivity : AppCompatActivity() {
 
     @SuppressLint("NewApi")
     private fun showNextQuestion() {
+        // If instructions have not been accepted, do not start a question.
+        if (!instructionsAccepted) return
+
         questionTimer?.cancel()
         questionAnswered = false
         if (questions.isEmpty()) {
@@ -233,7 +264,7 @@ class QuizActivity : AppCompatActivity() {
         currentProgress = currentProgress.copy(
             correctAnswers = currentProgress.correctAnswers + if (isCorrect) 1 else 0,
             currentStreak = newCurrentStreak,
-            bestStreak = kotlin.comparisons.maxOf(currentProgress.bestStreak, newCurrentStreak)
+            bestStreak = maxOf(currentProgress.bestStreak, newCurrentStreak)
         )
 
         saveProgress()
@@ -249,12 +280,7 @@ class QuizActivity : AppCompatActivity() {
      * Sets up draggable behavior for each answer option.
      */
     private fun setupDraggableOptions() {
-        listOf(
-            binding.option1,
-            binding.option2,
-            binding.option3,
-            binding.option4
-        ).forEach { textView ->
+        listOf(binding.option1, binding.option2, binding.option3, binding.option4).forEach { textView ->
             textView.setOnLongClickListener { view ->
                 val clipData = ClipData.newPlainText("option", textView.text.toString())
                 view.startDragAndDrop(
@@ -295,7 +321,7 @@ class QuizActivity : AppCompatActivity() {
     private fun showFeedback(isCorrect: Boolean) {
         val color = if (isCorrect) Color.GREEN else Color.RED
         binding.videoQuestion.foreground =
-            ColorDrawable(color).apply { alpha = 80 }
+            android.graphics.drawable.ColorDrawable(color).apply { alpha = 80 }
         Handler(Looper.getMainLooper()).postDelayed({
             binding.videoQuestion.foreground = null
         }, 300)
@@ -352,20 +378,8 @@ class QuizActivity : AppCompatActivity() {
 
     private fun saveProgress() {
         with(sharedPref.edit()) {
-            putInt(
-                "bestScore",
-                kotlin.comparisons.maxOf(
-                    currentProgress.correctAnswers,
-                    sharedPref.getInt("bestScore", 0)
-                )
-            )
-            putInt(
-                "bestStreak",
-                kotlin.comparisons.maxOf(
-                    currentProgress.bestStreak,
-                    sharedPref.getInt("bestStreak", 0)
-                )
-            )
+            putInt("bestScore", maxOf(currentProgress.correctAnswers, sharedPref.getInt("bestScore", 0)))
+            putInt("bestStreak", maxOf(currentProgress.bestStreak, sharedPref.getInt("bestStreak", 0)))
             apply()
         }
     }

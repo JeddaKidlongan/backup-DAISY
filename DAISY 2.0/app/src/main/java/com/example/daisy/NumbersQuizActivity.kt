@@ -1,9 +1,9 @@
 package com.example.daisy
 
+
 import android.animation.ValueAnimator
 import android.annotation.SuppressLint
 import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -199,7 +199,7 @@ class NumbersQuizActivity : AppCompatActivity() {
         currentProgress = currentProgress.copy(
             correctAnswers = currentProgress.correctAnswers + if (isCorrect) 1 else 0,
             currentStreak = newCurrentStreak,
-            bestStreak = kotlin.comparisons.maxOf(currentProgress.bestStreak, newCurrentStreak)
+            bestStreak = maxOf(currentProgress.bestStreak, newCurrentStreak)
         )
 
         saveProgress()
@@ -218,7 +218,7 @@ class NumbersQuizActivity : AppCompatActivity() {
 
     private fun showFeedback(isCorrect: Boolean) {
         val color = if (isCorrect) Color.GREEN else Color.RED
-        binding.videoQuestion.foreground = ColorDrawable(color).apply {
+        binding.videoQuestion.foreground = android.graphics.drawable.ColorDrawable(color).apply {
             alpha = 80 // Semi-transparent overlay for feedback.
         }
         Handler(Looper.getMainLooper()).postDelayed({
@@ -241,6 +241,8 @@ class NumbersQuizActivity : AppCompatActivity() {
             putBoolean("numbers_passed", passed)
             apply()
         }
+        // ✅ Save the final quiz score to history here, not after each question
+        saveScore("numbers", currentProgress.correctAnswers)
 
         // Build the message based on pass/fail.
         val message = if (passed) {
@@ -274,25 +276,21 @@ class NumbersQuizActivity : AppCompatActivity() {
         binding.konfettiView.start(party)
     }
 
-
+    @SuppressLint("UseKtx")
     private fun saveProgress() {
         with(sharedPref.edit()) {
-            putInt(
-                "bestScore",
-                kotlin.comparisons.maxOf(
-                    currentProgress.correctAnswers,
-                    sharedPref.getInt("bestScore", 0)
-                )
-            )
-            putInt(
-                "bestStreak",
-                kotlin.comparisons.maxOf(
-                    currentProgress.bestStreak,
-                    sharedPref.getInt("bestStreak", 0)
-                )
-            )
+            putInt("bestScore", maxOf(currentProgress.correctAnswers, sharedPref.getInt("bestScore", 0)))
+            putInt("bestStreak", maxOf(currentProgress.bestStreak, sharedPref.getInt("bestStreak", 0)))
             apply()
         }
+
+        // Calculate the percentage score and save to global "MyScores" preference.
+        val scorePercentage = (currentProgress.correctAnswers.toFloat() / currentProgress.totalQuestions * 100).toInt()
+        getSharedPreferences("MyScores", MODE_PRIVATE)
+            .edit()
+            .putInt("numbers_score",  currentProgress.correctAnswers)
+            .apply()
+
     }
 
     private fun loadProgress() {
@@ -343,5 +341,17 @@ class NumbersQuizActivity : AppCompatActivity() {
             repeatCount = 2
         }
         binding.txtStreakMain.startAnimation(anim)
+    }
+    // ✅ Add this function at the bottom
+    private fun saveScore(category: String, score: Int) {
+        val prefs = getSharedPreferences("MyScores", MODE_PRIVATE)
+        val editor = prefs.edit()
+
+        val key = "${category}_history"
+        val existing = prefs.getString(key, "") ?: ""
+        val updated = if (existing.isEmpty()) "$score" else "$existing,$score"
+
+        editor.putString(key, updated)
+        editor.apply()
     }
 }

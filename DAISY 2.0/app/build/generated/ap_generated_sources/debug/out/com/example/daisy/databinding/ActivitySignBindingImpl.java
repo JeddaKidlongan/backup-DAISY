@@ -18,8 +18,10 @@ public class ActivitySignBindingImpl extends ActivitySignBinding  {
         sViewsWithIds.put(R.id.txtSignTitle, 2);
         sViewsWithIds.put(R.id.txtSign, 3);
         sViewsWithIds.put(R.id.videoPlayer, 4);
-        sViewsWithIds.put(R.id.btnFrontView, 5);
-        sViewsWithIds.put(R.id.btnSideView, 6);
+        sViewsWithIds.put(R.id.leftSwipeIndicator, 5);
+        sViewsWithIds.put(R.id.rightSwipeIndicator, 6);
+        sViewsWithIds.put(R.id.btnFrontView, 7);
+        sViewsWithIds.put(R.id.btnSideView, 8);
     }
     // views
     // variables
@@ -28,13 +30,15 @@ public class ActivitySignBindingImpl extends ActivitySignBinding  {
     // Inverse Binding Event Handlers
 
     public ActivitySignBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
     }
     private ActivitySignBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.ImageButton) bindings[1]
-            , (android.widget.Button) bindings[5]
-            , (android.widget.Button) bindings[6]
+            , (android.widget.Button) bindings[7]
+            , (android.widget.Button) bindings[8]
+            , (android.widget.TextView) bindings[5]
+            , (android.widget.TextView) bindings[6]
             , (android.widget.FrameLayout) bindings[0]
             , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[2]

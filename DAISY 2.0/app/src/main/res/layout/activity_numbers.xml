@@ -264,7 +264,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:fontFamily="@font/lemon"
-                    android:text="Take Numbers Quiz"
+                    android:text="TAKE NUMBERS QUIZ"
                     android:textAlignment="center"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />

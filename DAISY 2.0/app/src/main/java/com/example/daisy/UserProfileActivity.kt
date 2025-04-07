@@ -4,53 +4,49 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.auth.FirebaseAuth
+import androidx.appcompat.widget.Toolbar
 
 class UserProfileActivity : AppCompatActivity() {
-
-    private lateinit var firebaseAuth: FirebaseAuth  // Declare firebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_profile)
 
-        // Initialize FirebaseAuth
-        firebaseAuth = FirebaseAuth.getInstance()
 
+        val btnBack = findViewById<ImageButton>(R.id.btnBack)
+
+        btnBack.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+        supportActionBar?.title = "User Profile"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        // Reference to the views
         val profileName: TextView = findViewById(R.id.profile_name)
-        val profileBio: TextView = findViewById(R.id.profile_bio)
+        val email: TextView = findViewById(R.id.email)
+        val phoneNumber: TextView = findViewById(R.id.phone_num)
         val editButton: Button = findViewById(R.id.edit_button)
-        val logoutButton: Button = findViewById(R.id.logout_button)
 
-
-
-        // Load updated user data from SharedPreferences
+        // Load user data from SharedPreferences
         val sharedPreferences = getSharedPreferences("UserProfile", Context.MODE_PRIVATE)
-        val savedName = sharedPreferences.getString("name", "John Doe")
-        val savedBio = sharedPreferences.getString("bio", "System Admin")
+        val savedName = sharedPreferences.getString("name", "Full Name")
+        val savedEmail = sharedPreferences.getString("email", "Email Address")
+        val savedPhone = sharedPreferences.getString("phone", "Phone Number")
 
-        // Display updated name and bio
+        // Set the user data in the TextViews
         profileName.text = savedName
-        profileBio.text = savedBio
+        email.text = savedEmail
+        phoneNumber.text = savedPhone
 
-        // Edit button click listener
+        // Edit Button click listener
         editButton.setOnClickListener {
-            // Navigate to Edit Profile page
+            // Navigate to EditProfileActivity
             val intent = Intent(this, EditProfileActivity::class.java)
             startActivity(intent)
         }
-
-        // Log Out button click listener
-        logoutButton.setOnClickListener {
-            // Log out from Firebase Authentication
-            firebaseAuth.signOut()
-
-            // Redirect user to Login page
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            finish() // Close the current UserProfileActivity
-        }
     }
+
 }

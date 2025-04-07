@@ -82,12 +82,42 @@
                     tools:ignore="TextContrastCheck,UnusedAttribute"
                     tools:text="A" />
 
-
-                <androidx.media3.ui.PlayerView
-                    android:id="@+id/videoPlayer"
+                <FrameLayout
                     android:layout_width="370dp"
-                    android:layout_height="400dp"
-                    android:background="@android:color/black" />
+                    android:layout_height="400dp">
+
+                    <androidx.media3.ui.PlayerView
+                        android:id="@+id/videoPlayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black" />
+
+                    <!-- Left Swipe Indicator -->
+                    <TextView
+                        android:id="@+id/leftSwipeIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/swipe_left"
+                        android:padding="8dp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <!-- Right Swipe Indicator -->
+                    <TextView
+                        android:id="@+id/rightSwipeIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/swipe_right"
+                        android:padding="8dp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
             </LinearLayout>
 
             <!-- Bottom Buttons for Front/Side View -->
@@ -115,7 +145,7 @@
                     android:textSize="18sp"
                     android:text="Front View"
                     android:textAlignment="center"
-                    android:textColor="#F6E8E8"
+                    android:textColor="@android:color/white"
                     tools:ignore="HardcodedText,RtlHardcoded" />
 
                 <Button
@@ -133,7 +163,7 @@
                     android:textSize="18sp"
                     android:text="Side View"
                     android:textAlignment="center"
-                    android:textColor="#F8EFEF"
+                    android:textColor="@android:color/white"
                     tools:ignore="HardcodedText,RtlHardcoded" />
             </LinearLayout>
         </LinearLayout>

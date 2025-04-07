@@ -273,6 +273,7 @@ class LettersQuizActivity : AppCompatActivity() {
         binding.konfettiView.start(party)
     }
 
+    @SuppressLint("UseKtx")
     private fun saveProgress() {
         with(sharedPref.edit()) {
             putInt(
@@ -291,6 +292,13 @@ class LettersQuizActivity : AppCompatActivity() {
             )
             apply()
         }
+
+        // Calculate and save the percentage score globally.
+        val scorePercentage = (currentProgress.correctAnswers.toFloat() / currentProgress.totalQuestions * 100).toInt()
+        getSharedPreferences("MyScores", MODE_PRIVATE)
+            .edit()
+            .putInt("letters_score",  currentProgress.correctAnswers)
+            .apply()
     }
 
     private fun loadProgress() {

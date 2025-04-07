@@ -20,6 +20,7 @@ import com.example.daisy.databinding.ActivitySignBinding
 import java.io.File
 import kotlin.math.abs
 
+
 class SignActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignBinding
     private var frontViewVideoUrl: String = ""
@@ -34,6 +35,7 @@ class SignActivity : AppCompatActivity() {
     private var currentVideoCode: String = ""
     private lateinit var gestureDetector: GestureDetector
     private var player: ExoPlayer? = null
+    private var showRightIndicator = true
 
     @OptIn(UnstableApi::class)
     @SuppressLint("ClickableViewAccessibility")
@@ -91,8 +93,10 @@ class SignActivity : AppCompatActivity() {
                 "numbers" -> currentList[currentIndex].substring(1)
                 else -> currentList[currentIndex]
             }
-            binding.txtSign.text = display
-            currentVideoCode = currentList[currentIndex]
+            // Determine the index based on the passed videoCode
+            currentIndex = currentList.indexOf(videoCode).takeIf { it != -1 } ?: 0
+            // Call updateDisplay() to apply the mapping logic for numbers
+            updateDisplay()
         }
 
         // Update video URLs and initialize ExoPlayer
@@ -176,29 +180,86 @@ class SignActivity : AppCompatActivity() {
         }
     }
 
+    // Update the swipe indicators based on the current item, then fade out after 2 seconds.
+    private fun updateSwipeIndicators() {
+        // Retain your original logic:
+        if (currentCategory == "words") {
+            binding.leftSwipeIndicator.visibility =
+                if (currentIndex == 0) View.GONE else View.VISIBLE
+            binding.rightSwipeIndicator.visibility =
+                if (currentIndex == currentWordList.size - 1) View.GONE else View.VISIBLE
+        } else {
+            binding.leftSwipeIndicator.visibility =
+                if (currentIndex == 0) View.GONE else View.VISIBLE
+            binding.rightSwipeIndicator.visibility =
+                if (currentIndex == currentList.size - 1) View.GONE else View.VISIBLE
+        }
+
+        // For any visible indicator, schedule a fade-out after 2 seconds.
+        if (binding.leftSwipeIndicator.visibility == View.VISIBLE) {
+            // Reset alpha (in case it was faded previously)
+            binding.leftSwipeIndicator.alpha = 1f
+            binding.leftSwipeIndicator.postDelayed({
+                binding.leftSwipeIndicator.animate()
+                    .alpha(0f)
+                    .setDuration(500)
+                    .withEndAction { binding.leftSwipeIndicator.visibility = View.INVISIBLE }
+            }, 2000)
+        }
+        if (binding.rightSwipeIndicator.visibility == View.VISIBLE) {
+            binding.rightSwipeIndicator.alpha = 1f
+            binding.rightSwipeIndicator.postDelayed({
+                binding.rightSwipeIndicator.animate()
+                    .alpha(0f)
+                    .setDuration(500)
+                    .withEndAction { binding.rightSwipeIndicator.visibility = View.INVISIBLE }
+            }, 2000)
+        }
+    }
+
     private fun updateDisplay() {
         if (currentCategory == "words") {
             val wordPair = currentWordList[currentIndex]
             binding.txtSign.text = wordPair.first
             currentVideoCode = wordPair.second
-            // Update video URLs and play the front view video
             updateVideoUrls(currentVideoCode)
             playVideo(frontViewVideoUrl, "front")
             trackProgress(wordPair.first)
         } else {
             val newVideoCode = currentList[currentIndex]
-            val displayText = when (currentCategory) {
-                "letters" -> newVideoCode.substring(1).uppercase()
-                "numbers" -> newVideoCode.substring(1)
-                else -> newVideoCode
+            // Extract the raw value from your code (e.g., "n0" becomes "0", "lA" becomes "A")
+            val rawValue = newVideoCode.substring(1)
+            // For letters, we just use the raw value; for numbers, we add the corresponding written sign.
+            val finalText = if (currentCategory == "numbers") {
+                // Map digit to written word
+                val numberWords = mapOf(
+                    "0" to "Zero",
+                    "1" to "One",
+                    "2" to "Two",
+                    "3" to "Three",
+                    "4" to "Four",
+                    "5" to "Five",
+                    "6" to "Six",
+                    "7" to "Seven",
+                    "8" to "Eight",
+                    "9" to "Nine"
+                )
+                val written = numberWords[rawValue] ?: rawValue
+                "$written\n$rawValue"
+            } else {
+                // For letters, simply use uppercase raw value
+                rawValue.uppercase()
             }
-            binding.txtSign.text = displayText
+            binding.txtSign.text = finalText
             currentVideoCode = newVideoCode
             updateVideoUrls(newVideoCode)
             playVideo(frontViewVideoUrl, "front")
-            trackProgress(displayText)
+            trackProgress(rawValue)
         }
+        updateSwipeIndicators()
     }
+
+
 
     private fun trackProgress(displayText: String) {
         val key = "${currentCategory}_completed"
@@ -256,6 +317,7 @@ class SignActivity : AppCompatActivity() {
         player?.prepare()
         player?.playWhenReady = true
         player?.setPlaybackSpeed(1.2f)
+        player?.volume = 0f
     }
 
     /**

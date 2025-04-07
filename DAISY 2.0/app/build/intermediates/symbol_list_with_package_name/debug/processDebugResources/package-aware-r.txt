@@ -3899,6 +3899,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable order_history
 drawable places_autocomplete_toolbar_shadow
 drawable places_powered_by_google_dark
 drawable places_powered_by_google_light
@@ -3913,7 +3914,8 @@ drawable sample_quiz
 drawable signs
 drawable ss_background
 drawable ss_logo
-drawable ss_logo2
+drawable swipe_left
+drawable swipe_right
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3926,6 +3928,7 @@ font bakbak_one
 font baloo
 font baloo_chettan
 font bevan
+font black_ops_one
 font bowlby_one_sc
 font lemon
 font roboto_medium_numbers
@@ -4041,6 +4044,7 @@ id bestChoice
 id blocking
 id bottom
 id bottomToTop
+id bottom_navigation
 id bounce
 id bounceBoth
 id bounceEnd
@@ -4119,6 +4123,7 @@ id camera_fragment
 id cancel_action
 id cancel_button
 id cardQuiz
+id cardScoreHistory
 id carryVelocity
 id center
 id centerCrop
@@ -4159,6 +4164,7 @@ id custom
 id customPanel
 id cut
 id dark
+id dash_layout
 id dashboard_toolbar
 id dataBinding
 id date_picker_actions
@@ -4190,7 +4196,6 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
-id drawer_layout
 id dropZone
 id dropdown_menu
 id easeIn
@@ -4198,12 +4203,14 @@ id easeInOut
 id easeOut
 id east
 id edge
-id edit_bio
 id edit_button
+id edit_email
 id edit_name
+id edit_phone_num
 id edit_query
 id edit_text_id
 id elastic
+id email
 id emailEt
 id emailLayout
 id embed
@@ -4305,6 +4312,7 @@ id header_title
 id header_user
 id hide_ime_id
 id hideable
+id history
 id home
 id homeAsUp
 id honorRequest
@@ -4318,7 +4326,10 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id imgQuizIcon
+id imgUser
+id imgUser2
 id immediateStop
 id included
 id indeterminate
@@ -4337,6 +4348,7 @@ id labeled
 id layout
 id learn_signlanguage_card
 id left
+id leftSwipeIndicator
 id leftToRight
 id legacy
 id lettersProgress
@@ -4349,7 +4361,6 @@ id list_item
 id locale
 id loginExtra
 id logout
-id logout_button
 id ltr
 id m3_side_sheet
 id main
@@ -4415,13 +4426,11 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
-id nav_edit_profile
 id nav_graph
-id nav_home
+id nav_history
 id nav_host_fragment_container
 id nav_logout
 id nav_profile
-id nav_view
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -4484,6 +4493,7 @@ id peekHeight
 id percent
 id performance
 id permissions_fragment
+id phone_num
 id pin
 id places_autocomplete_back_button
 id places_autocomplete_clear_button
@@ -4507,9 +4517,7 @@ id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
-id profile_bio
 id profile_name
-id profile_picture
 id progressBar
 id progressIndicator
 id progress_circular
@@ -4519,9 +4527,12 @@ id ratio
 id rectangles
 id recyclerview_results
 id recyclerview_top
+id rellay1
+id rellay2
 id report_drawn
 id reverseSawtooth
 id right
+id rightSwipeIndicator
 id rightToLeft
 id right_icon
 id right_side
@@ -4641,6 +4652,7 @@ id title_template
 id toggle
 id toolbar
 id top
+id topBar
 id topPanel
 id topToBottom
 id touch_outside
@@ -4661,6 +4673,9 @@ id tvLabel
 id tvLettersPercent
 id tvNumbersPercent
 id tvScore
+id tvScoreLetters
+id tvScoreNumbers
+id tvScoreWords
 id tvWordsPercent
 id txtProgressPercent
 id txtQuizLabel
@@ -4823,6 +4838,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_dashboard
 layout activity_edit_profile
+layout activity_history
 layout activity_letters
 layout activity_letters_quiz
 layout activity_login
@@ -4950,7 +4966,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-menu nav_menu
+menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap logo

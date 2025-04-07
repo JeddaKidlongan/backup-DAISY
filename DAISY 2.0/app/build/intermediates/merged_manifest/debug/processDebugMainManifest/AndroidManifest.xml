@@ -59,6 +59,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.GestureRecognizer" >
         <activity
+            android:name="com.example.daisy.HistoryActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.daisy.WordsActivity"
             android:exported="true" >
             <intent-filter>
@@ -108,8 +111,7 @@
             android:exported="false" />
         <activity
             android:name="com.example.daisy.LoginActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity android:name="com.example.daisy.UserProfileActivity" />
         <activity android:name="com.example.daisy.EditProfileActivity" />
         <activity
@@ -180,6 +182,18 @@
             android:exported="false" >
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"

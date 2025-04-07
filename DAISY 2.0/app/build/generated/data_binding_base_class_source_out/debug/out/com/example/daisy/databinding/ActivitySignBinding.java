@@ -28,6 +28,12 @@ public abstract class ActivitySignBinding extends ViewDataBinding {
   public final Button btnSideView;
 
   @NonNull
+  public final TextView leftSwipeIndicator;
+
+  @NonNull
+  public final TextView rightSwipeIndicator;
+
+  @NonNull
   public final FrameLayout root;
 
   @NonNull
@@ -40,12 +46,15 @@ public abstract class ActivitySignBinding extends ViewDataBinding {
   public final PlayerView videoPlayer;
 
   protected ActivitySignBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageButton btnBack, Button btnFrontView, Button btnSideView, FrameLayout root,
-      TextView txtSign, TextView txtSignTitle, PlayerView videoPlayer) {
+      ImageButton btnBack, Button btnFrontView, Button btnSideView, TextView leftSwipeIndicator,
+      TextView rightSwipeIndicator, FrameLayout root, TextView txtSign, TextView txtSignTitle,
+      PlayerView videoPlayer) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnBack = btnBack;
     this.btnFrontView = btnFrontView;
     this.btnSideView = btnSideView;
+    this.leftSwipeIndicator = leftSwipeIndicator;
+    this.rightSwipeIndicator = rightSwipeIndicator;
     this.root = root;
     this.txtSign = txtSign;
     this.txtSignTitle = txtSignTitle;

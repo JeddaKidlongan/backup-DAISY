@@ -2,23 +2,17 @@ package com.example.daisy
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.MenuItem
-import android.widget.Toast
-import androidx.appcompat.app.ActionBarDrawerToggle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.fragment.NavHostFragment
-import com.google.android.material.navigation.NavigationView
-import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 
-class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class DashboardActivity : AppCompatActivity() {
 
-    private lateinit var drawerLayout: DrawerLayout
-    private lateinit var navView: NavigationView
     private lateinit var firebaseAuth: FirebaseAuth
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,33 +21,38 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         // Initialize Firebase Authentication
         firebaseAuth = FirebaseAuth.getInstance()
 
-        // Initialize DrawerLayout and NavigationView
-        drawerLayout = findViewById(R.id.drawer_layout)
-        navView = findViewById(R.id.nav_view)
-
-        // Setup Toolbar and Drawer Toggle
-        val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.dashboard_toolbar)
-        setSupportActionBar(toolbar)
-
-        val toggle = ActionBarDrawerToggle(
-            this, drawerLayout, toolbar,
-            R.string.navigation_drawer_open, R.string.navigation_drawer_close
-        )
-        drawerLayout.addDrawerListener(toggle)
-        // Inside onCreate
-        navView = findViewById(R.id.nav_view)
-        navView.setNavigationItemSelectedListener { item ->
-            onNavigationItemSelected(item)
-        }
-        if (savedInstanceState == null) {
-            // Don’t launch DashboardActivity from itself!
-            navView.setCheckedItem(R.id.nav_home)
-        }
-
-
+        val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         // Ensure NavHostFragment is correctly referenced
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
         val navController = navHostFragment.navController
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.camera_fragment -> bottomNavigation.visibility = View.GONE // Hide for Sign Challenge
+                else -> bottomNavigation.visibility = View.VISIBLE // Show for everything else
+            }
+        }
+
+
+        bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_profile -> {
+                    startActivity(Intent(this, UserProfileActivity::class.java))
+                    true
+                }
+                R.id.nav_history -> {
+                    startActivity(Intent(this, HistoryActivity::class.java))
+                    true
+                }
+                R.id.nav_logout -> {
+                    // Handle logout
+                    true
+                }
+                else -> false
+            }
+        }
+
+
 
         // Initialize CardViews and Button
         val realTimeCard: CardView = findViewById(R.id.camera_fragment)
@@ -82,34 +81,4 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
     }
 
-
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.nav_home -> {
-                startActivity(Intent(this, DashboardActivity::class.java))
-            }
-            R.id.nav_profile -> {
-                startActivity(Intent(this, UserProfileActivity::class.java))
-            }
-            R.id.nav_edit_profile -> {
-                startActivity(Intent(this, EditProfileActivity::class.java))
-            }
-            R.id.logout -> {
-                Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show()
-                // Add logout logic if needed
-            }
-        }
-        drawerLayout.closeDrawer(GravityCompat.START)
-        return true
-    }
-
-
-
-    override fun onBackPressed() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
-        }
-    }
 }
