@@ -68,9 +68,9 @@ class MainActivity2 : AppCompatActivity() {
         val numbersCompleted = prefs.getStringSet("numbers_completed", emptySet())?.size ?: 0
         updateModuleProgress(binding.numbersProgress, binding.tvNumbersPercent, numbersCompleted, 10)
 
-        // Words (5 items)
+        // Words (11 items)
         val wordsCompleted = prefs.getStringSet("words_completed", emptySet())?.size ?: 0
-        updateModuleProgress(binding.wordsProgress, binding.tvWordsPercent, wordsCompleted, 5)
+        updateModuleProgress(binding.wordsProgress, binding.tvWordsPercent, wordsCompleted, 11)
     }
 
     private fun updateModuleProgress(
@@ -79,12 +79,12 @@ class MainActivity2 : AppCompatActivity() {
         completed: Int,
         total: Int
     ) {
-        val progress = (completed.toFloat() / total * 100).toInt()
-        progressBar.progress = progress
-        textView.text = "$progress%"
+        val percent = (completed.toFloat() / total * 100).toInt().coerceAtMost(100)
+        progressBar.progress = percent
+        textView.text = "$percent%"
 
         // Change color when completed
-        if (progress == 100) {
+        if (percent == 100) {
             progressBar.setIndicatorColor(ContextCompat.getColor(this, R.color.green_500))
             textView.setTextColor(ContextCompat.getColor(this, R.color.green_500))
         }
