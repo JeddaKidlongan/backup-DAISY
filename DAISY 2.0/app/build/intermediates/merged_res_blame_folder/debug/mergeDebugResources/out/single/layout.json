@@ -36,6 +36,10 @@
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\item_dashboard.xml"
     },
     {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\dialog_logout_confirmation.xml",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\dialog_logout_confirmation.xml"
+    },
+    {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_history.xml",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_history.xml"
     },
@@ -92,7 +96,7 @@
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_letters.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/dialog_logout_confirmation.xml",
-        "source": "com.example.daisy.app-main-84:/layout/dialog_logout_confirmation.xml"
+        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_main_2.xml",
+        "source": "com.example.daisy.app-main-84:/layout/activity_main_2.xml"
     }
 ]

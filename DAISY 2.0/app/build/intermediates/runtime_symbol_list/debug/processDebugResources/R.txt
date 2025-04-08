@@ -4076,7 +4076,6 @@ int id btnDoctor 0x7f0a0088
 int id btnE 0x7f0a0089
 int id btnEmergency 0x7f0a008a
 int id btnF 0x7f0a008b
-int id btnFrontView 0x7f0a008c
 int id btnG 0x7f0a008d
 int id btnGoodafternoon 0x7f0a008e
 int id btnGoodevening 0x7f0a008f
@@ -4103,7 +4102,6 @@ int id btnPolice 0x7f0a00a3
 int id btnQ 0x7f0a00a4
 int id btnR 0x7f0a00a5
 int id btnS 0x7f0a00a6
-int id btnSideView 0x7f0a00a7
 int id btnStartChallenge 0x7f0a00a8
 int id btnSwitchCamera 0x7f0a00a9
 int id btnT 0x7f0a00aa

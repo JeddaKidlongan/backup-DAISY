@@ -52,12 +52,16 @@
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\font\\wendy_one.xml"
     },
     {
-        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.daisy.app-debug-82:/layout_activity_main_2.xml.flat",
+        "source": "com.example.daisy.app-main-84:/layout/activity_main_2.xml"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\layout_activity_user_profile.xml.flat",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_user_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\font_baloo_chettan.xml.flat",
@@ -172,6 +176,10 @@
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\drawable\\profile.png"
     },
     {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_bg_items.xml.flat",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\drawable\\bg_items.xml"
+    },
+    {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\font_titan_one.xml.flat",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\font\\titan_one.xml"
     },
@@ -272,10 +280,6 @@
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.example.daisy.app-debug-82:/layout_dialog_logout_confirmation.xml.flat",
-        "source": "com.example.daisy.app-main-84:/layout/dialog_logout_confirmation.xml"
-    },
-    {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_ic_baseline_add_24.xml.flat",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\drawable\\ic_baseline_add_24.xml"
     },
@@ -342,6 +346,10 @@
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_signs.png.flat",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\drawable\\signs.png"
+    },
+    {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\font_poppins_black.ttf.flat",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\font\\poppins_black.ttf"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_ic_baseline_photo_library_24.xml.flat",
@@ -420,20 +428,12 @@
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_setting.xml"
     },
     {
-        "merged": "com.example.daisy.app-debug-82:/drawable_bg_items.xml.flat",
-        "source": "com.example.daisy.app-main-84:/drawable/bg_items.xml"
-    },
-    {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_gradient.xml.flat",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\drawable\\gradient.xml"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_ic_settings.xml.flat",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\drawable\\ic_settings.xml"
-    },
-    {
-        "merged": "com.example.daisy.app-debug-82:/font_poppins_black.ttf.flat",
-        "source": "com.example.daisy.app-main-84:/font/poppins_black.ttf"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_top_shape.xml.flat",
@@ -454,6 +454,10 @@
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\layout_header.xml.flat",
         "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\header.xml"
+    },
+    {
+        "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\layout_dialog_logout_confirmation.xml.flat",
+        "source": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\dialog_logout_confirmation.xml"
     },
     {
         "merged": "C:\\Users\\kinga\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-debug-82:\\drawable_btn2_bg_ripple.xml.flat",

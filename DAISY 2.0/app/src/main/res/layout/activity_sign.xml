@@ -120,52 +120,6 @@
                 </FrameLayout>
             </LinearLayout>
 
-            <!-- Bottom Buttons for Front/Side View -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:background="@drawable/bottom_shape"
-                android:padding="16dp"
-                tools:ignore="ExtraText,NewApi">
-
-                <Button
-                    android:id="@+id/btnFrontView"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/afacad_medium"
-                    android:background="@drawable/btn2_bg_ripple"
-                    app:backgroundTint="@null"
-                    android:drawableLeft="@drawable/ic_front_view"
-                    android:paddingStart="30dp"
-                    android:paddingEnd="30dp"
-                    android:textSize="18sp"
-                    android:text="Front View"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    tools:ignore="HardcodedText,RtlHardcoded" />
-
-                <Button
-                    android:id="@+id/btnSideView"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/afacad_medium"
-                    android:background="@drawable/btn2_bg_ripple"
-                    app:backgroundTint="@null"
-                    android:drawableLeft="@drawable/ic_front_view"
-                    android:paddingStart="30dp"
-                    android:paddingEnd="30dp"
-                    android:textSize="18sp"
-                    android:text="Side View"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    tools:ignore="HardcodedText,RtlHardcoded" />
-            </LinearLayout>
         </LinearLayout>
     </FrameLayout>
 </layout>

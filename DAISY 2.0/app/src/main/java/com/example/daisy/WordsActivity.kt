@@ -30,11 +30,11 @@ class WordsActivity : AppCompatActivity() {
             binding.btnGoodevening to Pair("Magandang Gabi", "w_goodevening"),
             binding.btnTakecare to Pair("Ingat ka", "w_takecare"),
             binding.btnBye to Pair("Paalam", "w_bye"),
-            binding.btnHelp to Pair("Help", "w_help"),
+            binding.btnHelp to Pair("Tulong", "w_help"),
             binding.btnDoctor to Pair("Doctor", "w_doctor"),
             binding.btnHospital to Pair("Hospital", "w_hospital"),
             binding.btnPolice to Pair("Police", "w_police"),
-            binding.btnPainful to Pair("Painful/Hurt", "w_painful"),
+            binding.btnPainful to Pair("Masakit", "w_painful"),
             binding.btnEmergency to Pair("Emergency", "w_emergency")
         )
 

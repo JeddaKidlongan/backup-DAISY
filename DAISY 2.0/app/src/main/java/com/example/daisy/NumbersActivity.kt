@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.daisy.databinding.ActivityNumbersBinding
 import com.bumptech.glide.Glide
 
+
 class NumbersActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityNumbersBinding
@@ -69,6 +70,7 @@ class NumbersActivity : AppCompatActivity() {
             putExtra("CATEGORY", "numbers")
             startActivity(this)
         }
+
     }
 
     /**

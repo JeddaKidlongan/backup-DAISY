@@ -4077,7 +4077,6 @@ id btnDoctor
 id btnE
 id btnEmergency
 id btnF
-id btnFrontView
 id btnG
 id btnGoodafternoon
 id btnGoodevening
@@ -4104,7 +4103,6 @@ id btnPolice
 id btnQ
 id btnR
 id btnS
-id btnSideView
 id btnStartChallenge
 id btnSwitchCamera
 id btnT

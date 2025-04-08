@@ -20,6 +20,11 @@ class MainActivity2 : AppCompatActivity() {
         binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Improved back button implementation
+        binding.btnBack.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         // Set up click listener for the Numbers CardView
         binding.btnNumbers.setOnClickListener {
             startActivity(Intent(this, NumbersActivity::class.java))

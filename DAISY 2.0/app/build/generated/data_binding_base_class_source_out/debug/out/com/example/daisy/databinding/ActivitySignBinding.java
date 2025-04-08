@@ -4,7 +4,6 @@ package com.example.daisy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -20,12 +19,6 @@ import java.lang.Object;
 public abstract class ActivitySignBinding extends ViewDataBinding {
   @NonNull
   public final ImageButton btnBack;
-
-  @NonNull
-  public final Button btnFrontView;
-
-  @NonNull
-  public final Button btnSideView;
 
   @NonNull
   public final TextView leftSwipeIndicator;
@@ -46,13 +39,10 @@ public abstract class ActivitySignBinding extends ViewDataBinding {
   public final PlayerView videoPlayer;
 
   protected ActivitySignBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageButton btnBack, Button btnFrontView, Button btnSideView, TextView leftSwipeIndicator,
-      TextView rightSwipeIndicator, FrameLayout root, TextView txtSign, TextView txtSignTitle,
-      PlayerView videoPlayer) {
+      ImageButton btnBack, TextView leftSwipeIndicator, TextView rightSwipeIndicator,
+      FrameLayout root, TextView txtSign, TextView txtSignTitle, PlayerView videoPlayer) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnBack = btnBack;
-    this.btnFrontView = btnFrontView;
-    this.btnSideView = btnSideView;
     this.leftSwipeIndicator = leftSwipeIndicator;
     this.rightSwipeIndicator = rightSwipeIndicator;
     this.root = root;

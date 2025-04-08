@@ -96,11 +96,11 @@ class WordsQuizActivity : AppCompatActivity() {
             Pair("Magandang Gabi", "goodevening"),
             Pair("Ingat ka", "takecare"),
             Pair("Paalam", "bye"),
-            Pair("Help", "help"),
+            Pair("Tulong", "help"),
             Pair("Doctor", "doctor"),
             Pair("Hospital", "hospital"),
             Pair("Police", "police"),
-            Pair("Painful", "painful"),
+            Pair("Masakit", "painful"),
             Pair("Emergency", "emergency")
         )
 
