@@ -26,11 +26,11 @@ class MainActivity2 : AppCompatActivity() {
         }
 
         // Set up click listener for the Numbers CardView
-        binding.btnNumbers.setOnClickListener {
+        binding.numeroCard.setOnClickListener {
             startActivity(Intent(this, NumbersActivity::class.java))
         }
 
-        binding.btnLetters.setOnClickListener {
+        binding.alpabetoCard.setOnClickListener {
             val prefs = getSharedPreferences("progress", MODE_PRIVATE)
             val numbersPassed = prefs.getBoolean("numbers_passed", false)
             if (numbersPassed) {
@@ -40,7 +40,7 @@ class MainActivity2 : AppCompatActivity() {
             }
         }
 
-        binding.btnWords.setOnClickListener {
+        binding.salitaCard.setOnClickListener {
             val prefs = getSharedPreferences("progress", MODE_PRIVATE)
             val lettersPassed = prefs.getBoolean("letters_passed", false)
             if (lettersPassed) {

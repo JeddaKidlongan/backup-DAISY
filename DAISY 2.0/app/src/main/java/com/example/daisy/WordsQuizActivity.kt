@@ -97,9 +97,9 @@ class WordsQuizActivity : AppCompatActivity() {
             Pair("Ingat ka", "takecare"),
             Pair("Paalam", "bye"),
             Pair("Tulong", "help"),
-            Pair("Doctor", "doctor"),
-            Pair("Hospital", "hospital"),
-            Pair("Police", "police"),
+            Pair("Doktor", "doctor"),
+            Pair("Ospital", "hospital"),
+            Pair("Pulis", "police"),
             Pair("Masakit", "painful"),
             Pair("Emergency", "emergency")
         )

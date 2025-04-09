@@ -4020,6 +4020,7 @@ int id alignMargins 0x7f0a0050
 int id aligned 0x7f0a0051
 int id all 0x7f0a0052
 int id allStates 0x7f0a0053
+int id alpabeto_card 0x7f0a0314
 int id always 0x7f0a0054
 int id alwaysAllow 0x7f0a0055
 int id alwaysDisallow 0x7f0a0056
@@ -4087,10 +4088,8 @@ int id btnI 0x7f0a0094
 int id btnJ 0x7f0a0095
 int id btnK 0x7f0a0096
 int id btnL 0x7f0a0097
-int id btnLetters 0x7f0a0098
 int id btnM 0x7f0a0099
 int id btnN 0x7f0a009a
-int id btnNumbers 0x7f0a009b
 int id btnO 0x7f0a009c
 int id btnOption1 0x7f0a009d
 int id btnOption2 0x7f0a009e
@@ -4109,7 +4108,6 @@ int id btnTakecare 0x7f0a00ab
 int id btnU 0x7f0a00ac
 int id btnV 0x7f0a00ad
 int id btnW 0x7f0a00ae
-int id btnWords 0x7f0a00af
 int id btnX 0x7f0a00b0
 int id btnY 0x7f0a00b1
 int id btnZ 0x7f0a00b2
@@ -4454,6 +4452,7 @@ int id notification_main_column 0x7f0a0201
 int id notification_main_column_container 0x7f0a0202
 int id numbersGrid 0x7f0a0203
 int id numbersProgress 0x7f0a0204
+int id numero_card 0x7f0a0313
 int id off 0x7f0a0205
 int id on 0x7f0a0206
 int id onAttachStateChangeListener 0x7f0a0207
@@ -4543,6 +4542,7 @@ int id root 0x7f0a025a
 int id rounded 0x7f0a025b
 int id row_index_key 0x7f0a025c
 int id rtl 0x7f0a025d
+int id salita_card 0x7f0a0315
 int id satellite 0x7f0a025e
 int id save_button 0x7f0a025f
 int id save_non_transition_alpha 0x7f0a0260

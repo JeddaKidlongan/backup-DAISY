@@ -4021,6 +4021,7 @@ id alignMargins
 id aligned
 id all
 id allStates
+id alpabeto_card
 id always
 id alwaysAllow
 id alwaysDisallow
@@ -4088,10 +4089,8 @@ id btnI
 id btnJ
 id btnK
 id btnL
-id btnLetters
 id btnM
 id btnN
-id btnNumbers
 id btnO
 id btnOption1
 id btnOption2
@@ -4110,7 +4109,6 @@ id btnTakecare
 id btnU
 id btnV
 id btnW
-id btnWords
 id btnX
 id btnY
 id btnZ
@@ -4455,6 +4453,7 @@ id notification_main_column
 id notification_main_column_container
 id numbersGrid
 id numbersProgress
+id numero_card
 id off
 id on
 id onAttachStateChangeListener
@@ -4544,6 +4543,7 @@ id root
 id rounded
 id row_index_key
 id rtl
+id salita_card
 id satellite
 id save_button
 id save_non_transition_alpha

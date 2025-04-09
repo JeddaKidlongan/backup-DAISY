@@ -96,7 +96,7 @@
         <!-- Draggable Answer Options -->
         <GridLayout
             android:id="@+id/answerGrid"
-            android:layout_width="365dp"
+            android:layout_width="360dp"
             android:layout_height="147dp"
             android:columnCount="2">
 

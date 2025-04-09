@@ -124,6 +124,7 @@ font titan_one
 font wendy_one
 id action_camera_to_permissions
 id action_permissions_to_camera
+id alpabeto_card
 id answerGrid
 id bottom_navigation
 id btn0
@@ -157,10 +158,8 @@ id btnI
 id btnJ
 id btnK
 id btnL
-id btnLetters
 id btnM
 id btnN
-id btnNumbers
 id btnO
 id btnOption1
 id btnOption2
@@ -179,7 +178,6 @@ id btnTakecare
 id btnU
 id btnV
 id btnW
-id btnWords
 id btnX
 id btnY
 id btnZ
@@ -229,6 +227,7 @@ id nav_profile
 id noBtn
 id numbersGrid
 id numbersProgress
+id numero_card
 id option1
 id option2
 id option3
@@ -246,6 +245,7 @@ id rellay1
 id rellay2
 id rightSwipeIndicator
 id root
+id salita_card
 id save_button
 id signInEt
 id signInExtra

@@ -65,9 +65,9 @@ class SignActivity : AppCompatActivity() {
                 Pair("Ingat ka", "w_takecare"),
                 Pair("Paalam", "w_bye"),
                 Pair("Tulong", "w_help"),
-                Pair("Doctor", "w_doctor"),
-                Pair("Hospital", "w_hospital"),
-                Pair("Police", "w_police"),
+                Pair("Doktor", "w_doctor"),
+                Pair("Ospital", "w_hospital"),
+                Pair("Pulis", "w_police"),
                 Pair("Masakit", "w_painful"),
                 Pair("Emergency", "w_emergency")
             )
@@ -154,9 +154,9 @@ class SignActivity : AppCompatActivity() {
             val rawValue = newVideoCode.substring(1)
             val finalText = if (currentCategory == "numbers") {
                 val numberWords = mapOf(
-                    "0" to "Zero", "1" to "One", "2" to "Two", "3" to "Three",
-                    "4" to "Four", "5" to "Five", "6" to "Six", "7" to "Seven",
-                    "8" to "Eight", "9" to "Nine"
+                    "0" to "Sero", "1" to "Uno", "2" to "Dos", "3" to "Tatlo",
+                    "4" to "Kuwatro", "5" to "Singko", "6" to "Anim", "7" to "Pito",
+                    "8" to "Walo", "9" to "Siyam"
                 )
                 val written = numberWords[rawValue] ?: rawValue
                 "$written\n$rawValue"

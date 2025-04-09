@@ -31,9 +31,9 @@ class WordsActivity : AppCompatActivity() {
             binding.btnTakecare to Pair("Ingat ka", "w_takecare"),
             binding.btnBye to Pair("Paalam", "w_bye"),
             binding.btnHelp to Pair("Tulong", "w_help"),
-            binding.btnDoctor to Pair("Doctor", "w_doctor"),
-            binding.btnHospital to Pair("Hospital", "w_hospital"),
-            binding.btnPolice to Pair("Police", "w_police"),
+            binding.btnDoctor to Pair("DoKtor", "w_doctor"),
+            binding.btnHospital to Pair("Ospital", "w_hospital"),
+            binding.btnPolice to Pair("Pulis", "w_police"),
             binding.btnPainful to Pair("Masakit", "w_painful"),
             binding.btnEmergency to Pair("Emergency", "w_emergency")
         )

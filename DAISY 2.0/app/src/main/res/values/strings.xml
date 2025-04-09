@@ -27,9 +27,9 @@
     <string name="navigation_drawer_open">Open Navigation Drawer</string>
     <string name="navigation_drawer_close">Close Navigation Drawer</string>
 
-    <string name="sign_title_alphabet">Learn Alphabet</string>
-    <string name="sign_title_numbers">Learn Numbers</string>
-    <string name="sign_title_words">Learn Words</string>
+    <string name="sign_title_alphabet">Alpabeto</string>
+    <string name="sign_title_numbers">Numero</string>
+    <string name="sign_title_words">Salita</string>
     <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
     <string name="no">NO</string>
     <string name="yes">YES</string>
