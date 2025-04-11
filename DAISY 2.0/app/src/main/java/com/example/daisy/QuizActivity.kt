@@ -156,11 +156,11 @@ class QuizActivity : AppCompatActivity() {
             Pair("Magandang Gabi", "goodevening"),
             Pair("Ingat ka", "takecare"),
             Pair("Paalam", "bye"),
-            Pair("Help", "help"),
-            Pair("Doctor", "doctor"),
-            Pair("Hospital", "hospital"),
-            Pair("Police", "police"),
-            Pair("Painful/Hurt", "painful"),
+            Pair("Tulong", "help"),
+            Pair("Doktor", "doctor"),
+            Pair("Ospital", "hospital"),
+            Pair("Pulis", "police"),
+            Pair("Masakit", "painful"),
             Pair("Emergency", "emergency")
         )
         return wordPairs.map { pair ->

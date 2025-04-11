@@ -154,8 +154,8 @@ class SignActivity : AppCompatActivity() {
             val rawValue = newVideoCode.substring(1)
             val finalText = if (currentCategory == "numbers") {
                 val numberWords = mapOf(
-                    "0" to "Sero", "1" to "Uno", "2" to "Dos", "3" to "Tatlo",
-                    "4" to "Kuwatro", "5" to "Singko", "6" to "Anim", "7" to "Pito",
+                    "0" to "Sero", "1" to "Isa", "2" to "Dalawa", "3" to "Tatlo",
+                    "4" to "Apat", "5" to "Lima", "6" to "Anim", "7" to "Pito",
                     "8" to "Walo", "9" to "Siyam"
                 )
                 val written = numberWords[rawValue] ?: rawValue
