@@ -4673,7 +4673,6 @@ id transition_transform
 id triangle
 id tvChallengeLetter
 id tvChallengeResult
-id tvLabel
 id tvLettersPercent
 id tvNumbersPercent
 id tvScore

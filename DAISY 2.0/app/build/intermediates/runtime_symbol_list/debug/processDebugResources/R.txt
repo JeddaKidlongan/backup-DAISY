@@ -4672,7 +4672,6 @@ int id transition_transform 0x7f0a02dc
 int id triangle 0x7f0a02dd
 int id tvChallengeLetter 0x7f0a02de
 int id tvChallengeResult 0x7f0a02df
-int id tvLabel 0x7f0a02e0
 int id tvLettersPercent 0x7f0a02e1
 int id tvNumbersPercent 0x7f0a02e2
 int id tvScore 0x7f0a02e3

@@ -255,7 +255,6 @@ id toolbar
 id topBar
 id tvChallengeLetter
 id tvChallengeResult
-id tvLabel
 id tvLettersPercent
 id tvNumbersPercent
 id tvScore
