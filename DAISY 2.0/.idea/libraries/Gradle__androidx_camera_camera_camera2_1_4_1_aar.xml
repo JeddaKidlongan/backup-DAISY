@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.camera:camera-camera2:1.4.1@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/800c428cc5969e64f15b3f655adfab11/transformed/camera-camera2-1.4.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/a098eceff7112ec7241f13c309aa5062/transformed/camera-camera2-1.4.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/800c428cc5969e64f15b3f655adfab11/transformed/camera-camera2-1.4.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/800c428cc5969e64f15b3f655adfab11/transformed/camera-camera2-1.4.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/800c428cc5969e64f15b3f655adfab11/transformed/camera-camera2-1.4.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/a098eceff7112ec7241f13c309aa5062/transformed/camera-camera2-1.4.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/a098eceff7112ec7241f13c309aa5062/transformed/camera-camera2-1.4.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/a098eceff7112ec7241f13c309aa5062/transformed/camera-camera2-1.4.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

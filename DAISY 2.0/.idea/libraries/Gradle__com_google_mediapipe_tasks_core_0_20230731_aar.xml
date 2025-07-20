@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.mediapipe:tasks-core:0.20230731@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/d957310844dd79db523ab228ccce7723/transformed/tasks-core-0.20230731/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/d957310844dd79db523ab228ccce7723/transformed/tasks-core-0.20230731/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/d65c255e165b7dbb104aa8a066c83f0f/transformed/tasks-core-0.20230731/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/d65c255e165b7dbb104aa8a066c83f0f/transformed/tasks-core-0.20230731/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

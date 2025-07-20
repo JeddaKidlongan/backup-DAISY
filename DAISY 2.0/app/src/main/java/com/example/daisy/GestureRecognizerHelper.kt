@@ -290,7 +290,7 @@ class GestureRecognizerHelper(
 
     companion object {
         val TAG = "GestureRecognizerHelper ${this.hashCode()}"
-        private const val MP_RECOGNIZER_TASK = "FSL_V6.task"
+        private const val MP_RECOGNIZER_TASK = "FSL_V7.task"
 
         const val DELEGATE_CPU = 1
         const val DELEGATE_GPU = 1

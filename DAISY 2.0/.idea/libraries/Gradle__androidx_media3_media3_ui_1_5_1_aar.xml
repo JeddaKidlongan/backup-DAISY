@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.media3:media3-ui:1.5.1@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/6fee8c5e1444745504f3e56fd75cc768/transformed/media3-ui-1.5.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/cadbabf9f7f9e6eeb49613c148e7000c/transformed/media3-ui-1.5.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/6fee8c5e1444745504f3e56fd75cc768/transformed/media3-ui-1.5.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/6fee8c5e1444745504f3e56fd75cc768/transformed/media3-ui-1.5.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/6fee8c5e1444745504f3e56fd75cc768/transformed/media3-ui-1.5.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/cadbabf9f7f9e6eeb49613c148e7000c/transformed/media3-ui-1.5.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/cadbabf9f7f9e6eeb49613c148e7000c/transformed/media3-ui-1.5.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/cadbabf9f7f9e6eeb49613c148e7000c/transformed/media3-ui-1.5.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

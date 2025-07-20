@@ -117,21 +117,11 @@ class CameraFragment : Fragment(), GestureRecognizerHelper.GestureRecognizerList
         val btnStartChallenge = fragmentCameraBinding.btnStartChallenge
 
         btnStartChallenge.setOnClickListener {
-            // Show instructions in an AlertDialog before starting challenge
-            AlertDialog.Builder(requireContext())
-                .setTitle("Sign Challenge Instructions")
-                .setMessage("In this challenge, a letter from A to I will be displayed. Your task is to sign the corresponding letter. Tap OK to begin the challenge.")
-                .setCancelable(false)
-                .setPositiveButton("OK") { dialog, _ ->
-                    // Reset challenge variables on start
-                    score = 0
-                    roundCount = 0
-                    startChallenge(tvChallengeLetter, tvChallengeResult, tvScore)
-                    dialog.dismiss()
-                }
-                .show()
+            // Reset challenge variables on start
+            score = 0
+            roundCount = 0
+            startChallenge(tvChallengeLetter, tvChallengeResult, tvScore)
         }
-
         fragmentCameraBinding.btnBack.setOnClickListener {
             requireActivity().onBackPressed()
         }
@@ -194,18 +184,16 @@ class CameraFragment : Fragment(), GestureRecognizerHelper.GestureRecognizerList
                 .setTitle("Challenge Complete!")
                 .setMessage("Final Score: $score out of $roundCount")
                 .setCancelable(false)
-                .setPositiveButton("Retry") { dialog, _ ->
+                .setPositiveButton("Retry") { dialog, which ->
                     score = 0
                     roundCount = 0
                     fragmentCameraBinding.tvScore.text = "Score: $score"
                     generateNewChallenge(fragmentCameraBinding.tvChallengeLetter, tvChallengeResult)
                     startChallengeTimer(tvChallengeResult)
-                    dialog.dismiss()
                 }
-                .setNegativeButton("Exit") { dialog, _ ->
+                .setNegativeButton("Exit") { dialog, which ->
                     // Pop the fragment rather than finishing the entire app
                     requireActivity().onBackPressed()
-                    dialog.dismiss()
                 }
                 .show()
             isChallengeInProgress = false

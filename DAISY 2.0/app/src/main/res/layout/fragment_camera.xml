@@ -36,8 +36,7 @@
         android:layout_marginTop="25dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Back"
-        android:src="@drawable/ic_back2"
-        tools:ignore="HardcodedText" />
+        android:src="@drawable/ic_back" />
 
     <ImageButton
         android:id="@+id/btnSwitchCamera"
@@ -48,8 +47,7 @@
         android:layout_marginTop="25dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Switch Camera"
-        android:src="@drawable/ic_switch_camera"
-        tools:ignore="HardcodedText" />
+        android:src="@drawable/ic_switch_camera" />
 
     <!-- Challenge UI and Panels -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -69,7 +67,7 @@
             app:layout_constraintTop_toBottomOf="@id/recyclerview_top"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="HardcodedText,NotSibling" />
+            tools:ignore="NotSibling" />
 
         <!-- Challenge Result -->
         <TextView
@@ -107,9 +105,8 @@
             android:text="Start Challenge"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@id/recyclerview_results"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="HardcodedText,TextSizeCheck" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <!-- Bottom RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView
