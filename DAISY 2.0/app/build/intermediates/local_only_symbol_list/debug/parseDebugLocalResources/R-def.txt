@@ -7,11 +7,13 @@ array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array delegate_spinner_titles
 array preloaded_fonts
+color bg_item
 color bg_nav_item
 color black
 color bottom_sheet_background
 color bottom_sheet_text_color
 color btn_color
+color button_default
 color circleBorder
 color colorPrimary
 color colorPrimaryDark

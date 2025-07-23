@@ -1541,6 +1541,7 @@ int color background_floating_material_dark 0x7f06001d
 int color background_floating_material_light 0x7f06001e
 int color background_material_dark 0x7f06001f
 int color background_material_light 0x7f060020
+int color bg_item 0x7f0604a5
 int color bg_nav_item 0x7f060021
 int color black 0x7f060022
 int color bottom_sheet_background 0x7f060023
@@ -1556,6 +1557,7 @@ int color browser_actions_divider_color 0x7f06002c
 int color browser_actions_text_color 0x7f06002d
 int color browser_actions_title_color 0x7f06002e
 int color btn_color 0x7f06002f
+int color button_default 0x7f0604a3
 int color button_material_dark 0x7f060030
 int color button_material_light 0x7f060031
 int color call_notification_answer_color 0x7f060032

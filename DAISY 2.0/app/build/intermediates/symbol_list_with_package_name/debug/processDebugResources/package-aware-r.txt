@@ -1542,6 +1542,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color bg_item
 color bg_nav_item
 color black
 color bottom_sheet_background
@@ -1557,6 +1558,7 @@ color browser_actions_divider_color
 color browser_actions_text_color
 color browser_actions_title_color
 color btn_color
+color button_default
 color button_material_dark
 color button_material_light
 color call_notification_answer_color

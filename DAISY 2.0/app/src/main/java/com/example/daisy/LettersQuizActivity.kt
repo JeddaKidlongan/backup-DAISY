@@ -157,11 +157,14 @@ class LettersQuizActivity : AppCompatActivity() {
 
         updateProgressUI()
 
+        val defaultColor = getColor(R.color.bg_item)
         listOf(binding.btnOption1, binding.btnOption2, binding.btnOption3, binding.btnOption4)
             .forEachIndexed { index, button ->
                 button.text = currentQuestion.options[index]
+                button.setBackgroundColor(defaultColor)
+                button.isEnabled = true
             }
-        startQuestionTimer()
+
     }
 
     /**
@@ -183,37 +186,64 @@ class LettersQuizActivity : AppCompatActivity() {
                 }
             }
             override fun onFinish() {
-                // Timer finished: mark the question as wrong.
-                checkAnswer("")
-                binding.txtTimer.text = "0"
+                disableAllButtons()
+                showFeedback(false)
+                Handler(Looper.getMainLooper()).postDelayed({
+                    resetButtonColors()
+                    showNextQuestion()
+                }, 1000)
             }
         }.start()
     }
 
-    private fun checkAnswer(selectedAnswer: String) {
+    private fun checkAnswer(selectedButton: android.widget.Button) {
         questionTimer?.cancel()
 
+        val selectedAnswer = selectedButton.text.toString()
         val isCorrect = selectedAnswer.equals(currentQuestion.correctAnswer, ignoreCase = true)
-        // Compute the new streak value.
         val newCurrentStreak = if (isCorrect) currentProgress.currentStreak + 1 else 0
 
         currentProgress = currentProgress.copy(
             correctAnswers = currentProgress.correctAnswers + if (isCorrect) 1 else 0,
             currentStreak = newCurrentStreak,
-            bestStreak = kotlin.comparisons.maxOf(currentProgress.bestStreak, newCurrentStreak)
+            bestStreak = maxOf(currentProgress.bestStreak, newCurrentStreak)
         )
 
         saveProgress()
         updateProgressUI()
         showFeedback(isCorrect)
 
+        // Change button color
+        if (isCorrect) {
+            selectedButton.setBackgroundColor(Color.GREEN)
+        } else {
+            selectedButton.setBackgroundColor(Color.RED)
+            // Show correct answer in green
+            listOf(binding.btnOption1, binding.btnOption2, binding.btnOption3, binding.btnOption4).forEach { button ->
+                if (button.text.toString().equals(currentQuestion.correctAnswer, ignoreCase = true)) {
+                    button.setBackgroundColor(Color.GREEN)
+                }
+            }
+        }
+
         Handler(Looper.getMainLooper()).postDelayed({
             if (questions.isEmpty()) {
                 showResults()
             } else {
+                resetButtonColors()
                 showNextQuestion()
             }
         }, 1000)
+    }
+    private fun disableAllButtons() {
+        listOf(binding.btnOption1, binding.btnOption2, binding.btnOption3, binding.btnOption4).forEach { it.isEnabled = false }
+    }
+    private fun resetButtonColors() {
+        val defaultColor = getColor(R.color.bg_item) // Or use a custom color
+        listOf(binding.btnOption1, binding.btnOption2, binding.btnOption3, binding.btnOption4).forEach { button ->
+            button.setBackgroundColor(defaultColor)
+            button.isEnabled = true
+        }
     }
 
 
@@ -311,9 +341,13 @@ class LettersQuizActivity : AppCompatActivity() {
         binding.btnBack.setOnClickListener { finish() }
         listOf(binding.btnOption1, binding.btnOption2, binding.btnOption3, binding.btnOption4)
             .forEach { button ->
-                button.setOnClickListener { checkAnswer(button.text.toString()) }
+                button.setOnClickListener {
+                    disableAllButtons()
+                    checkAnswer(button)
+                }
             }
     }
+
 
     @SuppressLint("SetTextI18n")
     private fun updateProgressUI() {

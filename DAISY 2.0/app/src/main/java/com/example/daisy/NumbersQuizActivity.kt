@@ -1,6 +1,5 @@
 package com.example.daisy
 
-
 import android.animation.ValueAnimator
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -11,6 +10,7 @@ import android.os.Handler
 import android.os.Looper
 import android.view.animation.AnimationUtils
 import android.view.animation.OvershootInterpolator
+import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
@@ -25,9 +25,8 @@ import java.io.File
 import java.util.Locale
 import java.util.concurrent.TimeUnit
 
-
 data class NumbersQuizQuestion(
-    val type: String, // Always "number" for this activity
+    val type: String,
     val correctAnswer: String,
     val videoUrl: String,
     val options: List<String>
@@ -48,8 +47,6 @@ class NumbersQuizActivity : AppCompatActivity() {
     private val questions = mutableListOf<NumbersQuizQuestion>()
     private var currentProgress = NumbersQuizProgress(0, 0, 0, 0)
     private val sharedPref by lazy { getSharedPreferences("NumbersQuizProgress", MODE_PRIVATE) }
-
-    // Timer variables: 15 sec per question.
     private var questionTimer: CountDownTimer? = null
     private val questionTimeInMillis: Long = 15000
 
@@ -58,7 +55,6 @@ class NumbersQuizActivity : AppCompatActivity() {
         binding = ActivityNumbersQuizBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Initialize ExoPlayer for video playback.
         player = ExoPlayer.Builder(this).build().also { exoPlayer ->
             binding.videoQuestion.player = exoPlayer
             exoPlayer.repeatMode = ExoPlayer.REPEAT_MODE_ALL
@@ -76,18 +72,12 @@ class NumbersQuizActivity : AppCompatActivity() {
         player.release()
     }
 
-    /**
-     * Setup quiz by generating only number questions.
-     */
     private fun setupQuiz() {
         questions.addAll(generateNumberQuestions())
         questions.shuffle()
         currentProgress = currentProgress.copy(totalQuestions = questions.size)
     }
 
-    /**
-     * Generate number questions from 0 to 9 using VideoRepository.
-     */
     private fun generateNumberQuestions(): List<NumbersQuizQuestion> {
         return (0..9).map { number ->
             NumbersQuizQuestion(
@@ -99,9 +89,6 @@ class NumbersQuizActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Generate options for a given correct answer from a pool.
-     */
     private fun <T> generateOptions(correct: T, pool: Iterable<T>): List<String> {
         val options = mutableListOf(correct.toString())
         val availableOptions = pool.toList() - correct
@@ -119,31 +106,23 @@ class NumbersQuizActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Checks for a local video file; if available, returns its URI, otherwise returns the online URL.
-     */
     private fun getLocalVideoUri(videoCode: String, viewType: String, onlineUrl: String): Uri {
         val videosDir = File(getExternalFilesDir(null), "videos")
         val fileName = "${videoCode}_${viewType}.mp4"
         val localFile = File(videosDir, fileName)
-        return if (localFile.exists()) {
-            Uri.fromFile(localFile)
-        } else {
-            onlineUrl.toUri()
-        }
+        return if (localFile.exists()) Uri.fromFile(localFile) else onlineUrl.toUri()
     }
 
     @SuppressLint("NewApi")
     private fun showNextQuestion() {
-        // Cancel any existing timer.
         questionTimer?.cancel()
 
         if (questions.isEmpty()) {
             showResults()
             return
         }
+
         currentQuestion = questions.removeFirst()
-        // Build video code from correctAnswer (e.g., "n5" for answer "5")
         val videoCode = "n" + currentQuestion.correctAnswer
         val localUri = getLocalVideoUri(videoCode, "front", currentQuestion.videoUrl)
         val mediaItem = MediaItem.fromUri(localUri)
@@ -154,48 +133,38 @@ class NumbersQuizActivity : AppCompatActivity() {
 
         updateProgressUI()
 
+        val defaultColor = getColor(R.color.bg_nav_item) // or android.R.color.bg_nav_item
         listOf(binding.btnOption1, binding.btnOption2, binding.btnOption3, binding.btnOption4)
             .forEachIndexed { index, button ->
                 button.text = currentQuestion.options[index]
+                button.isEnabled = true
+                button.setBackgroundColor(defaultColor)
             }
-        startQuestionTimer()
+
     }
 
-    /**
-     * Starts a 15-second timer for the current question.
-     * If the timer finishes, checkAnswer("") is called to mark the question as incorrect.
-     */
     private fun startQuestionTimer() {
         questionTimer?.cancel()
         questionTimer = object : CountDownTimer(questionTimeInMillis, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 val secondsLeft = millisUntilFinished / 1000
                 binding.txtTimer.text = secondsLeft.toString()
-
-                // Change text color to red when 5 seconds or less remain, otherwise white.
-                if (secondsLeft <= 5) {
-                    binding.txtTimer.setTextColor(Color.RED)
-                } else {
-                    binding.txtTimer.setTextColor(Color.WHITE)
-                }
+                binding.txtTimer.setTextColor(if (secondsLeft <= 5) Color.RED else Color.WHITE)
             }
+
             override fun onFinish() {
-                // Timer finished: mark the question as wrong.
-                checkAnswer("")
-                // Optionally reset the timer text.
+                checkAnswer(null)
                 binding.txtTimer.text = "0"
             }
         }.start()
     }
 
-
-    private fun checkAnswer(selectedAnswer: String) {
+    private fun checkAnswer(selectedButton: Button?) {
         questionTimer?.cancel()
-
+        val selectedAnswer = selectedButton?.text?.toString() ?: ""
         val isCorrect = selectedAnswer.equals(currentQuestion.correctAnswer, ignoreCase = true)
-        // Calculate the new current streak based on whether the answer is correct.
+
         val newCurrentStreak = if (isCorrect) currentProgress.currentStreak + 1 else 0
-        // Then update bestStreak using the new current streak value.
         currentProgress = currentProgress.copy(
             correctAnswers = currentProgress.correctAnswers + if (isCorrect) 1 else 0,
             currentStreak = newCurrentStreak,
@@ -206,7 +175,20 @@ class NumbersQuizActivity : AppCompatActivity() {
         updateProgressUI()
         showFeedback(isCorrect)
 
+        // Handle button color
+        if (selectedButton != null) {
+            if (isCorrect) {
+                selectedButton.setBackgroundColor(Color.GREEN)
+            } else {
+                selectedButton.setBackgroundColor(Color.RED)
+                highlightCorrectButton()
+            }
+        } else {
+            highlightCorrectButton()
+        }
+
         Handler(Looper.getMainLooper()).postDelayed({
+            resetButtonColors()
             if (questions.isEmpty()) {
                 showResults()
             } else {
@@ -215,44 +197,48 @@ class NumbersQuizActivity : AppCompatActivity() {
         }, 1000)
     }
 
+    private fun highlightCorrectButton() {
+        listOf(binding.btnOption1, binding.btnOption2, binding.btnOption3, binding.btnOption4).forEach { btn ->
+            if (btn.text.toString().equals(currentQuestion.correctAnswer, ignoreCase = true)) {
+                btn.setBackgroundColor(Color.GREEN)
+            }
+        }
+    }
+
+    private fun resetButtonColors() {
+        val defaultColor = getColor(R.color.bg_nav_item) // or android.R.color.bg_nav_item
+        listOf(binding.btnOption1, binding.btnOption2, binding.btnOption3, binding.btnOption4).forEach { button ->
+            button.setBackgroundColor(defaultColor)
+            button.isEnabled = true
+        }
+    }
+
 
     private fun showFeedback(isCorrect: Boolean) {
         val color = if (isCorrect) Color.GREEN else Color.RED
-        binding.videoQuestion.foreground = android.graphics.drawable.ColorDrawable(color).apply {
-            alpha = 80 // Semi-transparent overlay for feedback.
-        }
+        binding.videoQuestion.foreground = android.graphics.drawable.ColorDrawable(color).apply { alpha = 80 }
         Handler(Looper.getMainLooper()).postDelayed({
             binding.videoQuestion.foreground = null
         }, 300)
     }
 
     private fun showResults() {
-        // Trigger confetti if the user got a perfect score.
-        if (currentProgress.correctAnswers == currentProgress.totalQuestions) {
-            showConfetti()
-        }
+        if (currentProgress.correctAnswers == currentProgress.totalQuestions) showConfetti()
 
-        // Define a passing threshold (e.g., 70% correct answers).
         val passingThreshold = (currentProgress.totalQuestions * 0.7).toInt()
         val passed = currentProgress.correctAnswers >= passingThreshold
 
-        // Save the flag to indicate whether this module is passed.
         with(getSharedPreferences("progress", MODE_PRIVATE).edit()) {
             putBoolean("numbers_passed", passed)
             apply()
         }
-        // ✅ Save the final quiz score to history here, not after each question
+
         saveScore("numbers", currentProgress.correctAnswers)
 
-        // Build the message based on pass/fail.
         val message = if (passed) {
-            // Show positive feedback.
-            "Congratulations! You scored ${currentProgress.correctAnswers}/${currentProgress.totalQuestions}.\n" +
-                    "You've unlocked the next module!"
+            "Congratulations! You scored ${currentProgress.correctAnswers}/${currentProgress.totalQuestions}.\nYou've unlocked the next module!"
         } else {
-            // Show an encouraging message.
-            "You scored ${currentProgress.correctAnswers}/${currentProgress.totalQuestions}.\n" +
-                    "Keep practicing and try again to unlock the next module."
+            "You scored ${currentProgress.correctAnswers}/${currentProgress.totalQuestions}.\nKeep practicing and try again to unlock the next module."
         }
 
         AlertDialog.Builder(this)
@@ -283,14 +269,9 @@ class NumbersQuizActivity : AppCompatActivity() {
             putInt("bestStreak", maxOf(currentProgress.bestStreak, sharedPref.getInt("bestStreak", 0)))
             apply()
         }
-
-        // Calculate the percentage score and save to global "MyScores" preference.
-        val scorePercentage = (currentProgress.correctAnswers.toFloat() / currentProgress.totalQuestions * 100).toInt()
-        getSharedPreferences("MyScores", MODE_PRIVATE)
-            .edit()
-            .putInt("numbers_score",  currentProgress.correctAnswers)
+        getSharedPreferences("MyScores", MODE_PRIVATE).edit()
+            .putInt("numbers_score", currentProgress.correctAnswers)
             .apply()
-
     }
 
     private fun loadProgress() {
@@ -303,20 +284,24 @@ class NumbersQuizActivity : AppCompatActivity() {
         binding.btnBack.setOnClickListener { finish() }
         listOf(binding.btnOption1, binding.btnOption2, binding.btnOption3, binding.btnOption4)
             .forEach { button ->
-                button.setOnClickListener { checkAnswer(button.text.toString()) }
+                button.setOnClickListener {
+                    disableAllButtons()
+                    checkAnswer(button)
+                }
             }
+    }
+
+    private fun disableAllButtons() {
+        listOf(binding.btnOption1, binding.btnOption2, binding.btnOption3, binding.btnOption4)
+            .forEach { it.isEnabled = false }
     }
 
     @SuppressLint("SetTextI18n")
     private fun updateProgressUI() {
-        // Calculate how many questions have been attempted.
         val attemptedQuestions = currentProgress.totalQuestions - questions.size
-        // Compute progress percentage based on attempted questions.
         val progressPercent = ((attemptedQuestions.toFloat() / currentProgress.totalQuestions) * 100).toInt()
 
-        // Optionally, still show the score (if desired).
         binding.txtScore.text = "Score: ${currentProgress.correctAnswers}"
-
         val prevProgress = binding.progressBar.progress
         val progressAnimator = ValueAnimator.ofInt(prevProgress, progressPercent).apply {
             duration = 500
@@ -329,12 +314,11 @@ class NumbersQuizActivity : AppCompatActivity() {
                 binding.progressIndicator.translationX = translationX
             }
         }
-        progressAnimator.start() // Animate progress bar and update streak UI.
+        progressAnimator.start()
 
         binding.txtStreakMain.text =
             "Current Streak: ${currentProgress.currentStreak}\nBest Streak: ${currentProgress.bestStreak}"
     }
-
 
     private fun showStreakEffect(streak: Int) {
         val anim = AnimationUtils.loadAnimation(this, R.anim.streak_pulse).apply {
@@ -342,15 +326,13 @@ class NumbersQuizActivity : AppCompatActivity() {
         }
         binding.txtStreakMain.startAnimation(anim)
     }
-    // ✅ Add this function at the bottom
+
     private fun saveScore(category: String, score: Int) {
         val prefs = getSharedPreferences("MyScores", MODE_PRIVATE)
         val editor = prefs.edit()
-
         val key = "${category}_history"
         val existing = prefs.getString(key, "") ?: ""
         val updated = if (existing.isEmpty()) "$score" else "$existing,$score"
-
         editor.putString(key, updated)
         editor.apply()
     }

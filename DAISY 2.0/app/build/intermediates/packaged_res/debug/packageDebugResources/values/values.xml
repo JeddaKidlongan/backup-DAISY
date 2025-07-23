@@ -26,11 +26,13 @@
         <item>@font/lemon</item>
         <item>@font/wendy_one</item>
     </array>
+    <color name="bg_item">#007F8B</color>
     <color name="bg_nav_item">#007F8B</color>
     <color name="black">#000000</color>
     <color name="bottom_sheet_background">#EEEEEE</color>
     <color name="bottom_sheet_text_color">@android:color/black</color>
     <color name="btn_color">#1D5281</color>
+    <color name="button_default">#E0E0E0</color>
     <color name="circleBorder">#50FFFFFF</color>
     <color name="colorPrimary">#165FF1</color>
     <color name="colorPrimaryDark">#485C31</color>

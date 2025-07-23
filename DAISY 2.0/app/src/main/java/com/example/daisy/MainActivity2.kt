@@ -3,7 +3,6 @@ package com.example.daisy
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.work.OneTimeWorkRequestBuilder
@@ -20,37 +19,27 @@ class MainActivity2 : AppCompatActivity() {
         binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Improved back button implementation
+        // Back button
         binding.btnBack.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
 
-        // Set up click listener for the Numbers CardView
+        // Numbers CardView
         binding.numeroCard.setOnClickListener {
             startActivity(Intent(this, NumbersActivity::class.java))
         }
 
+        // Letters CardView — now directly opens LettersActivity
         binding.alpabetoCard.setOnClickListener {
-            val prefs = getSharedPreferences("progress", MODE_PRIVATE)
-            val numbersPassed = prefs.getBoolean("numbers_passed", false)
-            if (numbersPassed) {
-                startActivity(Intent(this, LettersActivity::class.java))
-            } else {
-                Toast.makeText(this, "Please pass the Number Quiz to unlock Alphabet.", Toast.LENGTH_SHORT).show()
-            }
+            startActivity(Intent(this, LettersActivity::class.java))
         }
 
+        // Words CardView — now directly opens WordsActivity
         binding.salitaCard.setOnClickListener {
-            val prefs = getSharedPreferences("progress", MODE_PRIVATE)
-            val lettersPassed = prefs.getBoolean("letters_passed", false)
-            if (lettersPassed) {
-                startActivity(Intent(this, WordsActivity::class.java))
-            } else {
-                Toast.makeText(this, "Please pass the Letters Quiz to unlock Words.", Toast.LENGTH_SHORT).show()
-            }
+            startActivity(Intent(this, WordsActivity::class.java))
         }
 
-        // Trigger the bulk video download using WorkManager
+        // Bulk video download
         val bulkDownloadWorkRequest = OneTimeWorkRequestBuilder<BulkDownloadWorker>().build()
         WorkManager.getInstance(this).enqueue(bulkDownloadWorkRequest)
 
@@ -69,7 +58,7 @@ class MainActivity2 : AppCompatActivity() {
         val lettersCompleted = prefs.getStringSet("letters_completed", emptySet())?.size ?: 0
         updateModuleProgress(binding.lettersProgress, binding.tvLettersPercent, lettersCompleted, 26)
 
-        // Numbers (0-9)
+        // Numbers (0–9)
         val numbersCompleted = prefs.getStringSet("numbers_completed", emptySet())?.size ?: 0
         updateModuleProgress(binding.numbersProgress, binding.tvNumbersPercent, numbersCompleted, 10)
 
