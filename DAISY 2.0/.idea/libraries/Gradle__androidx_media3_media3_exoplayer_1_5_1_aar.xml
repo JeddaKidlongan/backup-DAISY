@@ -9,6 +9,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/3b654464a9caa04ece6873218416f966/transformed/media3-exoplayer-1.5.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.media3/media3-exoplayer/1.5.1/4e2f523c04e9ec91377b26384fa51354f96db433/media3-exoplayer-1.5.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

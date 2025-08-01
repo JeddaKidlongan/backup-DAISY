@@ -46,7 +46,7 @@
     <color name="icActive">#FFFFFFFF</color>
     <color name="icFocused">#DDFFFFFF</color>
     <color name="icPressed">#AAFFFFFF</color>
-    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="ic_launcher_background">#25CCD1</color>
     <color name="light_blue">#009688</color>
     <color name="mp_color_accent">#03DAC6</color>
     <color name="mp_color_error">#B00020</color>

@@ -302,6 +302,7 @@ layout item_dashboard
 layout item_gesture_recognizer_result
 menu bottom_nav_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap logo
 navigation nav_graph

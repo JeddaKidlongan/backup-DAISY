@@ -8,6 +8,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/bd8149c032c15ab36adf0b720004986e/transformed/firebase-storage-20.3.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-storage/20.3.0/70ffb7dde1bb05250adb0fe364f640d9a6a485c6/firebase-storage-20.3.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

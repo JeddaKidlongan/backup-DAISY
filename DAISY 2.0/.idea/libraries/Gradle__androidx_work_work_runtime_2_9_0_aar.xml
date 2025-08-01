@@ -6,6 +6,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/3436beb31d83faa0ec3417bb48632ce3/transformed/work-runtime-2.9.0/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.work/work-runtime/2.9.0/469f3a707823cb36415ab2cfcd0b0c7663734200/work-runtime-2.9.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

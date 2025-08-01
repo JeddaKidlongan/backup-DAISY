@@ -6,6 +6,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/a0204b3ef189e574b59c3988f0ca3848/transformed/navigation-ui-2.8.9/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-ui/2.8.9/794ff876987dc95057bbf0a112930ef1023ca27f/navigation-ui-2.8.9-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

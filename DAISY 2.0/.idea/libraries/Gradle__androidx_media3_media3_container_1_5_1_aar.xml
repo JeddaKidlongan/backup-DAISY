@@ -5,6 +5,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/4133ba296f823af7094e3dbfa394a4a7/transformed/media3-container-1.5.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.media3/media3-container/1.5.1/75d8b23aef8316a0d0467781c38e2af36556afba/media3-container-1.5.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

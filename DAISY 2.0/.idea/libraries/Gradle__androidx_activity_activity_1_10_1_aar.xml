@@ -6,6 +6,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/e3d8d51d029312bb23d6903b423b2242/transformed/activity-1.10.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.activity/activity/1.10.1/2dab2db4576a9f16d32369bd2af0e3e46847bc6c/activity-1.10.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

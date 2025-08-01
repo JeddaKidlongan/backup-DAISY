@@ -8,6 +8,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/bb18793b882a4a8f914f03ae23568f48/transformed/media3-common-1.5.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.media3/media3-common/1.5.1/c0debd247d34512b7456b8b0916a756ad08ce320/media3-common-1.5.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

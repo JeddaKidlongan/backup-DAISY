@@ -8,6 +8,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/e5fbbdfa3793db9188d4ef49a516c985/transformed/media3-extractor-1.5.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.media3/media3-extractor/1.5.1/976c401cbbdaf9bbbe11c298bae4f79514d588d5/media3-extractor-1.5.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

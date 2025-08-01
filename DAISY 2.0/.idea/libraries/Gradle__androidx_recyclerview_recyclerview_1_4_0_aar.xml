@@ -9,6 +9,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/70dc15c737e29de912e54b7477b23454/transformed/recyclerview-1.4.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.4.0/e7e910392b8ee3c7bb8b09d365879ef0cefe198b/recyclerview-1.4.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

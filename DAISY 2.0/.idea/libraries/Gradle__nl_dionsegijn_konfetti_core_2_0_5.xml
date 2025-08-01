@@ -4,7 +4,11 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nl.dionsegijn/konfetti-core/2.0.5/5589ae2ab81ef2ae1fb8aa51b3dd2d7744b5c700/konfetti-core-2.0.5.jar!/" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nl.dionsegijn/konfetti-core/2.0.5/fbddf74729eebbe271e9ab147ed5eb54b33fe74/konfetti-core-2.0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nl.dionsegijn/konfetti-core/2.0.5/f9f29ad1eb6be4a61e1085b7f5724d6f2831b469/konfetti-core-2.0.5-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

@@ -9,6 +9,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/cadbabf9f7f9e6eeb49613c148e7000c/transformed/media3-ui-1.5.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.media3/media3-ui/1.5.1/790d7bed7cabc6f5baca3f0e65ced83a3328104b/media3-ui-1.5.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

@@ -6,6 +6,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/0ab337d5ff5ad2378883e871054ada58/transformed/camera-lifecycle-1.4.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.camera/camera-lifecycle/1.4.1/7cfd9568f044467d3455096b09ebbdce1edc439b/camera-lifecycle-1.4.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.camera/camera-lifecycle/1.4.1/53a7f87fc3a57b0ece9bacb9cbf77a0689421f30/camera-lifecycle-1.4.1-samples-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

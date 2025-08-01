@@ -6,6 +6,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/e2c55b272974bb0f57aee9488d5ab45a/transformed/tracing-1.2.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.tracing/tracing/1.2.0/7a8da514613e34b2f3cc6f1d9dc805295d9838a7/tracing-1.2.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

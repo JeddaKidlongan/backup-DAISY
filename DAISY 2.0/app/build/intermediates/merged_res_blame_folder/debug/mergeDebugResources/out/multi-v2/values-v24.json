@@ -4,7 +4,7 @@
             "outputFile": "com.example.daisy.app-mergeDebugResources-80:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kinga\\.gradle\\caches\\8.11.1\\transforms\\3abafb03224c51efbbcf22b49bd502ae\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\8.11.1\\transforms\\3abafb03224c51efbbcf22b49bd502ae\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kinga\\.gradle\\caches\\8.11.1\\transforms\\5969b9b3a34550b389a48edd10575dbc\\transformed\\appcompat-1.7.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\8.11.1\\transforms\\5969b9b3a34550b389a48edd10575dbc\\transformed\\appcompat-1.7.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -33,7 +33,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kinga\\.gradle\\caches\\8.11.1\\transforms\\e0b68865e6a0eaf9b7aa3c08eed4a7dc\\transformed\\media-1.7.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\8.11.1\\transforms\\e0b68865e6a0eaf9b7aa3c08eed4a7dc\\transformed\\media-1.7.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

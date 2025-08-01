@@ -8,6 +8,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/d5aafb236b8dc9577635c281c9ee7576/transformed/firebase-appcheck-17.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-appcheck/17.1.0/b1460d04d9edae62a0020fec58d8cd3871bc3bc7/firebase-appcheck-17.1.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

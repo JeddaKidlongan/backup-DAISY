@@ -6,6 +6,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/58ef1aef53d38725ecfc1d8fbd6ceb99/transformed/navigation-fragment-ktx-2.8.9/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-fragment-ktx/2.8.9/d6e7d531ce96506b7de720eb12aecd6e13ae750b/navigation-fragment-ktx-2.8.9-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

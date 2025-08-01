@@ -9,6 +9,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/f1a3c443e02fb5efda174ac3ed5076e6/transformed/camera-view-1.4.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.camera/camera-view/1.4.1/92d0428532e8c273a675bad110f4bcaafea3b71b/camera-view-1.4.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

@@ -6,6 +6,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/fefd250f8b1a1fb1f6920e935189008d/transformed/work-runtime-ktx-2.9.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.work/work-runtime-ktx/2.9.0/2ad14aed781c4a73ed4dbb421966d408a0a06686/work-runtime-ktx-2.9.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
