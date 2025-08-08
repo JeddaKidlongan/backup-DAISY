@@ -1,94 +1,98 @@
 [
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/header.xml",
-        "source": "com.example.daisy.app-main-84:/layout/header.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\item_dashboard.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\item_dashboard.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_numbers_quiz.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_numbers_quiz.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_main_2.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_main_2.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/fragment_camera.xml",
-        "source": "com.example.daisy.app-main-84:/layout/fragment_camera.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/item_dashboard.xml",
-        "source": "com.example.daisy.app-main-84:/layout/item_dashboard.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_numbers.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_numbers.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_sign.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_sign.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_numbers_quiz.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_numbers_quiz.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_sign_up.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_sign_up.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_words.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_words.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/dialog_logout_confirmation.xml",
-        "source": "com.example.daisy.app-main-84:/layout/dialog_logout_confirmation.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\fragment_camera.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\fragment_camera.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_user_profile.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_user_profile.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\item_gesture_recognizer_result.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\item_gesture_recognizer_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_quiz.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_letters.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_letters.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_edit_profile.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_history.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_setting.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_setting.xml"
     },
     {
         "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/item_gesture_recognizer_result.xml",
         "source": "com.example.daisy.app-main-84:/layout/item_gesture_recognizer_result.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_numbers.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_numbers.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_dashboard.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_dashboard.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_edit_profile.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_edit_profile.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_sign.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_sign.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_letters.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_letters.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_words_quiz.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_words_quiz.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_login.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_login.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_main.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_main.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_letters_quiz.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_letters_quiz.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_words_quiz.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_words_quiz.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_user_profile.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_user_profile.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_quiz.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_quiz.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\dialog_logout_confirmation.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\dialog_logout_confirmation.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_setting.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_setting.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_dashboard.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_dashboard.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\activity_splash_screen.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_history.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_history.xml"
-    },
-    {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_main_2.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_main_2.xml"
-    },
-    {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_splash_screen.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_splash_screen.xml"
-    },
-    {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_letters_quiz.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_letters_quiz.xml"
-    },
-    {
-        "merged": "com.example.daisy.app-mergeDebugResources-81:/layout/activity_words.xml",
-        "source": "com.example.daisy.app-main-84:/layout/activity_words.xml"
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-mergeDebugResources-81:\\layout\\header.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.11.1\\com.example.daisy.app-main-84:\\layout\\header.xml"
     }
 ]

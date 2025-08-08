@@ -12,4 +12,18 @@
         android:textSize="@dimen/bottom_sheet_text_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Target: ?"
+        android:textColor="@color/bottom_sheet_text_color"
+        android:textSize="@dimen/bottom_sheet_text_size"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,11 +20,15 @@ public final class ItemGestureRecognizerResultBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView tvLabel;
+
+  @NonNull
   public final TextView tvScore;
 
   private ItemGestureRecognizerResultBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView tvScore) {
+      @NonNull TextView tvLabel, @NonNull TextView tvScore) {
     this.rootView = rootView;
+    this.tvLabel = tvLabel;
     this.tvScore = tvScore;
   }
 
@@ -55,13 +59,19 @@ public final class ItemGestureRecognizerResultBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.tvLabel;
+      TextView tvLabel = ViewBindings.findChildViewById(rootView, id);
+      if (tvLabel == null) {
+        break missingId;
+      }
+
       id = R.id.tvScore;
       TextView tvScore = ViewBindings.findChildViewById(rootView, id);
       if (tvScore == null) {
         break missingId;
       }
 
-      return new ItemGestureRecognizerResultBinding((ConstraintLayout) rootView, tvScore);
+      return new ItemGestureRecognizerResultBinding((ConstraintLayout) rootView, tvLabel, tvScore);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

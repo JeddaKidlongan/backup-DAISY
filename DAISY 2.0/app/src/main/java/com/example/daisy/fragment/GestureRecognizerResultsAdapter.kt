@@ -63,6 +63,7 @@ inner class ViewHolder(private val binding: ItemGestureRecognizerResultBinding) 
 
     fun bind(label: String?, score: Float?) {
         with(binding) {
+            tvLabel.text = label ?: NO_VALUE
             tvScore.text = if (score != null) String.format(
                 Locale.US,
                 "%.2f",
